@@ -1,0 +1,3 @@
+ew_bsp_system.c:75:13:SystemClock_Config	336	static
+ew_bsp_system.c:283:6:EwBspSystemInit	56	static
+ew_bsp_system.c:337:6:EwBspSystemDone	0	static

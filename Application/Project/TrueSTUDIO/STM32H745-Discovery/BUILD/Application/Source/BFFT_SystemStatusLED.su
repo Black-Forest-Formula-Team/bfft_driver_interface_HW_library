@@ -1,0 +1,2 @@
+BFFT_SystemStatusLED.c:11:6:vLEDStatusOkaySet	0	static
+BFFT_SystemStatusLED.c:16:6:vLEDStatusErrorSet	0	static

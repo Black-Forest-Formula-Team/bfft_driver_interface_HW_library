@@ -1,0 +1,15 @@
+ft5336.c:137:9:FT5336_GetCapabilities	4	static
+ft5336.c:194:9:FT5336_DeInit	0	static
+ft5336.c:371:9:FT5336_ClearIT	0	static
+ft5336.c:505:16:ReadRegWrap	4	static
+ft5336.c:520:16:WriteRegWrap	4	static
+ft5336.c:212:9:FT5336_GestureConfig	16	static
+ft5336.c:237:9:FT5336_ReadID	16	static
+ft5336.c:253:9:FT5336_GetState	24	static
+ft5336.c:280:9:FT5336_GetMultiTouchState	56	static
+ft5336.c:320:9:FT5336_GetGesture	0	static
+ft5336.c:331:9:FT5336_EnableIT	0	static
+ft5336.c:342:9:FT5336_DisableIT	0	static
+ft5336.c:159:9:FT5336_Init	16	static
+ft5336.c:355:9:FT5336_ITStatus	0	static
+ft5336.c:97:9:FT5336_RegisterBusIO	16	static

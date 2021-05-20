@@ -1,0 +1,5 @@
+ew_bsp_inout.c:60:6:EwBspInOutInitButton	48	static
+ew_bsp_inout.c:95:6:EwBspInOutInitLed	0	static
+ew_bsp_inout.c:115:6:EwBspInOutLedOn	0	static
+ew_bsp_inout.c:135:6:EwBspInOutLedOff	0	static
+ew_bsp_inout.c:156:6:EwBspInOutEventHandler	8	static

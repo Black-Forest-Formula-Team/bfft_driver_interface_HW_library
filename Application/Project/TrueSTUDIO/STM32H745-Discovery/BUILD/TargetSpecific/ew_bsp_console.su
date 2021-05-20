@@ -1,0 +1,6 @@
+ew_bsp_console.c:65:6:HAL_UART_MspInit	248	static
+ew_bsp_console.c:101:6:HAL_UART_MspDeInit	8	static
+ew_bsp_console.c:138:6:EwBspConsoleInit	8	static
+ew_bsp_console.c:167:6:EwBspConsoleDone	0	static
+ew_bsp_console.c:187:6:EwBspConsolePutCharacter	16	static
+ew_bsp_console.c:209:15:EwBspConsoleGetCharacter	16	static

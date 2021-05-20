@@ -1,0 +1,6 @@
+Templates.c:33:6:TemplatesRotaryKnob__Init	8	static
+Templates.c:96:6:TemplatesPickerControl__Init	8	static
+Templates.c:46:6:TemplatesRotaryKnob__ReInit	0	static
+Templates.c:109:6:TemplatesPickerControl__ReInit	0	static
+Templates.c:53:6:TemplatesRotaryKnob__Done	0	static
+Templates.c:116:6:TemplatesPickerControl__Done	0	static

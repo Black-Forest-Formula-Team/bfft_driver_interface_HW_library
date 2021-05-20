@@ -1,0 +1,46 @@
+stm32h745-discovery/ewmain.o: ..\..\Source\ewmain.c \
+  ..\..\Source\ewconfig.h ..\..\Source\ewdef.h \
+  RTE\_STM32H745-Discovery\RTE_Components.h ..\..\Source\ewmain.h \
+  ..\..\GeneratedCode\Core.h \
+  C:\Users\maanm\Desktop\STM32H745-Discovery\PlatformPackage\RTE\ewrte.h \
+  ..\..\Source\ewconfig.h \
+  C:\Users\maanm\Desktop\STM32H745-Discovery\PlatformPackage\RGB565\ewgfx.h \
+  C:\Users\maanm\Desktop\STM32H745-Discovery\PlatformPackage\RGB565\ewgfxdriver.h \
+  C:\Users\maanm\Desktop\STM32H745-Discovery\PlatformPackage\RGB565\ewextgfx.h \
+  C:\Users\maanm\Desktop\STM32H745-Discovery\PlatformPackage\RGB565\ewgfxdefs.h \
+  C:\Users\maanm\Desktop\STM32H745-Discovery\PlatformPackage\RGB565\ewextbmp.h \
+  C:\Users\maanm\Desktop\STM32H745-Discovery\PlatformPackage\RGB565\ewextfnt.h \
+  C:\Users\maanm\Desktop\STM32H745-Discovery\PlatformPackage\RGB565\ewgfxcore.h \
+  ..\..\GeneratedCode\_CoreCursorEvent.h \
+  ..\..\GeneratedCode\_CoreEvent.h \
+  ..\..\GeneratedCode\_CoreCursorGrabEvent.h \
+  ..\..\GeneratedCode\_CoreCursorHit.h \
+  ..\..\GeneratedCode\_CoreDialogContext.h \
+  ..\..\GeneratedCode\_CoreDragEvent.h ..\..\GeneratedCode\_CoreGroup.h \
+  ..\..\GeneratedCode\_CoreRectView.h ..\..\GeneratedCode\_CoreView.h \
+  ..\..\GeneratedCode\_CoreKeyEvent.h \
+  ..\..\GeneratedCode\_CoreKeyPressHandler.h \
+  ..\..\GeneratedCode\_CoreLayoutContext.h \
+  ..\..\GeneratedCode\_CoreLayoutLineContext.h \
+  ..\..\GeneratedCode\_CoreLayoutQuadContext.h \
+  ..\..\GeneratedCode\_CoreLineView.h \
+  ..\..\GeneratedCode\_CoreModalContext.h \
+  ..\..\GeneratedCode\_CoreOutline.h \
+  ..\..\GeneratedCode\_CorePropertyObserver.h \
+  ..\..\GeneratedCode\_CoreQuadView.h \
+  ..\..\GeneratedCode\_CoreResource.h ..\..\GeneratedCode\_CoreRoot.h \
+  ..\..\GeneratedCode\_CoreTimer.h \
+  ..\..\GeneratedCode\_CoreRotateTouchHandler.h \
+  ..\..\GeneratedCode\_CoreSimpleTouchHandler.h \
+  ..\..\GeneratedCode\_CoreSlideTouchHandler.h \
+  ..\..\GeneratedCode\_CoreTask.h ..\..\GeneratedCode\_CoreTaskQueue.h \
+  ..\..\GeneratedCode\_CoreTime.h \
+  ..\..\GeneratedCode\_CoreVerticalList.h ..\..\GeneratedCode\Graphics.h \
+  ..\..\GeneratedCode\_GraphicsArcPath.h \
+  ..\..\GeneratedCode\_GraphicsPath.h \
+  ..\..\GeneratedCode\_GraphicsCanvas.h \
+  ..\..\GeneratedCode\_ResourcesBitmap.h \
+  ..\..\..\TargetSpecific\ew_bsp_clock.h \
+  ..\..\..\TargetSpecific\ew_bsp_event.h \
+  ..\..\..\TargetSpecific\ew_bsp_display.h \
+  ..\..\..\TargetSpecific\ew_bsp_touch.h ..\..\Source\DeviceDriver.h

@@ -1,0 +1,7 @@
+DeviceDriver.c:90:6:HardButtonIsrCallback	0	static
+DeviceDriver.c:127:6:DeviceDriver_Initialize	8	static
+DeviceDriver.c:189:6:DeviceDriver_Deinitialize	0	static
+DeviceDriver.c:232:5:DeviceDriver_ProcessData	0	static
+DeviceDriver.c:324:6:DeviceDriver_SetLedStatus	0	static
+DeviceDriver.c:357:6:DeviceDriver_PrintMessage	0	static
+DeviceDriver.c:373:6:DeviceDriver_SetTime	0	static
