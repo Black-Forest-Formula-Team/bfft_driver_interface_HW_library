@@ -54,7 +54,7 @@
   #include "cmsis_os.h"
 #include "task.h"
   #define semtstSTACK_SIZE    configMINIMAL_STACK_SIZE * 10
-
+  #define STACK_SIZE    configMINIMAL_STACK_SIZE
   static void GuiThread( const void* arg );
  static void vThreadLEDSystemAlive(const void *argument);
   static void vThreadCANSendMessage(const void *argument);
@@ -139,28 +139,17 @@ int main( void )
   /* initialize console interface for debug messages */
   EwBspConsoleInit();
 
-  osThreadDef( EwThreadHandle, GuiThread, osPriorityLow, 0, semtstSTACK_SIZE );
-	osThreadCreate( osThread( EwThreadHandle ), (void*)0 );
+   /* create thread that drives the Embedded Wizard GUI application... */
+   osThreadDef( EwThreadHandle, GuiThread, osPriorityLow, 0, semtstSTACK_SIZE );
+   osThreadCreate( osThread( EwThreadHandle ), (void*)0 );
 
-	osThreadDef(vThreadLEDSystemAliveHandle ,vThreadLEDSystemAlive , osPriorityNormal, 0, semtstSTACK_SIZE );
-	osThreadCreate(osThread(vThreadLEDSystemAliveHandle), (void*)0);
+   /* creation of vThreadLEDSystemAliveHandle*/
+   osThreadDef(vThreadLEDSystemAliveHandle ,vThreadLEDSystemAlive , osPriorityNormal, 0, STACK_SIZE );
+   osThreadCreate(osThread(vThreadLEDSystemAliveHandle), (void*)0);
 
-
-
-	osThreadDef(vThreadCANSendMessageHandle ,vThreadCANSendMessage ,osPriorityAboveNormal , 0, semtstSTACK_SIZE );
-	osThreadCreate(osThread(vThreadCANSendMessageHandle), (void*)0);
-
-
-
-  /* create thread that drives the Embedded Wizard GUI application... */
-
-
-
-
-     /* creation of ThreadCANSendMe*/
-
-
-
+   /* creation of ThreadCANSendMe*/
+   osThreadDef(vThreadCANSendMessageHandle ,vThreadCANSendMessage ,osPriorityAboveNormal , 0, STACK_SIZE );
+   osThreadCreate(osThread(vThreadCANSendMessageHandle), (void*)0);
 
 
   /* ...and start scheduler */
@@ -211,12 +200,10 @@ static void vThreadCANSendMessage(const void *argument)
   /* Infinite loop */
    TickType_t xPreviousWakeTime = xTaskGetTickCount();
 
-
    while(1)
    {
 	   s8CANSendMessage();
-
-      vTaskDelayUntil(&xPreviousWakeTime, 2000u/portTICK_RATE_MS);
+      vTaskDelayUntil(&xPreviousWakeTime, 200u/portTICK_RATE_MS);
    }
   /* USER CODE END vThreadCANSendMessage */
 }
@@ -228,15 +215,17 @@ static void vThreadCANSendMessage(const void *argument)
 * @retval None
 */
 /* USER CODE END Header_vThreadLEDSystemAlive */
+
 static void vThreadLEDSystemAlive(const void *argument)
 {
   /* USER CODE BEGIN vThreadLEDSystemAlive */
   /* Infinite loop */
    TickType_t xPreviousWakeTime = xTaskGetTickCount();
+   bool i = false;
 
    while(1)
    {
-	  DeviceDriver_SetLedStatus(0);
+      DeviceDriver_SetLedStatus(i =! i );
       vTaskDelayUntil(&xPreviousWakeTime, 250u/portTICK_RATE_MS);
    }
   /* USER CODE END vThreadLEDSystemAlive */
