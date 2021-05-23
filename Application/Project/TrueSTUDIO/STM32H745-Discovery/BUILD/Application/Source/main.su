@@ -1,5 +1,5 @@
-main.c:208:13:vThreadCANSendMessage	16	static
-main.c:231:13:vThreadLEDSystemAlive	16	static
-main.c:193:13:GuiThread	8	static
+main.c:197:13:vThreadCANSendMessage	16	static
+main.c:219:13:vThreadLEDSystemAlive	24	static
+main.c:182:13:GuiThread	8	static
 main.c:130:5:main	80	static
-main.c:245:6:Error_Handler	0	static
+main.c:234:6:Error_Handler	0	static

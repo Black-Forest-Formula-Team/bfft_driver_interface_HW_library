@@ -1401,6 +1401,7 @@ Discarded input sections
  .group         0x00000000        0x8 Application\Source\BFFT_CAN.o
  .group         0x00000000        0x8 Application\Source\BFFT_CAN.o
  .group         0x00000000        0x8 Application\Source\BFFT_CAN.o
+ .group         0x00000000        0x8 Application\Source\BFFT_CAN.o
  .text          0x00000000        0x0 Application\Source\BFFT_CAN.o
  .data          0x00000000        0x0 Application\Source\BFFT_CAN.o
  .text.s8CANReceiveMessage
@@ -1409,6 +1410,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x4c Application\Source\BFFT_CAN.o
  .debug_macro   0x00000000       0xd7 Application\Source\BFFT_CAN.o
  .debug_macro   0x00000000      0x352 Application\Source\BFFT_CAN.o
+ .group         0x00000000        0x8 Application\Source\BFFT_SystemStatusLED.o
  .group         0x00000000        0x8 Application\Source\BFFT_SystemStatusLED.o
  .group         0x00000000        0x8 Application\Source\BFFT_SystemStatusLED.o
  .group         0x00000000        0x8 Application\Source\BFFT_SystemStatusLED.o
@@ -1565,7 +1567,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x6a Application\Source\BFFT_SystemStatusLED.o
  .debug_macro   0x00000000       0xa0 Application\Source\BFFT_SystemStatusLED.o
  .debug_macro   0x00000000       0xa5 Application\Source\BFFT_SystemStatusLED.o
- .debug_macro   0x00000000       0x5e Application\Source\BFFT_SystemStatusLED.o
+ .debug_macro   0x00000000       0x22 Application\Source\BFFT_SystemStatusLED.o
+ .debug_macro   0x00000000       0x58 Application\Source\BFFT_SystemStatusLED.o
  .debug_macro   0x00000000       0x16 Application\Source\BFFT_SystemStatusLED.o
  .debug_macro   0x00000000       0x4c Application\Source\BFFT_SystemStatusLED.o
  .debug_macro   0x00000000       0xd7 Application\Source\BFFT_SystemStatusLED.o
@@ -1779,6 +1782,7 @@ Discarded input sections
  .group         0x00000000        0x8 Application\Source\fdcan.o
  .group         0x00000000        0x8 Application\Source\fdcan.o
  .group         0x00000000        0x8 Application\Source\fdcan.o
+ .group         0x00000000        0x8 Application\Source\fdcan.o
  .text          0x00000000        0x0 Application\Source\fdcan.o
  .data          0x00000000        0x0 Application\Source\fdcan.o
  .bss           0x00000000        0x0 Application\Source\fdcan.o
@@ -1847,6 +1851,9 @@ Discarded input sections
  .debug_macro   0x00000000      0x662 Application\Source\fdcan.o
  .debug_macro   0x00000000       0xa6 Application\Source\fdcan.o
  .debug_macro   0x00000000      0x783 Application\Source\fdcan.o
+ .debug_macro   0x00000000       0x22 Application\Source\fdcan.o
+ .debug_macro   0x00000000       0x58 Application\Source\fdcan.o
+ .group         0x00000000        0x8 Application\Source\gpio.o
  .group         0x00000000        0x8 Application\Source\gpio.o
  .group         0x00000000        0x8 Application\Source\gpio.o
  .group         0x00000000        0x8 Application\Source\gpio.o
@@ -1987,7 +1994,9 @@ Discarded input sections
  .debug_macro   0x00000000      0x662 Application\Source\gpio.o
  .debug_macro   0x00000000       0xa6 Application\Source\gpio.o
  .debug_macro   0x00000000      0x783 Application\Source\gpio.o
+ .debug_macro   0x00000000       0x22 Application\Source\gpio.o
  .debug_macro   0x00000000       0x58 Application\Source\gpio.o
+ .group         0x00000000        0x8 Application\Source\main.o
  .group         0x00000000        0x8 Application\Source\main.o
  .group         0x00000000        0x8 Application\Source\main.o
  .group         0x00000000        0x8 Application\Source\main.o
@@ -2160,6 +2169,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x662 Application\Source\main.o
  .debug_macro   0x00000000       0xa6 Application\Source\main.o
  .debug_macro   0x00000000      0x783 Application\Source\main.o
+ .debug_macro   0x00000000       0x22 Application\Source\main.o
  .debug_macro   0x00000000       0x58 Application\Source\main.o
  .debug_macro   0x00000000       0x16 Application\Source\main.o
  .debug_macro   0x00000000       0x35 Application\Source\main.o
@@ -14033,9 +14043,9 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x08040bf4       0xac Application\Source\gpio.o
                 0x08040bf4                MX_GPIO_Init
  .text.vThreadCANSendMessage
-                0x08040ca0       0x20 Application\Source\main.o
+                0x08040ca0       0x1c Application\Source\main.o
  .text.vThreadLEDSystemAlive
-                0x08040cc0       0x20 Application\Source\main.o
+                0x08040cbc       0x24 Application\Source\main.o
  .text.GuiThread
                 0x08040ce0       0x20 Application\Source\main.o
  .text.startup.main
@@ -16136,7 +16146,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x00001af6       0x22 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-sp-d16/crtn.o
 OUTPUT(EmbeddedWizard-STM32H745-Discovery.elf elf32-littlearm)
 
-.debug_info     0x00000000    0xe21e9
+.debug_info     0x00000000    0xe21fb
  .debug_info    0x00000000     0x559f Application\GeneratedCode\Application.o
  .debug_info    0x0000559f    0x17f4c Application\GeneratedCode\BezierClock.o
  .debug_info    0x0001d4eb    0x1b0e4 Application\GeneratedCode\Core.o
@@ -16154,53 +16164,53 @@ OUTPUT(EmbeddedWizard-STM32H745-Discovery.elf elf32-littlearm)
  .debug_info    0x00088aac     0x61f9 Application\Source\ewmain.o
  .debug_info    0x0008eca5     0x175f Application\Source\fdcan.o
  .debug_info    0x00090404      0xfe3 Application\Source\gpio.o
- .debug_info    0x000913e7     0x1804 Application\Source\main.o
- .debug_info    0x00092beb     0x2563 PlatformPackage\RGB565\ewextgfx.o
- .debug_info    0x0009514e     0x141b PlatformPackage\RTE\ewextrte.o
- .debug_info    0x00096569      0xc0c TargetSpecific\Drivers\ft5336.o
- .debug_info    0x00097175     0x25ea TargetSpecific\Drivers\ft5336_reg.o
- .debug_info    0x0009975f     0x1d3e TargetSpecific\ew_bsp_clock.o
- .debug_info    0x0009b49d     0x1a0e TargetSpecific\ew_bsp_console.o
- .debug_info    0x0009ceab     0x2097 TargetSpecific\ew_bsp_display.o
- .debug_info    0x0009ef42      0xbbf TargetSpecific\ew_bsp_event.o
- .debug_info    0x0009fb01     0x1e3b TargetSpecific\ew_bsp_graphics.o
- .debug_info    0x000a193c     0x151a TargetSpecific\ew_bsp_inout.o
- .debug_info    0x000a2e56     0x25df TargetSpecific\ew_bsp_system.o
- .debug_info    0x000a5435     0x1a81 TargetSpecific\ew_bsp_touch.o
- .debug_info    0x000a6eb6      0xe96 TargetSpecific\stm32h7xx_it.o
- .debug_info    0x000a7d4c     0x13c7 TargetSpecific\system_stm32h7xx.o
- .debug_info    0x000a9113     0x1e46 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
- .debug_info    0x000aaf59     0x1664 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
- .debug_info    0x000ac5bd     0x1a25 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery.o
- .debug_info    0x000adfe2     0x2244 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
- .debug_info    0x000b0226     0x2b53 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_qspi.o
- .debug_info    0x000b2d79     0x1e4c ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_sdram.o
- .debug_info    0x000b4bc5     0x211d ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
- .debug_info    0x000b6ce2     0x1bd7 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_cortex.o
- .debug_info    0x000b88b9     0x1d49 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma2d.o
- .debug_info    0x000ba602     0x36a8 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_fdcan.o
- .debug_info    0x000bdcaa     0x16e4 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_gpio.o
- .debug_info    0x000bf38e     0x50e3 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c.o
- .debug_info    0x000c4471     0x16f7 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c_ex.o
- .debug_info    0x000c5b68     0x1c58 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_ltdc.o
- .debug_info    0x000c77c0     0x16d0 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_mdma.o
- .debug_info    0x000c8e90     0x1c15 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr_ex.o
- .debug_info    0x000caaa5     0x2102 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_qspi.o
- .debug_info    0x000ccba7     0x1a7b ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc.o
- .debug_info    0x000ce622     0x21b1 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.o
- .debug_info    0x000d07d3     0x1e96 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc.o
- .debug_info    0x000d2669     0x1a08 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_sdram.o
- .debug_info    0x000d4071     0x2d01 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o
- .debug_info    0x000d6d72     0x15a7 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_ll_fmc.o
- .debug_info    0x000d8319     0x2844 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
- .debug_info    0x000dab5d      0xadd ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
- .debug_info    0x000db63a      0x52d ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.o
- .debug_info    0x000dbb67      0xc77 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
- .debug_info    0x000dc7de     0x2855 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
- .debug_info    0x000df033     0x30ec ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
- .debug_info    0x000e211f       0xca startup_stm32h745xx.o
+ .debug_info    0x000913e7     0x1816 Application\Source\main.o
+ .debug_info    0x00092bfd     0x2563 PlatformPackage\RGB565\ewextgfx.o
+ .debug_info    0x00095160     0x141b PlatformPackage\RTE\ewextrte.o
+ .debug_info    0x0009657b      0xc0c TargetSpecific\Drivers\ft5336.o
+ .debug_info    0x00097187     0x25ea TargetSpecific\Drivers\ft5336_reg.o
+ .debug_info    0x00099771     0x1d3e TargetSpecific\ew_bsp_clock.o
+ .debug_info    0x0009b4af     0x1a0e TargetSpecific\ew_bsp_console.o
+ .debug_info    0x0009cebd     0x2097 TargetSpecific\ew_bsp_display.o
+ .debug_info    0x0009ef54      0xbbf TargetSpecific\ew_bsp_event.o
+ .debug_info    0x0009fb13     0x1e3b TargetSpecific\ew_bsp_graphics.o
+ .debug_info    0x000a194e     0x151a TargetSpecific\ew_bsp_inout.o
+ .debug_info    0x000a2e68     0x25df TargetSpecific\ew_bsp_system.o
+ .debug_info    0x000a5447     0x1a81 TargetSpecific\ew_bsp_touch.o
+ .debug_info    0x000a6ec8      0xe96 TargetSpecific\stm32h7xx_it.o
+ .debug_info    0x000a7d5e     0x13c7 TargetSpecific\system_stm32h7xx.o
+ .debug_info    0x000a9125     0x1e46 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
+ .debug_info    0x000aaf6b     0x1664 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
+ .debug_info    0x000ac5cf     0x1a25 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery.o
+ .debug_info    0x000adff4     0x2244 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
+ .debug_info    0x000b0238     0x2b53 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_qspi.o
+ .debug_info    0x000b2d8b     0x1e4c ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_sdram.o
+ .debug_info    0x000b4bd7     0x211d ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
+ .debug_info    0x000b6cf4     0x1bd7 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_cortex.o
+ .debug_info    0x000b88cb     0x1d49 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma2d.o
+ .debug_info    0x000ba614     0x36a8 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_fdcan.o
+ .debug_info    0x000bdcbc     0x16e4 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_gpio.o
+ .debug_info    0x000bf3a0     0x50e3 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c.o
+ .debug_info    0x000c4483     0x16f7 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c_ex.o
+ .debug_info    0x000c5b7a     0x1c58 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_ltdc.o
+ .debug_info    0x000c77d2     0x16d0 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_mdma.o
+ .debug_info    0x000c8ea2     0x1c15 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr_ex.o
+ .debug_info    0x000caab7     0x2102 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_qspi.o
+ .debug_info    0x000ccbb9     0x1a7b ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc.o
+ .debug_info    0x000ce634     0x21b1 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.o
+ .debug_info    0x000d07e5     0x1e96 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc.o
+ .debug_info    0x000d267b     0x1a08 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_sdram.o
+ .debug_info    0x000d4083     0x2d01 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o
+ .debug_info    0x000d6d84     0x15a7 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_ll_fmc.o
+ .debug_info    0x000d832b     0x2844 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
+ .debug_info    0x000dab6f      0xadd ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
+ .debug_info    0x000db64c      0x52d ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.o
+ .debug_info    0x000dbb79      0xc77 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
+ .debug_info    0x000dc7f0     0x2855 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
+ .debug_info    0x000df045     0x30ec ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
+ .debug_info    0x000e2131       0xca startup_stm32h745xx.o
 
-.debug_abbrev   0x00000000     0xbca5
+.debug_abbrev   0x00000000     0xbcb4
  .debug_abbrev  0x00000000      0x204 Application\GeneratedCode\Application.o
  .debug_abbrev  0x00000204      0x43d Application\GeneratedCode\BezierClock.o
  .debug_abbrev  0x00000641      0x523 Application\GeneratedCode\Core.o
@@ -16218,51 +16228,51 @@ OUTPUT(EmbeddedWizard-STM32H745-Discovery.elf elf32-littlearm)
  .debug_abbrev  0x00002e89      0x32e Application\Source\ewmain.o
  .debug_abbrev  0x000031b7      0x254 Application\Source\fdcan.o
  .debug_abbrev  0x0000340b      0x216 Application\Source\gpio.o
- .debug_abbrev  0x00003621      0x2eb Application\Source\main.o
- .debug_abbrev  0x0000390c      0x3ec PlatformPackage\RGB565\ewextgfx.o
- .debug_abbrev  0x00003cf8      0x300 PlatformPackage\RTE\ewextrte.o
- .debug_abbrev  0x00003ff8      0x31e TargetSpecific\Drivers\ft5336.o
- .debug_abbrev  0x00004316      0x1f2 TargetSpecific\Drivers\ft5336_reg.o
- .debug_abbrev  0x00004508      0x368 TargetSpecific\ew_bsp_clock.o
- .debug_abbrev  0x00004870      0x281 TargetSpecific\ew_bsp_console.o
- .debug_abbrev  0x00004af1      0x350 TargetSpecific\ew_bsp_display.o
- .debug_abbrev  0x00004e41      0x21a TargetSpecific\ew_bsp_event.o
- .debug_abbrev  0x0000505b      0x312 TargetSpecific\ew_bsp_graphics.o
- .debug_abbrev  0x0000536d      0x274 TargetSpecific\ew_bsp_inout.o
- .debug_abbrev  0x000055e1      0x31f TargetSpecific\ew_bsp_system.o
- .debug_abbrev  0x00005900      0x29d TargetSpecific\ew_bsp_touch.o
- .debug_abbrev  0x00005b9d      0x244 TargetSpecific\stm32h7xx_it.o
- .debug_abbrev  0x00005de1      0x201 TargetSpecific\system_stm32h7xx.o
- .debug_abbrev  0x00005fe2      0x25a ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
- .debug_abbrev  0x0000623c      0x318 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
- .debug_abbrev  0x00006554      0x359 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery.o
- .debug_abbrev  0x000068ad      0x3db ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
- .debug_abbrev  0x00006c88      0x3ad ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_qspi.o
- .debug_abbrev  0x00007035      0x349 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_sdram.o
- .debug_abbrev  0x0000737e      0x341 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
- .debug_abbrev  0x000076bf      0x3b4 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_cortex.o
- .debug_abbrev  0x00007a73      0x355 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma2d.o
- .debug_abbrev  0x00007dc8      0x37c ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_fdcan.o
- .debug_abbrev  0x00008144      0x2c9 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_gpio.o
- .debug_abbrev  0x0000840d      0x416 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c.o
- .debug_abbrev  0x00008823      0x246 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c_ex.o
- .debug_abbrev  0x00008a69      0x2e7 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_ltdc.o
- .debug_abbrev  0x00008d50      0x337 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_mdma.o
- .debug_abbrev  0x00009087      0x354 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr_ex.o
- .debug_abbrev  0x000093db      0x346 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_qspi.o
- .debug_abbrev  0x00009721      0x30a ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc.o
- .debug_abbrev  0x00009a2b      0x38d ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.o
- .debug_abbrev  0x00009db8      0x350 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc.o
- .debug_abbrev  0x0000a108      0x2c8 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_sdram.o
- .debug_abbrev  0x0000a3d0      0x3dc ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o
- .debug_abbrev  0x0000a7ac      0x25d ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_ll_fmc.o
- .debug_abbrev  0x0000aa09      0x3bd ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
- .debug_abbrev  0x0000adc6      0x1ed ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
- .debug_abbrev  0x0000afb3      0x253 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.o
- .debug_abbrev  0x0000b206      0x309 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
- .debug_abbrev  0x0000b50f      0x3ae ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
- .debug_abbrev  0x0000b8bd      0x3d6 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
- .debug_abbrev  0x0000bc93       0x12 startup_stm32h745xx.o
+ .debug_abbrev  0x00003621      0x2fa Application\Source\main.o
+ .debug_abbrev  0x0000391b      0x3ec PlatformPackage\RGB565\ewextgfx.o
+ .debug_abbrev  0x00003d07      0x300 PlatformPackage\RTE\ewextrte.o
+ .debug_abbrev  0x00004007      0x31e TargetSpecific\Drivers\ft5336.o
+ .debug_abbrev  0x00004325      0x1f2 TargetSpecific\Drivers\ft5336_reg.o
+ .debug_abbrev  0x00004517      0x368 TargetSpecific\ew_bsp_clock.o
+ .debug_abbrev  0x0000487f      0x281 TargetSpecific\ew_bsp_console.o
+ .debug_abbrev  0x00004b00      0x350 TargetSpecific\ew_bsp_display.o
+ .debug_abbrev  0x00004e50      0x21a TargetSpecific\ew_bsp_event.o
+ .debug_abbrev  0x0000506a      0x312 TargetSpecific\ew_bsp_graphics.o
+ .debug_abbrev  0x0000537c      0x274 TargetSpecific\ew_bsp_inout.o
+ .debug_abbrev  0x000055f0      0x31f TargetSpecific\ew_bsp_system.o
+ .debug_abbrev  0x0000590f      0x29d TargetSpecific\ew_bsp_touch.o
+ .debug_abbrev  0x00005bac      0x244 TargetSpecific\stm32h7xx_it.o
+ .debug_abbrev  0x00005df0      0x201 TargetSpecific\system_stm32h7xx.o
+ .debug_abbrev  0x00005ff1      0x25a ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
+ .debug_abbrev  0x0000624b      0x318 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
+ .debug_abbrev  0x00006563      0x359 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery.o
+ .debug_abbrev  0x000068bc      0x3db ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
+ .debug_abbrev  0x00006c97      0x3ad ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_qspi.o
+ .debug_abbrev  0x00007044      0x349 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_sdram.o
+ .debug_abbrev  0x0000738d      0x341 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
+ .debug_abbrev  0x000076ce      0x3b4 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_cortex.o
+ .debug_abbrev  0x00007a82      0x355 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma2d.o
+ .debug_abbrev  0x00007dd7      0x37c ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_fdcan.o
+ .debug_abbrev  0x00008153      0x2c9 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_gpio.o
+ .debug_abbrev  0x0000841c      0x416 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c.o
+ .debug_abbrev  0x00008832      0x246 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c_ex.o
+ .debug_abbrev  0x00008a78      0x2e7 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_ltdc.o
+ .debug_abbrev  0x00008d5f      0x337 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_mdma.o
+ .debug_abbrev  0x00009096      0x354 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr_ex.o
+ .debug_abbrev  0x000093ea      0x346 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_qspi.o
+ .debug_abbrev  0x00009730      0x30a ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc.o
+ .debug_abbrev  0x00009a3a      0x38d ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.o
+ .debug_abbrev  0x00009dc7      0x350 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc.o
+ .debug_abbrev  0x0000a117      0x2c8 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_sdram.o
+ .debug_abbrev  0x0000a3df      0x3dc ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o
+ .debug_abbrev  0x0000a7bb      0x25d ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_ll_fmc.o
+ .debug_abbrev  0x0000aa18      0x3bd ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
+ .debug_abbrev  0x0000add5      0x1ed ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
+ .debug_abbrev  0x0000afc2      0x253 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.o
+ .debug_abbrev  0x0000b215      0x309 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
+ .debug_abbrev  0x0000b51e      0x3ae ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
+ .debug_abbrev  0x0000b8cc      0x3d6 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
+ .debug_abbrev  0x0000bca2       0x12 startup_stm32h745xx.o
 
 .debug_loc      0x00000000    0x553a4
  .debug_loc     0x00000000       0xea Application\GeneratedCode\Application.o
@@ -16514,7 +16524,7 @@ OUTPUT(EmbeddedWizard-STM32H745-Discovery.elf elf32-littlearm)
  .debug_ranges  0x00009460      0x2c8 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
  .debug_ranges  0x00009728       0x20 startup_stm32h745xx.o
 
-.debug_macro    0x00000000    0x48ff5
+.debug_macro    0x00000000    0x48ff8
  .debug_macro   0x00000000      0x1ff Application\GeneratedCode\Application.o
  .debug_macro   0x000001ff      0x8e0 Application\GeneratedCode\Application.o
  .debug_macro   0x00000adf       0x4c Application\GeneratedCode\Application.o
@@ -16615,200 +16625,200 @@ OUTPUT(EmbeddedWizard-STM32H745-Discovery.elf elf32-littlearm)
  .debug_macro   0x00003654       0x31 Application\GeneratedCode\WidgetSet.o
  .debug_macro   0x00003685       0x16 Application\GeneratedCode\WidgetSet.o
  .debug_macro   0x0000369b       0x10 Application\GeneratedCode\WidgetSet.o
- .debug_macro   0x000036ab      0x41d Application\Source\BFFT_CAN.o
- .debug_macro   0x00003ac8       0x22 Application\Source\BFFT_CAN.o
- .debug_macro   0x00003aea       0x52 Application\Source\BFFT_CAN.o
- .debug_macro   0x00003b3c       0x55 Application\Source\BFFT_CAN.o
- .debug_macro   0x00003b91       0x3c Application\Source\BFFT_CAN.o
- .debug_macro   0x00003bcd       0x9c Application\Source\BFFT_CAN.o
- .debug_macro   0x00003c69      0x174 Application\Source\BFFT_CAN.o
- .debug_macro   0x00003ddd       0x57 Application\Source\BFFT_CAN.o
- .debug_macro   0x00003e34       0x58 Application\Source\BFFT_CAN.o
- .debug_macro   0x00003e8c       0x1f Application\Source\BFFT_CAN.o
- .debug_macro   0x00003eab       0x43 Application\Source\BFFT_CAN.o
- .debug_macro   0x00003eee       0x20 Application\Source\BFFT_CAN.o
- .debug_macro   0x00003f0e      0x1a3 Application\Source\BFFT_CAN.o
- .debug_macro   0x000040b1      0x30d Application\Source\BFFT_CAN.o
- .debug_macro   0x000043be       0x10 Application\Source\BFFT_CAN.o
- .debug_macro   0x000043ce       0x35 Application\Source\BFFT_CAN.o
- .debug_macro   0x00004403       0x20 Application\Source\BFFT_CAN.o
- .debug_macro   0x00004423       0xef Application\Source\BFFT_CAN.o
- .debug_macro   0x00004512       0x6a Application\Source\BFFT_CAN.o
- .debug_macro   0x0000457c      0x1df Application\Source\BFFT_CAN.o
- .debug_macro   0x0000475b      0x10a Application\Source\BFFT_CAN.o
- .debug_macro   0x00004865       0x2e Application\Source\BFFT_CAN.o
- .debug_macro   0x00004893       0x49 Application\Source\BFFT_CAN.o
- .debug_macro   0x000048dc       0x1c Application\Source\BFFT_CAN.o
- .debug_macro   0x000048f8       0x22 Application\Source\BFFT_CAN.o
- .debug_macro   0x0000491a       0xd9 Application\Source\BFFT_CAN.o
- .debug_macro   0x000049f3     0x12cd Application\Source\BFFT_CAN.o
- .debug_macro   0x00005cc0      0x11f Application\Source\BFFT_CAN.o
- .debug_macro   0x00005ddf       0x19 Application\Source\BFFT_CAN.o
- .debug_macro   0x00005df8    0x26858 Application\Source\BFFT_CAN.o
- .debug_macro   0x0002c650       0x43 Application\Source\BFFT_CAN.o
- .debug_macro   0x0002c693     0x3cd3 Application\Source\BFFT_CAN.o
- .debug_macro   0x00030366       0xde Application\Source\BFFT_CAN.o
- .debug_macro   0x00030444       0x54 Application\Source\BFFT_CAN.o
- .debug_macro   0x00030498     0x3a9d Application\Source\BFFT_CAN.o
- .debug_macro   0x00033f35     0x102c Application\Source\BFFT_CAN.o
- .debug_macro   0x00034f61      0x138 Application\Source\BFFT_CAN.o
- .debug_macro   0x00035099      0x133 Application\Source\BFFT_CAN.o
- .debug_macro   0x000351cc      0x3a0 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003556c       0x27 Application\Source\BFFT_CAN.o
- .debug_macro   0x00035593      0x72d Application\Source\BFFT_CAN.o
- .debug_macro   0x00035cc0      0x229 Application\Source\BFFT_CAN.o
- .debug_macro   0x00035ee9       0x66 Application\Source\BFFT_CAN.o
- .debug_macro   0x00035f4f      0x3ad Application\Source\BFFT_CAN.o
- .debug_macro   0x000362fc      0x294 Application\Source\BFFT_CAN.o
- .debug_macro   0x00036590      0x408 Application\Source\BFFT_CAN.o
- .debug_macro   0x00036998      0x27c Application\Source\BFFT_CAN.o
- .debug_macro   0x00036c14     0x101a Application\Source\BFFT_CAN.o
- .debug_macro   0x00037c2e      0x6b7 Application\Source\BFFT_CAN.o
- .debug_macro   0x000382e5      0x36e Application\Source\BFFT_CAN.o
- .debug_macro   0x00038653      0xe34 Application\Source\BFFT_CAN.o
- .debug_macro   0x00039487      0x3cb Application\Source\BFFT_CAN.o
- .debug_macro   0x00039852      0x4a9 Application\Source\BFFT_CAN.o
- .debug_macro   0x00039cfb       0x51 Application\Source\BFFT_CAN.o
- .debug_macro   0x00039d4c      0x513 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003a25f      0x22c Application\Source\BFFT_CAN.o
- .debug_macro   0x0003a48b       0x58 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003a4e3       0xa5 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003a588      0x198 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003a720       0xd6 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003a7f6      0x219 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003aa0f      0x2e5 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003acf4       0x35 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003ad29      0x2d4 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003affd      0x34b Application\Source\BFFT_CAN.o
- .debug_macro   0x0003b348      0x6af Application\Source\BFFT_CAN.o
- .debug_macro   0x0003b9f7       0xe4 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003badb       0x11 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003baec      0x662 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003c14e       0xa6 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003c1f4      0x783 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003c977       0x6a Application\Source\BFFT_CAN.o
- .debug_macro   0x0003c9e1       0xa0 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003ca81       0xa5 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003cb26       0x5e Application\Source\BFFT_CAN.o
- .debug_macro   0x0003cb84       0x16 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003cb9a       0x1c Application\Source\BFFT_CAN.o
- .debug_macro   0x0003cbb6       0x10 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003cbc6       0x10 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003cbd6       0xb6 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003cc8c       0x16 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003cca2      0x130 Application\Source\BFFT_CAN.o
- .debug_macro   0x0003cdd2      0x3b7 Application\Source\BFFT_SystemStatusLED.o
- .debug_macro   0x0003d189      0x208 Application\Source\DeviceDriver.o
- .debug_macro   0x0003d391       0x16 Application\Source\DeviceDriver.o
- .debug_macro   0x0003d3a7      0x230 Application\Source\ewmain.o
- .debug_macro   0x0003d5d7       0x47 Application\Source\ewmain.o
- .debug_macro   0x0003d61e       0x10 Application\Source\ewmain.o
- .debug_macro   0x0003d62e       0x22 Application\Source\ewmain.o
- .debug_macro   0x0003d650       0x10 Application\Source\ewmain.o
- .debug_macro   0x0003d660       0x1c Application\Source\ewmain.o
- .debug_macro   0x0003d67c       0x29 Application\Source\ewmain.o
- .debug_macro   0x0003d6a5       0x2b Application\Source\ewmain.o
- .debug_macro   0x0003d6d0       0x74 Application\Source\ewmain.o
- .debug_macro   0x0003d744       0x10 Application\Source\ewmain.o
- .debug_macro   0x0003d754       0x16 Application\Source\ewmain.o
- .debug_macro   0x0003d76a       0x1c Application\Source\ewmain.o
- .debug_macro   0x0003d786       0x1c Application\Source\ewmain.o
- .debug_macro   0x0003d7a2      0x32e Application\Source\fdcan.o
- .debug_macro   0x0003dad0       0x4f Application\Source\fdcan.o
- .debug_macro   0x0003db1f       0x51 Application\Source\fdcan.o
- .debug_macro   0x0003db70       0xdf Application\Source\fdcan.o
- .debug_macro   0x0003dc4f       0x58 Application\Source\fdcan.o
- .debug_macro   0x0003dca7      0x307 Application\Source\fdcan.o
- .debug_macro   0x0003dfae       0x58 Application\Source\fdcan.o
- .debug_macro   0x0003e006      0x32e Application\Source\gpio.o
- .debug_macro   0x0003e334      0x4f3 Application\Source\main.o
- .debug_macro   0x0003e827       0x47 Application\Source\main.o
- .debug_macro   0x0003e86e       0x16 Application\Source\main.o
- .debug_macro   0x0003e884      0x12b Application\Source\main.o
- .debug_macro   0x0003e9af      0x15a Application\Source\main.o
- .debug_macro   0x0003eb09       0xe4 Application\Source\main.o
- .debug_macro   0x0003ebed       0x1c Application\Source\main.o
- .debug_macro   0x0003ec09       0x26 Application\Source\main.o
- .debug_macro   0x0003ec2f      0x4b7 Application\Source\main.o
- .debug_macro   0x0003f0e6       0xb5 Application\Source\main.o
- .debug_macro   0x0003f19b       0xaa Application\Source\main.o
- .debug_macro   0x0003f245       0x91 Application\Source\main.o
- .debug_macro   0x0003f2d6       0x86 Application\Source\main.o
- .debug_macro   0x0003f35c       0x7e Application\Source\main.o
- .debug_macro   0x0003f3da       0xcf Application\Source\main.o
- .debug_macro   0x0003f4a9      0x3d9 PlatformPackage\RGB565\ewextgfx.o
- .debug_macro   0x0003f882       0x19 PlatformPackage\RGB565\ewextgfx.o
- .debug_macro   0x0003f89b      0x1d5 PlatformPackage\RTE\ewextrte.o
- .debug_macro   0x0003fa70       0x52 PlatformPackage\RTE\ewextrte.o
- .debug_macro   0x0003fac2       0x16 PlatformPackage\RTE\ewextrte.o
- .debug_macro   0x0003fad8       0x22 PlatformPackage\RTE\ewextrte.o
- .debug_macro   0x0003fafa       0x93 TargetSpecific\Drivers\ft5336.o
- .debug_macro   0x0003fb8d      0x5ae TargetSpecific\Drivers\ft5336.o
- .debug_macro   0x0004013b       0x1c TargetSpecific\Drivers\ft5336.o
- .debug_macro   0x00040157       0x76 TargetSpecific\Drivers\ft5336.o
- .debug_macro   0x000401cd       0x72 TargetSpecific\Drivers\ft5336_reg.o
- .debug_macro   0x0004023f      0x3ab TargetSpecific\ew_bsp_clock.o
- .debug_macro   0x000405ea      0x3a6 TargetSpecific\ew_bsp_console.o
- .debug_macro   0x00040990      0x44b TargetSpecific\ew_bsp_display.o
- .debug_macro   0x00040ddb      0x416 TargetSpecific\ew_bsp_event.o
- .debug_macro   0x000411f1      0x40a TargetSpecific\ew_bsp_graphics.o
- .debug_macro   0x000415fb       0x10 TargetSpecific\ew_bsp_graphics.o
- .debug_macro   0x0004160b      0x358 TargetSpecific\ew_bsp_inout.o
- .debug_macro   0x00041963      0x3a0 TargetSpecific\ew_bsp_system.o
- .debug_macro   0x00041d03       0x16 TargetSpecific\ew_bsp_system.o
- .debug_macro   0x00041d19       0x7c TargetSpecific\ew_bsp_system.o
- .debug_macro   0x00041d95       0x34 TargetSpecific\ew_bsp_system.o
- .debug_macro   0x00041dc9       0x28 TargetSpecific\ew_bsp_system.o
- .debug_macro   0x00041df1      0x357 TargetSpecific\ew_bsp_system.o
- .debug_macro   0x00042148      0x1b5 TargetSpecific\ew_bsp_system.o
- .debug_macro   0x000422fd      0x3ed TargetSpecific\ew_bsp_touch.o
- .debug_macro   0x000426ea       0x6a TargetSpecific\ew_bsp_touch.o
- .debug_macro   0x00042754      0x5b4 TargetSpecific\ew_bsp_touch.o
- .debug_macro   0x00042d08      0x42f TargetSpecific\stm32h7xx_it.o
- .debug_macro   0x00043137       0x64 TargetSpecific\stm32h7xx_it.o
- .debug_macro   0x0004319b      0x31b TargetSpecific\system_stm32h7xx.o
- .debug_macro   0x000434b6      0x333 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
- .debug_macro   0x000437e9       0x22 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
- .debug_macro   0x0004380b      0x333 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
- .debug_macro   0x00043b3e       0x10 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
- .debug_macro   0x00043b4e      0x33c ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery.o
- .debug_macro   0x00043e8a      0x390 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
- .debug_macro   0x0004421a       0x64 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
- .debug_macro   0x0004427e      0x354 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_qspi.o
- .debug_macro   0x000445d2      0x354 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_sdram.o
- .debug_macro   0x00044926      0x33f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
- .debug_macro   0x00044c65      0x315 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_cortex.o
- .debug_macro   0x00044f7a      0x324 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma2d.o
- .debug_macro   0x0004529e      0x3d3 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_fdcan.o
- .debug_macro   0x00045671      0x35f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_gpio.o
- .debug_macro   0x000459d0      0x3da ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c.o
- .debug_macro   0x00045daa      0x315 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c_ex.o
- .debug_macro   0x000460bf      0x316 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_ltdc.o
- .debug_macro   0x000463d5      0x324 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_mdma.o
- .debug_macro   0x000466f9      0x34e ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr_ex.o
- .debug_macro   0x00046a47      0x339 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_qspi.o
- .debug_macro   0x00046d80      0x339 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc.o
- .debug_macro   0x000470b9      0x333 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.o
- .debug_macro   0x000473ec      0x316 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc.o
- .debug_macro   0x00047702      0x315 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_sdram.o
- .debug_macro   0x00047a17      0x340 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o
- .debug_macro   0x00047d57      0x33f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_ll_fmc.o
- .debug_macro   0x00048096      0x1e0 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
- .debug_macro   0x00048276      0x12b ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
- .debug_macro   0x000483a1       0xc7 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
- .debug_macro   0x00048468      0x172 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
- .debug_macro   0x000485da      0x10e ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
- .debug_macro   0x000486e8       0x8d ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
- .debug_macro   0x00048775      0x184 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.o
- .debug_macro   0x000488f9      0x199 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
- .debug_macro   0x00048a92      0x1ed ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
- .debug_macro   0x00048c7f       0x80 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
- .debug_macro   0x00048cff      0x262 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
- .debug_macro   0x00048f61       0x10 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
- .debug_macro   0x00048f71       0x10 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
- .debug_macro   0x00048f81       0x74 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
+ .debug_macro   0x000036ab      0x42c Application\Source\BFFT_CAN.o
+ .debug_macro   0x00003ad7       0x22 Application\Source\BFFT_CAN.o
+ .debug_macro   0x00003af9       0x52 Application\Source\BFFT_CAN.o
+ .debug_macro   0x00003b4b       0x55 Application\Source\BFFT_CAN.o
+ .debug_macro   0x00003ba0       0x3c Application\Source\BFFT_CAN.o
+ .debug_macro   0x00003bdc       0x9c Application\Source\BFFT_CAN.o
+ .debug_macro   0x00003c78      0x174 Application\Source\BFFT_CAN.o
+ .debug_macro   0x00003dec       0x57 Application\Source\BFFT_CAN.o
+ .debug_macro   0x00003e43       0x58 Application\Source\BFFT_CAN.o
+ .debug_macro   0x00003e9b       0x1f Application\Source\BFFT_CAN.o
+ .debug_macro   0x00003eba       0x43 Application\Source\BFFT_CAN.o
+ .debug_macro   0x00003efd       0x20 Application\Source\BFFT_CAN.o
+ .debug_macro   0x00003f1d      0x1a3 Application\Source\BFFT_CAN.o
+ .debug_macro   0x000040c0      0x30d Application\Source\BFFT_CAN.o
+ .debug_macro   0x000043cd       0x10 Application\Source\BFFT_CAN.o
+ .debug_macro   0x000043dd       0x35 Application\Source\BFFT_CAN.o
+ .debug_macro   0x00004412       0x20 Application\Source\BFFT_CAN.o
+ .debug_macro   0x00004432       0xef Application\Source\BFFT_CAN.o
+ .debug_macro   0x00004521       0x6a Application\Source\BFFT_CAN.o
+ .debug_macro   0x0000458b      0x1df Application\Source\BFFT_CAN.o
+ .debug_macro   0x0000476a      0x10a Application\Source\BFFT_CAN.o
+ .debug_macro   0x00004874       0x2e Application\Source\BFFT_CAN.o
+ .debug_macro   0x000048a2       0x49 Application\Source\BFFT_CAN.o
+ .debug_macro   0x000048eb       0x1c Application\Source\BFFT_CAN.o
+ .debug_macro   0x00004907       0x22 Application\Source\BFFT_CAN.o
+ .debug_macro   0x00004929       0xd9 Application\Source\BFFT_CAN.o
+ .debug_macro   0x00004a02     0x12cd Application\Source\BFFT_CAN.o
+ .debug_macro   0x00005ccf      0x11f Application\Source\BFFT_CAN.o
+ .debug_macro   0x00005dee       0x19 Application\Source\BFFT_CAN.o
+ .debug_macro   0x00005e07    0x26858 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0002c65f       0x43 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0002c6a2     0x3cd3 Application\Source\BFFT_CAN.o
+ .debug_macro   0x00030375       0xde Application\Source\BFFT_CAN.o
+ .debug_macro   0x00030453       0x54 Application\Source\BFFT_CAN.o
+ .debug_macro   0x000304a7     0x3a9d Application\Source\BFFT_CAN.o
+ .debug_macro   0x00033f44     0x102c Application\Source\BFFT_CAN.o
+ .debug_macro   0x00034f70      0x138 Application\Source\BFFT_CAN.o
+ .debug_macro   0x000350a8      0x133 Application\Source\BFFT_CAN.o
+ .debug_macro   0x000351db      0x3a0 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003557b       0x27 Application\Source\BFFT_CAN.o
+ .debug_macro   0x000355a2      0x72d Application\Source\BFFT_CAN.o
+ .debug_macro   0x00035ccf      0x229 Application\Source\BFFT_CAN.o
+ .debug_macro   0x00035ef8       0x66 Application\Source\BFFT_CAN.o
+ .debug_macro   0x00035f5e      0x3ad Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003630b      0x294 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003659f      0x408 Application\Source\BFFT_CAN.o
+ .debug_macro   0x000369a7      0x27c Application\Source\BFFT_CAN.o
+ .debug_macro   0x00036c23     0x101a Application\Source\BFFT_CAN.o
+ .debug_macro   0x00037c3d      0x6b7 Application\Source\BFFT_CAN.o
+ .debug_macro   0x000382f4      0x36e Application\Source\BFFT_CAN.o
+ .debug_macro   0x00038662      0xe34 Application\Source\BFFT_CAN.o
+ .debug_macro   0x00039496      0x3cb Application\Source\BFFT_CAN.o
+ .debug_macro   0x00039861      0x4a9 Application\Source\BFFT_CAN.o
+ .debug_macro   0x00039d0a       0x51 Application\Source\BFFT_CAN.o
+ .debug_macro   0x00039d5b      0x513 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003a26e      0x22c Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003a49a       0x58 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003a4f2       0xa5 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003a597      0x198 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003a72f       0xd6 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003a805      0x219 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003aa1e      0x2e5 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003ad03       0x35 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003ad38      0x2d4 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003b00c      0x34b Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003b357      0x6af Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003ba06       0xe4 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003baea       0x11 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003bafb      0x662 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003c15d       0xa6 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003c203      0x783 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003c986       0x6a Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003c9f0       0xa0 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003ca90       0xa5 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003cb35       0x22 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003cb57       0x58 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003cbaf       0x16 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003cbc5       0x1c Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003cbe1       0x10 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003cbf1       0x10 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003cc01       0xb6 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003ccb7       0x16 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003cccd      0x130 Application\Source\BFFT_CAN.o
+ .debug_macro   0x0003cdfd      0x3c6 Application\Source\BFFT_SystemStatusLED.o
+ .debug_macro   0x0003d1c3      0x208 Application\Source\DeviceDriver.o
+ .debug_macro   0x0003d3cb       0x16 Application\Source\DeviceDriver.o
+ .debug_macro   0x0003d3e1      0x230 Application\Source\ewmain.o
+ .debug_macro   0x0003d611       0x47 Application\Source\ewmain.o
+ .debug_macro   0x0003d658       0x10 Application\Source\ewmain.o
+ .debug_macro   0x0003d668       0x22 Application\Source\ewmain.o
+ .debug_macro   0x0003d68a       0x10 Application\Source\ewmain.o
+ .debug_macro   0x0003d69a       0x1c Application\Source\ewmain.o
+ .debug_macro   0x0003d6b6       0x29 Application\Source\ewmain.o
+ .debug_macro   0x0003d6df       0x2b Application\Source\ewmain.o
+ .debug_macro   0x0003d70a       0x74 Application\Source\ewmain.o
+ .debug_macro   0x0003d77e       0x10 Application\Source\ewmain.o
+ .debug_macro   0x0003d78e       0x16 Application\Source\ewmain.o
+ .debug_macro   0x0003d7a4       0x1c Application\Source\ewmain.o
+ .debug_macro   0x0003d7c0       0x1c Application\Source\ewmain.o
+ .debug_macro   0x0003d7dc      0x337 Application\Source\fdcan.o
+ .debug_macro   0x0003db13       0x4f Application\Source\fdcan.o
+ .debug_macro   0x0003db62       0x51 Application\Source\fdcan.o
+ .debug_macro   0x0003dbb3       0xdf Application\Source\fdcan.o
+ .debug_macro   0x0003dc92       0x58 Application\Source\fdcan.o
+ .debug_macro   0x0003dcea      0x307 Application\Source\fdcan.o
+ .debug_macro   0x0003dff1      0x337 Application\Source\gpio.o
+ .debug_macro   0x0003e328      0x502 Application\Source\main.o
+ .debug_macro   0x0003e82a       0x47 Application\Source\main.o
+ .debug_macro   0x0003e871       0x16 Application\Source\main.o
+ .debug_macro   0x0003e887      0x12b Application\Source\main.o
+ .debug_macro   0x0003e9b2      0x15a Application\Source\main.o
+ .debug_macro   0x0003eb0c       0xe4 Application\Source\main.o
+ .debug_macro   0x0003ebf0       0x1c Application\Source\main.o
+ .debug_macro   0x0003ec0c       0x26 Application\Source\main.o
+ .debug_macro   0x0003ec32      0x4b7 Application\Source\main.o
+ .debug_macro   0x0003f0e9       0xb5 Application\Source\main.o
+ .debug_macro   0x0003f19e       0xaa Application\Source\main.o
+ .debug_macro   0x0003f248       0x91 Application\Source\main.o
+ .debug_macro   0x0003f2d9       0x86 Application\Source\main.o
+ .debug_macro   0x0003f35f       0x7e Application\Source\main.o
+ .debug_macro   0x0003f3dd       0xcf Application\Source\main.o
+ .debug_macro   0x0003f4ac      0x3d9 PlatformPackage\RGB565\ewextgfx.o
+ .debug_macro   0x0003f885       0x19 PlatformPackage\RGB565\ewextgfx.o
+ .debug_macro   0x0003f89e      0x1d5 PlatformPackage\RTE\ewextrte.o
+ .debug_macro   0x0003fa73       0x52 PlatformPackage\RTE\ewextrte.o
+ .debug_macro   0x0003fac5       0x16 PlatformPackage\RTE\ewextrte.o
+ .debug_macro   0x0003fadb       0x22 PlatformPackage\RTE\ewextrte.o
+ .debug_macro   0x0003fafd       0x93 TargetSpecific\Drivers\ft5336.o
+ .debug_macro   0x0003fb90      0x5ae TargetSpecific\Drivers\ft5336.o
+ .debug_macro   0x0004013e       0x1c TargetSpecific\Drivers\ft5336.o
+ .debug_macro   0x0004015a       0x76 TargetSpecific\Drivers\ft5336.o
+ .debug_macro   0x000401d0       0x72 TargetSpecific\Drivers\ft5336_reg.o
+ .debug_macro   0x00040242      0x3ab TargetSpecific\ew_bsp_clock.o
+ .debug_macro   0x000405ed      0x3a6 TargetSpecific\ew_bsp_console.o
+ .debug_macro   0x00040993      0x44b TargetSpecific\ew_bsp_display.o
+ .debug_macro   0x00040dde      0x416 TargetSpecific\ew_bsp_event.o
+ .debug_macro   0x000411f4      0x40a TargetSpecific\ew_bsp_graphics.o
+ .debug_macro   0x000415fe       0x10 TargetSpecific\ew_bsp_graphics.o
+ .debug_macro   0x0004160e      0x358 TargetSpecific\ew_bsp_inout.o
+ .debug_macro   0x00041966      0x3a0 TargetSpecific\ew_bsp_system.o
+ .debug_macro   0x00041d06       0x16 TargetSpecific\ew_bsp_system.o
+ .debug_macro   0x00041d1c       0x7c TargetSpecific\ew_bsp_system.o
+ .debug_macro   0x00041d98       0x34 TargetSpecific\ew_bsp_system.o
+ .debug_macro   0x00041dcc       0x28 TargetSpecific\ew_bsp_system.o
+ .debug_macro   0x00041df4      0x357 TargetSpecific\ew_bsp_system.o
+ .debug_macro   0x0004214b      0x1b5 TargetSpecific\ew_bsp_system.o
+ .debug_macro   0x00042300      0x3ed TargetSpecific\ew_bsp_touch.o
+ .debug_macro   0x000426ed       0x6a TargetSpecific\ew_bsp_touch.o
+ .debug_macro   0x00042757      0x5b4 TargetSpecific\ew_bsp_touch.o
+ .debug_macro   0x00042d0b      0x42f TargetSpecific\stm32h7xx_it.o
+ .debug_macro   0x0004313a       0x64 TargetSpecific\stm32h7xx_it.o
+ .debug_macro   0x0004319e      0x31b TargetSpecific\system_stm32h7xx.o
+ .debug_macro   0x000434b9      0x333 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
+ .debug_macro   0x000437ec       0x22 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
+ .debug_macro   0x0004380e      0x333 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
+ .debug_macro   0x00043b41       0x10 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
+ .debug_macro   0x00043b51      0x33c ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery.o
+ .debug_macro   0x00043e8d      0x390 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
+ .debug_macro   0x0004421d       0x64 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
+ .debug_macro   0x00044281      0x354 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_qspi.o
+ .debug_macro   0x000445d5      0x354 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_sdram.o
+ .debug_macro   0x00044929      0x33f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
+ .debug_macro   0x00044c68      0x315 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_cortex.o
+ .debug_macro   0x00044f7d      0x324 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma2d.o
+ .debug_macro   0x000452a1      0x3d3 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_fdcan.o
+ .debug_macro   0x00045674      0x35f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_gpio.o
+ .debug_macro   0x000459d3      0x3da ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c.o
+ .debug_macro   0x00045dad      0x315 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c_ex.o
+ .debug_macro   0x000460c2      0x316 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_ltdc.o
+ .debug_macro   0x000463d8      0x324 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_mdma.o
+ .debug_macro   0x000466fc      0x34e ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr_ex.o
+ .debug_macro   0x00046a4a      0x339 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_qspi.o
+ .debug_macro   0x00046d83      0x339 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc.o
+ .debug_macro   0x000470bc      0x333 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.o
+ .debug_macro   0x000473ef      0x316 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc.o
+ .debug_macro   0x00047705      0x315 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_sdram.o
+ .debug_macro   0x00047a1a      0x340 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o
+ .debug_macro   0x00047d5a      0x33f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_ll_fmc.o
+ .debug_macro   0x00048099      0x1e0 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
+ .debug_macro   0x00048279      0x12b ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
+ .debug_macro   0x000483a4       0xc7 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
+ .debug_macro   0x0004846b      0x172 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
+ .debug_macro   0x000485dd      0x10e ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
+ .debug_macro   0x000486eb       0x8d ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
+ .debug_macro   0x00048778      0x184 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.o
+ .debug_macro   0x000488fc      0x199 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
+ .debug_macro   0x00048a95      0x1ed ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
+ .debug_macro   0x00048c82       0x80 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
+ .debug_macro   0x00048d02      0x262 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
+ .debug_macro   0x00048f64       0x10 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
+ .debug_macro   0x00048f74       0x10 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
+ .debug_macro   0x00048f84       0x74 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
 
-.debug_line     0x00000000    0x3a228
+.debug_line     0x00000000    0x3a268
  .debug_line    0x00000000      0x53b Application\GeneratedCode\Application.o
  .debug_line    0x0000053b     0x24c0 Application\GeneratedCode\BezierClock.o
  .debug_line    0x000029fb     0x4ecf Application\GeneratedCode\Core.o
@@ -16820,59 +16830,59 @@ OUTPUT(EmbeddedWizard-STM32H745-Discovery.elf elf32-littlearm)
  .debug_line    0x0000b68e      0x2f6 Application\GeneratedCode\Templates.o
  .debug_line    0x0000b984     0x1a43 Application\GeneratedCode\Views.o
  .debug_line    0x0000d3c7     0x21b8 Application\GeneratedCode\WidgetSet.o
- .debug_line    0x0000f57f      0xc3f Application\Source\BFFT_CAN.o
- .debug_line    0x000101be      0xb93 Application\Source\BFFT_SystemStatusLED.o
- .debug_line    0x00010d51      0x654 Application\Source\DeviceDriver.o
- .debug_line    0x000113a5      0x7ab Application\Source\ewmain.o
- .debug_line    0x00011b50      0x9c0 Application\Source\fdcan.o
- .debug_line    0x00012510      0x966 Application\Source\gpio.o
- .debug_line    0x00012e76      0xf3a Application\Source\main.o
- .debug_line    0x00013db0      0xfec PlatformPackage\RGB565\ewextgfx.o
- .debug_line    0x00014d9c      0x637 PlatformPackage\RTE\ewextrte.o
- .debug_line    0x000153d3      0x4dc TargetSpecific\Drivers\ft5336.o
- .debug_line    0x000158af      0x9c3 TargetSpecific\Drivers\ft5336_reg.o
- .debug_line    0x00016272      0xc94 TargetSpecific\ew_bsp_clock.o
- .debug_line    0x00016f06      0xb5c TargetSpecific\ew_bsp_console.o
- .debug_line    0x00017a62      0xfbf TargetSpecific\ew_bsp_display.o
- .debug_line    0x00018a21      0xda0 TargetSpecific\ew_bsp_event.o
- .debug_line    0x000197c1      0xf08 TargetSpecific\ew_bsp_graphics.o
- .debug_line    0x0001a6c9      0xb13 TargetSpecific\ew_bsp_inout.o
- .debug_line    0x0001b1dc      0xde8 TargetSpecific\ew_bsp_system.o
- .debug_line    0x0001bfc4      0xd92 TargetSpecific\ew_bsp_touch.o
- .debug_line    0x0001cd56      0xe70 TargetSpecific\stm32h7xx_it.o
- .debug_line    0x0001dbc6      0x9be TargetSpecific\system_stm32h7xx.o
- .debug_line    0x0001e584      0xe88 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
- .debug_line    0x0001f40c      0xad4 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
- .debug_line    0x0001fee0      0xb04 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery.o
- .debug_line    0x000209e4      0xb98 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
- .debug_line    0x0002157c      0xd7d ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_qspi.o
- .debug_line    0x000222f9      0xb9d ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_sdram.o
- .debug_line    0x00022e96      0xe6e ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
- .debug_line    0x00023d04      0xbf3 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_cortex.o
- .debug_line    0x000248f7     0x11e2 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma2d.o
- .debug_line    0x00025ad9     0x1a69 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_fdcan.o
- .debug_line    0x00027542      0xb72 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_gpio.o
- .debug_line    0x000280b4     0x2a1b ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c.o
- .debug_line    0x0002aacf      0xb33 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c_ex.o
- .debug_line    0x0002b602     0x17a1 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_ltdc.o
- .debug_line    0x0002cda3     0x1043 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_mdma.o
- .debug_line    0x0002dde6      0xd7f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr_ex.o
- .debug_line    0x0002eb65     0x10e9 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_qspi.o
- .debug_line    0x0002fc4e      0xeab ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc.o
- .debug_line    0x00030af9     0x1039 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.o
- .debug_line    0x00031b32      0xfb9 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc.o
- .debug_line    0x00032aeb      0xdda ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_sdram.o
- .debug_line    0x000338c5     0x2126 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o
- .debug_line    0x000359eb      0xc4d ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_ll_fmc.o
- .debug_line    0x00036638      0xcc9 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
- .debug_line    0x00037301      0x5b5 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
- .debug_line    0x000378b6      0x654 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.o
- .debug_line    0x00037f0a      0x656 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
- .debug_line    0x00038560      0xc4a ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
- .debug_line    0x000391aa     0x1008 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
- .debug_line    0x0003a1b2       0x76 startup_stm32h745xx.o
+ .debug_line    0x0000f57f      0xc4c Application\Source\BFFT_CAN.o
+ .debug_line    0x000101cb      0xba0 Application\Source\BFFT_SystemStatusLED.o
+ .debug_line    0x00010d6b      0x654 Application\Source\DeviceDriver.o
+ .debug_line    0x000113bf      0x7ab Application\Source\ewmain.o
+ .debug_line    0x00011b6a      0x9cd Application\Source\fdcan.o
+ .debug_line    0x00012537      0x973 Application\Source\gpio.o
+ .debug_line    0x00012eaa      0xf46 Application\Source\main.o
+ .debug_line    0x00013df0      0xfec PlatformPackage\RGB565\ewextgfx.o
+ .debug_line    0x00014ddc      0x637 PlatformPackage\RTE\ewextrte.o
+ .debug_line    0x00015413      0x4dc TargetSpecific\Drivers\ft5336.o
+ .debug_line    0x000158ef      0x9c3 TargetSpecific\Drivers\ft5336_reg.o
+ .debug_line    0x000162b2      0xc94 TargetSpecific\ew_bsp_clock.o
+ .debug_line    0x00016f46      0xb5c TargetSpecific\ew_bsp_console.o
+ .debug_line    0x00017aa2      0xfbf TargetSpecific\ew_bsp_display.o
+ .debug_line    0x00018a61      0xda0 TargetSpecific\ew_bsp_event.o
+ .debug_line    0x00019801      0xf08 TargetSpecific\ew_bsp_graphics.o
+ .debug_line    0x0001a709      0xb13 TargetSpecific\ew_bsp_inout.o
+ .debug_line    0x0001b21c      0xde8 TargetSpecific\ew_bsp_system.o
+ .debug_line    0x0001c004      0xd92 TargetSpecific\ew_bsp_touch.o
+ .debug_line    0x0001cd96      0xe70 TargetSpecific\stm32h7xx_it.o
+ .debug_line    0x0001dc06      0x9be TargetSpecific\system_stm32h7xx.o
+ .debug_line    0x0001e5c4      0xe88 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
+ .debug_line    0x0001f44c      0xad4 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
+ .debug_line    0x0001ff20      0xb04 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery.o
+ .debug_line    0x00020a24      0xb98 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
+ .debug_line    0x000215bc      0xd7d ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_qspi.o
+ .debug_line    0x00022339      0xb9d ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_sdram.o
+ .debug_line    0x00022ed6      0xe6e ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
+ .debug_line    0x00023d44      0xbf3 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_cortex.o
+ .debug_line    0x00024937     0x11e2 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma2d.o
+ .debug_line    0x00025b19     0x1a69 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_fdcan.o
+ .debug_line    0x00027582      0xb72 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_gpio.o
+ .debug_line    0x000280f4     0x2a1b ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c.o
+ .debug_line    0x0002ab0f      0xb33 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c_ex.o
+ .debug_line    0x0002b642     0x17a1 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_ltdc.o
+ .debug_line    0x0002cde3     0x1043 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_mdma.o
+ .debug_line    0x0002de26      0xd7f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr_ex.o
+ .debug_line    0x0002eba5     0x10e9 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_qspi.o
+ .debug_line    0x0002fc8e      0xeab ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc.o
+ .debug_line    0x00030b39     0x1039 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.o
+ .debug_line    0x00031b72      0xfb9 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc.o
+ .debug_line    0x00032b2b      0xdda ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_sdram.o
+ .debug_line    0x00033905     0x2126 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o
+ .debug_line    0x00035a2b      0xc4d ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_ll_fmc.o
+ .debug_line    0x00036678      0xcc9 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
+ .debug_line    0x00037341      0x5b5 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
+ .debug_line    0x000378f6      0x654 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.o
+ .debug_line    0x00037f4a      0x656 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
+ .debug_line    0x000385a0      0xc4a ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
+ .debug_line    0x000391ea     0x1008 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
+ .debug_line    0x0003a1f2       0x76 startup_stm32h745xx.o
 
-.debug_str      0x00000000   0x1cd101
+.debug_str      0x00000000   0x1cd16b
  .debug_str     0x00000000     0xd1ba Application\GeneratedCode\Application.o
                                0xde01 (size before relaxing)
  .debug_str     0x0000d1ba     0x557d Application\GeneratedCode\BezierClock.o
@@ -16895,105 +16905,105 @@ OUTPUT(EmbeddedWizard-STM32H745-Discovery.elf elf32-littlearm)
                               0x104b0 (size before relaxing)
  .debug_str     0x0001a4b8     0x1751 Application\GeneratedCode\WidgetSet.o
                               0x14bb7 (size before relaxing)
- .debug_str     0x0001bc09   0x19757c Application\Source\BFFT_CAN.o
-                             0x19d1e6 (size before relaxing)
- .debug_str     0x001b3185       0x54 Application\Source\BFFT_SystemStatusLED.o
-                             0x19c79b (size before relaxing)
- .debug_str     0x001b31d9      0x1a1 Application\Source\DeviceDriver.o
+ .debug_str     0x0001bc09   0x1975c2 Application\Source\BFFT_CAN.o
+                             0x19d22c (size before relaxing)
+ .debug_str     0x001b31cb       0x54 Application\Source\BFFT_SystemStatusLED.o
+                             0x19c7e1 (size before relaxing)
+ .debug_str     0x001b321f      0x1a1 Application\Source\DeviceDriver.o
                                0xde2e (size before relaxing)
- .debug_str     0x001b337a      0x620 Application\Source\ewmain.o
+ .debug_str     0x001b33c0      0x620 Application\Source\ewmain.o
                                0xfcf7 (size before relaxing)
- .debug_str     0x001b399a      0x2f6 Application\Source\fdcan.o
-                             0x1991c8 (size before relaxing)
- .debug_str     0x001b3c90       0x27 Application\Source\gpio.o
-                             0x198cbe (size before relaxing)
- .debug_str     0x001b3cb7     0x5c21 Application\Source\main.o
-                             0x1a2d10 (size before relaxing)
- .debug_str     0x001b98d8      0x7bc PlatformPackage\RGB565\ewextgfx.o
+ .debug_str     0x001b39e0      0x2f6 Application\Source\fdcan.o
+                             0x19920e (size before relaxing)
+ .debug_str     0x001b3cd6       0x27 Application\Source\gpio.o
+                             0x198d04 (size before relaxing)
+ .debug_str     0x001b3cfd     0x5c45 Application\Source\main.o
+                             0x1a2d80 (size before relaxing)
+ .debug_str     0x001b9942      0x7bc PlatformPackage\RGB565\ewextgfx.o
                              0x1a21a0 (size before relaxing)
- .debug_str     0x001ba094      0x389 PlatformPackage\RTE\ewextrte.o
+ .debug_str     0x001ba0fe      0x389 PlatformPackage\RTE\ewextrte.o
                                0x9fe8 (size before relaxing)
- .debug_str     0x001ba41d     0x1e94 TargetSpecific\Drivers\ft5336.o
+ .debug_str     0x001ba487     0x1e94 TargetSpecific\Drivers\ft5336.o
                                0x57ef (size before relaxing)
- .debug_str     0x001bc2b1      0x3db TargetSpecific\Drivers\ft5336_reg.o
+ .debug_str     0x001bc31b      0x3db TargetSpecific\Drivers\ft5336_reg.o
                                0x5220 (size before relaxing)
- .debug_str     0x001bc68c      0xa8d TargetSpecific\ew_bsp_clock.o
+ .debug_str     0x001bc6f6      0xa8d TargetSpecific\ew_bsp_clock.o
                              0x19a672 (size before relaxing)
- .debug_str     0x001bd119      0x74c TargetSpecific\ew_bsp_console.o
+ .debug_str     0x001bd183      0x74c TargetSpecific\ew_bsp_console.o
                              0x19a5ed (size before relaxing)
- .debug_str     0x001bd865      0xc8c TargetSpecific\ew_bsp_display.o
+ .debug_str     0x001bd8cf      0xc8c TargetSpecific\ew_bsp_display.o
                              0x1a2cc8 (size before relaxing)
- .debug_str     0x001be4f1       0xad TargetSpecific\ew_bsp_event.o
+ .debug_str     0x001be55b       0xad TargetSpecific\ew_bsp_event.o
                              0x19f2b9 (size before relaxing)
- .debug_str     0x001be59e      0x3e0 TargetSpecific\ew_bsp_graphics.o
+ .debug_str     0x001be608      0x3e0 TargetSpecific\ew_bsp_graphics.o
                              0x19fa1d (size before relaxing)
- .debug_str     0x001be97e       0xfd TargetSpecific\ew_bsp_inout.o
+ .debug_str     0x001be9e8       0xfd TargetSpecific\ew_bsp_inout.o
                              0x19a464 (size before relaxing)
- .debug_str     0x001bea7b     0x2cc0 TargetSpecific\ew_bsp_system.o
+ .debug_str     0x001beae5     0x2cc0 TargetSpecific\ew_bsp_system.o
                              0x19cd7a (size before relaxing)
- .debug_str     0x001c173b      0x64b TargetSpecific\ew_bsp_touch.o
+ .debug_str     0x001c17a5      0x64b TargetSpecific\ew_bsp_touch.o
                              0x19f77c (size before relaxing)
- .debug_str     0x001c1d86       0xff TargetSpecific\stm32h7xx_it.o
+ .debug_str     0x001c1df0       0xff TargetSpecific\stm32h7xx_it.o
                              0x1a1b4b (size before relaxing)
- .debug_str     0x001c1e85      0x11d TargetSpecific\system_stm32h7xx.o
+ .debug_str     0x001c1eef      0x11d TargetSpecific\system_stm32h7xx.o
                              0x198cf2 (size before relaxing)
- .debug_str     0x001c1fa2      0x4ea ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
+ .debug_str     0x001c200c      0x4ea ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
                              0x19a610 (size before relaxing)
- .debug_str     0x001c248c      0x2fc ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
+ .debug_str     0x001c24f6      0x2fc ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
                              0x1993f4 (size before relaxing)
- .debug_str     0x001c2788      0x270 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery.o
+ .debug_str     0x001c27f2      0x270 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery.o
                              0x19a001 (size before relaxing)
- .debug_str     0x001c29f8      0x4d7 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
+ .debug_str     0x001c2a62      0x4d7 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
                              0x199dff (size before relaxing)
- .debug_str     0x001c2ecf      0x1a6 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_qspi.o
+ .debug_str     0x001c2f39      0x1a6 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_qspi.o
                              0x19c2e9 (size before relaxing)
- .debug_str     0x001c3075      0x113 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_sdram.o
+ .debug_str     0x001c30df      0x113 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_sdram.o
                              0x19a4f5 (size before relaxing)
- .debug_str     0x001c3188      0x987 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
+ .debug_str     0x001c31f2      0x987 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
                              0x199f02 (size before relaxing)
- .debug_str     0x001c3b0f      0x287 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_cortex.o
+ .debug_str     0x001c3b79      0x287 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_cortex.o
                              0x19975c (size before relaxing)
- .debug_str     0x001c3d96      0x31f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma2d.o
+ .debug_str     0x001c3e00      0x31f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma2d.o
                              0x199175 (size before relaxing)
- .debug_str     0x001c40b5     0x1a00 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_fdcan.o
+ .debug_str     0x001c411f     0x1a00 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_fdcan.o
                              0x19aa82 (size before relaxing)
- .debug_str     0x001c5ab5      0x1d2 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_gpio.o
+ .debug_str     0x001c5b1f      0x1d2 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_gpio.o
                              0x198f28 (size before relaxing)
- .debug_str     0x001c5c87      0xd8c ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c.o
+ .debug_str     0x001c5cf1      0xd8c ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c.o
                              0x199d95 (size before relaxing)
- .debug_str     0x001c6a13       0xdf ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c_ex.o
+ .debug_str     0x001c6a7d       0xdf ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c_ex.o
                              0x1991ed (size before relaxing)
- .debug_str     0x001c6af2      0x421 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_ltdc.o
+ .debug_str     0x001c6b5c      0x421 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_ltdc.o
                              0x199068 (size before relaxing)
- .debug_str     0x001c6f13      0x4ca ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_mdma.o
+ .debug_str     0x001c6f7d      0x4ca ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_mdma.o
                              0x199101 (size before relaxing)
- .debug_str     0x001c73dd      0x688 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr_ex.o
+ .debug_str     0x001c7447      0x688 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr_ex.o
                              0x199346 (size before relaxing)
- .debug_str     0x001c7a65      0x4f2 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_qspi.o
+ .debug_str     0x001c7acf      0x4f2 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_qspi.o
                              0x1994d4 (size before relaxing)
- .debug_str     0x001c7f57      0x376 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc.o
+ .debug_str     0x001c7fc1      0x376 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc.o
                              0x199188 (size before relaxing)
- .debug_str     0x001c82cd      0x676 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.o
+ .debug_str     0x001c8337      0x676 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.o
                              0x19969f (size before relaxing)
- .debug_str     0x001c8943      0x215 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc.o
+ .debug_str     0x001c89ad      0x215 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc.o
                              0x198f96 (size before relaxing)
- .debug_str     0x001c8b58      0x381 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_sdram.o
+ .debug_str     0x001c8bc2      0x381 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_sdram.o
                              0x199250 (size before relaxing)
- .debug_str     0x001c8ed9      0x976 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o
+ .debug_str     0x001c8f43      0x976 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o
                              0x199b86 (size before relaxing)
- .debug_str     0x001c984f      0x76f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_ll_fmc.o
+ .debug_str     0x001c98b9      0x76f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_ll_fmc.o
                              0x19935b (size before relaxing)
- .debug_str     0x001c9fbe      0xb3b ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
+ .debug_str     0x001ca028      0xb3b ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
                                0xd98d (size before relaxing)
- .debug_str     0x001caaf9      0x163 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
+ .debug_str     0x001cab63      0x163 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
                                0xa36a (size before relaxing)
- .debug_str     0x001cac5c      0x7e2 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.o
+ .debug_str     0x001cacc6      0x7e2 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.o
                                0x7eb0 (size before relaxing)
- .debug_str     0x001cb43e      0x2b3 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
+ .debug_str     0x001cb4a8      0x2b3 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
                                0xab7c (size before relaxing)
- .debug_str     0x001cb6f1      0x7e1 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
+ .debug_str     0x001cb75b      0x7e1 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
                                0xbc0b (size before relaxing)
- .debug_str     0x001cbed2     0x122f ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
+ .debug_str     0x001cbf3c     0x122f ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
                                0xc9a0 (size before relaxing)
 
 .comment        0x00000000       0xf2
@@ -17082,7 +17092,7 @@ OUTPUT(EmbeddedWizard-STM32H745-Discovery.elf elf32-littlearm)
  .comment       0x000000f2       0x77 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewstring.o)
  .comment       0x000000f2       0x77 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewtimer.o)
 
-.debug_frame    0x00000000     0xf878
+.debug_frame    0x00000000     0xf87c
  .debug_frame   0x00000000       0x78 Application\GeneratedCode\Application.o
  .debug_frame   0x00000078     0x11f4 Application\GeneratedCode\BezierClock.o
  .debug_frame   0x0000126c     0x2b3c Application\GeneratedCode\Core.o
@@ -17100,89 +17110,89 @@ OUTPUT(EmbeddedWizard-STM32H745-Discovery.elf elf32-littlearm)
  .debug_frame   0x00007ac8       0xb8 Application\Source\ewmain.o
  .debug_frame   0x00007b80       0x70 Application\Source\fdcan.o
  .debug_frame   0x00007bf0       0x34 Application\Source\gpio.o
- .debug_frame   0x00007c24       0x90 Application\Source\main.o
- .debug_frame   0x00007cb4      0x23c PlatformPackage\RGB565\ewextgfx.o
- .debug_frame   0x00007ef0      0x228 PlatformPackage\RTE\ewextrte.o
- .debug_frame   0x00008118      0x198 TargetSpecific\Drivers\ft5336.o
- .debug_frame   0x000082b0      0x7a8 TargetSpecific\Drivers\ft5336_reg.o
- .debug_frame   0x00008a58      0x124 TargetSpecific\ew_bsp_clock.o
- .debug_frame   0x00008b7c       0xb4 TargetSpecific\ew_bsp_console.o
- .debug_frame   0x00008c30      0x124 TargetSpecific\ew_bsp_display.o
- .debug_frame   0x00008d54       0x50 TargetSpecific\ew_bsp_event.o
- .debug_frame   0x00008da4      0x208 TargetSpecific\ew_bsp_graphics.o
- .debug_frame   0x00008fac       0x84 TargetSpecific\ew_bsp_inout.o
- .debug_frame   0x00009030       0x78 TargetSpecific\ew_bsp_system.o
- .debug_frame   0x000090a8       0x84 TargetSpecific\ew_bsp_touch.o
- .debug_frame   0x0000912c       0xc8 TargetSpecific\stm32h7xx_it.o
- .debug_frame   0x000091f4       0x50 TargetSpecific\system_stm32h7xx.o
- .debug_frame   0x00009244      0x368 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
- .debug_frame   0x000095ac      0x124 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
- .debug_frame   0x000096d0      0x178 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery.o
- .debug_frame   0x00009848      0x120 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
- .debug_frame   0x00009968      0x240 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_qspi.o
- .debug_frame   0x00009ba8       0xc0 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_sdram.o
- .debug_frame   0x00009c68      0x4c8 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
- .debug_frame   0x0000a130      0x1a8 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_cortex.o
- .debug_frame   0x0000a2d8      0x418 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma2d.o
- .debug_frame   0x0000a6f0      0x8fc ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_fdcan.o
- .debug_frame   0x0000afec       0xec ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_gpio.o
- .debug_frame   0x0000b0d8      0x988 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c.o
- .debug_frame   0x0000ba60       0xb8 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c_ex.o
- .debug_frame   0x0000bb18      0x4c4 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_ltdc.o
- .debug_frame   0x0000bfdc      0x2d4 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_mdma.o
- .debug_frame   0x0000c2b0      0x358 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr_ex.o
- .debug_frame   0x0000c608      0x488 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_qspi.o
- .debug_frame   0x0000ca90      0x1ac ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc.o
- .debug_frame   0x0000cc3c      0x2cc ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.o
- .debug_frame   0x0000cf08      0x25c ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc.o
- .debug_frame   0x0000d164      0x308 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_sdram.o
- .debug_frame   0x0000d46c      0x704 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o
- .debug_frame   0x0000db70      0x24c ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_ll_fmc.o
- .debug_frame   0x0000ddbc      0x590 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
- .debug_frame   0x0000e34c       0x6c ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
- .debug_frame   0x0000e3b8      0x100 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.o
- .debug_frame   0x0000e4b8       0x98 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
- .debug_frame   0x0000e550      0x38c ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
- .debug_frame   0x0000e8dc      0x590 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
- .debug_frame   0x0000ee6c       0x2c c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-init.o)
- .debug_frame   0x0000ee98       0x28 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-memcpy-stub.o)
- .debug_frame   0x0000eec0       0x28 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-memmove.o)
- .debug_frame   0x0000eee8       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-memset.o)
- .debug_frame   0x0000ef08       0x44 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-rand.o)
- .debug_frame   0x0000ef4c       0x30 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-malloc.o)
- .debug_frame   0x0000ef7c       0x40 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-mallocr.o)
- .debug_frame   0x0000efbc       0x30 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-mlock.o)
- .debug_frame   0x0000efec       0x2c c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-sbrkr.o)
- .debug_frame   0x0000f018       0x60 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-freer.o)
- .debug_frame   0x0000f078       0xb0 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-lock.o)
- .debug_frame   0x0000f128       0x5c c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-reent.o)
- .debug_frame   0x0000f184       0x2c c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-sf_cos.o)
- .debug_frame   0x0000f1b0       0x2c c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-sf_sin.o)
- .debug_frame   0x0000f1dc       0x40 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-wf_acos.o)
- .debug_frame   0x0000f21c       0x50 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-wf_pow.o)
- .debug_frame   0x0000f26c       0x40 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-wf_sqrt.o)
- .debug_frame   0x0000f2ac       0x6c c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-ef_acos.o)
- .debug_frame   0x0000f318       0x68 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-ef_pow.o)
- .debug_frame   0x0000f380       0x38 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-ef_rem_pio2.o)
- .debug_frame   0x0000f3b8       0x2c c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-ef_sqrt.o)
- .debug_frame   0x0000f3e4       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-kf_cos.o)
- .debug_frame   0x0000f404       0x5c c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-kf_rem_pio2.o)
- .debug_frame   0x0000f460       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-kf_sin.o)
- .debug_frame   0x0000f480       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-s_matherr.o)
- .debug_frame   0x0000f4a0       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-s_nan.o)
- .debug_frame   0x0000f4c0       0x34 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-s_rint.o)
- .debug_frame   0x0000f4f4       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-sf_fabs.o)
- .debug_frame   0x0000f514       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-sf_finite.o)
- .debug_frame   0x0000f534       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-sf_floor.o)
- .debug_frame   0x0000f554       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-sf_nan.o)
- .debug_frame   0x0000f574       0x3c c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-sf_scalbn.o)
- .debug_frame   0x0000f5b0       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-sf_copysign.o)
- .debug_frame   0x0000f5d0       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-errno.o)
- .debug_frame   0x0000f5f0       0xac c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-sp-d16\libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x0000f69c       0x50 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-sp-d16\libgcc.a(_arm_muldivdf3.o)
- .debug_frame   0x0000f6ec       0xc4 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-sp-d16\libgcc.a(_arm_cmpdf2.o)
- .debug_frame   0x0000f7b0       0x24 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-sp-d16\libgcc.a(_arm_fixdfsi.o)
- .debug_frame   0x0000f7d4       0x24 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-sp-d16\libgcc.a(_arm_truncdfsf2.o)
- .debug_frame   0x0000f7f8       0x2c c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-sp-d16\libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x0000f824       0x34 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-sp-d16\libgcc.a(_udivmoddi4.o)
- .debug_frame   0x0000f858       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libnosys.a(sbrk.o)
+ .debug_frame   0x00007c24       0x94 Application\Source\main.o
+ .debug_frame   0x00007cb8      0x23c PlatformPackage\RGB565\ewextgfx.o
+ .debug_frame   0x00007ef4      0x228 PlatformPackage\RTE\ewextrte.o
+ .debug_frame   0x0000811c      0x198 TargetSpecific\Drivers\ft5336.o
+ .debug_frame   0x000082b4      0x7a8 TargetSpecific\Drivers\ft5336_reg.o
+ .debug_frame   0x00008a5c      0x124 TargetSpecific\ew_bsp_clock.o
+ .debug_frame   0x00008b80       0xb4 TargetSpecific\ew_bsp_console.o
+ .debug_frame   0x00008c34      0x124 TargetSpecific\ew_bsp_display.o
+ .debug_frame   0x00008d58       0x50 TargetSpecific\ew_bsp_event.o
+ .debug_frame   0x00008da8      0x208 TargetSpecific\ew_bsp_graphics.o
+ .debug_frame   0x00008fb0       0x84 TargetSpecific\ew_bsp_inout.o
+ .debug_frame   0x00009034       0x78 TargetSpecific\ew_bsp_system.o
+ .debug_frame   0x000090ac       0x84 TargetSpecific\ew_bsp_touch.o
+ .debug_frame   0x00009130       0xc8 TargetSpecific\stm32h7xx_it.o
+ .debug_frame   0x000091f8       0x50 TargetSpecific\system_stm32h7xx.o
+ .debug_frame   0x00009248      0x368 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
+ .debug_frame   0x000095b0      0x124 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
+ .debug_frame   0x000096d4      0x178 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery.o
+ .debug_frame   0x0000984c      0x120 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
+ .debug_frame   0x0000996c      0x240 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_qspi.o
+ .debug_frame   0x00009bac       0xc0 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_sdram.o
+ .debug_frame   0x00009c6c      0x4c8 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
+ .debug_frame   0x0000a134      0x1a8 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_cortex.o
+ .debug_frame   0x0000a2dc      0x418 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma2d.o
+ .debug_frame   0x0000a6f4      0x8fc ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_fdcan.o
+ .debug_frame   0x0000aff0       0xec ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_gpio.o
+ .debug_frame   0x0000b0dc      0x988 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c.o
+ .debug_frame   0x0000ba64       0xb8 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c_ex.o
+ .debug_frame   0x0000bb1c      0x4c4 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_ltdc.o
+ .debug_frame   0x0000bfe0      0x2d4 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_mdma.o
+ .debug_frame   0x0000c2b4      0x358 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr_ex.o
+ .debug_frame   0x0000c60c      0x488 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_qspi.o
+ .debug_frame   0x0000ca94      0x1ac ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc.o
+ .debug_frame   0x0000cc40      0x2cc ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.o
+ .debug_frame   0x0000cf0c      0x25c ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc.o
+ .debug_frame   0x0000d168      0x308 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_sdram.o
+ .debug_frame   0x0000d470      0x704 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o
+ .debug_frame   0x0000db74      0x24c ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_ll_fmc.o
+ .debug_frame   0x0000ddc0      0x590 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
+ .debug_frame   0x0000e350       0x6c ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
+ .debug_frame   0x0000e3bc      0x100 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.o
+ .debug_frame   0x0000e4bc       0x98 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
+ .debug_frame   0x0000e554      0x38c ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
+ .debug_frame   0x0000e8e0      0x590 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
+ .debug_frame   0x0000ee70       0x2c c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-init.o)
+ .debug_frame   0x0000ee9c       0x28 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000eec4       0x28 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-memmove.o)
+ .debug_frame   0x0000eeec       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-memset.o)
+ .debug_frame   0x0000ef0c       0x44 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-rand.o)
+ .debug_frame   0x0000ef50       0x30 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-malloc.o)
+ .debug_frame   0x0000ef80       0x40 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-mallocr.o)
+ .debug_frame   0x0000efc0       0x30 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-mlock.o)
+ .debug_frame   0x0000eff0       0x2c c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-sbrkr.o)
+ .debug_frame   0x0000f01c       0x60 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-freer.o)
+ .debug_frame   0x0000f07c       0xb0 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-lock.o)
+ .debug_frame   0x0000f12c       0x5c c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-reent.o)
+ .debug_frame   0x0000f188       0x2c c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-sf_cos.o)
+ .debug_frame   0x0000f1b4       0x2c c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-sf_sin.o)
+ .debug_frame   0x0000f1e0       0x40 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-wf_acos.o)
+ .debug_frame   0x0000f220       0x50 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-wf_pow.o)
+ .debug_frame   0x0000f270       0x40 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-wf_sqrt.o)
+ .debug_frame   0x0000f2b0       0x6c c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-ef_acos.o)
+ .debug_frame   0x0000f31c       0x68 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-ef_pow.o)
+ .debug_frame   0x0000f384       0x38 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-ef_rem_pio2.o)
+ .debug_frame   0x0000f3bc       0x2c c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-ef_sqrt.o)
+ .debug_frame   0x0000f3e8       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-kf_cos.o)
+ .debug_frame   0x0000f408       0x5c c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-kf_rem_pio2.o)
+ .debug_frame   0x0000f464       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-kf_sin.o)
+ .debug_frame   0x0000f484       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-s_matherr.o)
+ .debug_frame   0x0000f4a4       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-s_nan.o)
+ .debug_frame   0x0000f4c4       0x34 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-s_rint.o)
+ .debug_frame   0x0000f4f8       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-sf_fabs.o)
+ .debug_frame   0x0000f518       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-sf_finite.o)
+ .debug_frame   0x0000f538       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-sf_floor.o)
+ .debug_frame   0x0000f558       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-sf_nan.o)
+ .debug_frame   0x0000f578       0x3c c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-sf_scalbn.o)
+ .debug_frame   0x0000f5b4       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-sf_copysign.o)
+ .debug_frame   0x0000f5d4       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-errno.o)
+ .debug_frame   0x0000f5f4       0xac c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-sp-d16\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x0000f6a0       0x50 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-sp-d16\libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x0000f6f0       0xc4 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-sp-d16\libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x0000f7b4       0x24 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-sp-d16\libgcc.a(_arm_fixdfsi.o)
+ .debug_frame   0x0000f7d8       0x24 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-sp-d16\libgcc.a(_arm_truncdfsf2.o)
+ .debug_frame   0x0000f7fc       0x2c c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-sp-d16\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x0000f828       0x34 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-sp-d16\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x0000f85c       0x20 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libnosys.a(sbrk.o)
