@@ -1,46 +1,46 @@
 Archive member included to satisfy reference by file (symbol)
 
-C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextpxl_RGB565.o)
+C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextpxl_RGB565.o)
                               PlatformPackage\RGB565\ewextgfx.o (EwFillRowSolid)
-C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o)
+C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o)
                               Application\GeneratedCode\Graphics.o (EwFreeBitmap)
-C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxattrtext.o)
-                              C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o) (EwInitAttrText)
-C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxbidi.o)
-                              C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o) (EwInitBidi)
-C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxcore.o)
-                              C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o) (EwDoneGfxCore)
-C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxdriver.o)
-                              C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxcore.o) (EwGetIndex8SurfaceMemSize)
-C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxtasks.o)
-                              C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o) (EwGfxTasksInit)
-C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextbmp_RGB565.o)
-                              C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o) (EwBmpInit)
-C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextfnt.o)
-                              C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o) (EwFntInit)
-C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewcolor.o)
+C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxattrtext.o)
+                              C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o) (EwInitAttrText)
+C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxbidi.o)
+                              C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o) (EwInitBidi)
+C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxcore.o)
+                              C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o) (EwDoneGfxCore)
+C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxdriver.o)
+                              C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxcore.o) (EwGetIndex8SurfaceMemSize)
+C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxtasks.o)
+                              C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o) (EwGfxTasksInit)
+C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextbmp_RGB565.o)
+                              C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o) (EwBmpInit)
+C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextfnt.o)
+                              C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o) (EwFntInit)
+C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewcolor.o)
                               Application\GeneratedCode\Core.o (EwNewColor)
-C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewdebug.o)
+C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewdebug.o)
                               Application\GeneratedCode\BezierClock.o (EwPrint)
-C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewheap.o)
+C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewheap.o)
                               Application\Source\ewmain.o (EwInitHeap)
-C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewobject.o)
+C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewobject.o)
                               Application\GeneratedCode\BezierClock.o (XObject__Init)
-C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewpoint.o)
+C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewpoint.o)
                               Application\GeneratedCode\BezierClock.o (EwNewPoint)
-C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewrect.o)
+C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewrect.o)
                               Application\GeneratedCode\BezierClock.o (EwNewRect)
-C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewref.o)
+C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewref.o)
                               Application\GeneratedCode\BezierClock.o (EwNewRef)
-C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewresource.o)
+C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewresource.o)
                               Application\GeneratedCode\Core.o (EwRegisterResource)
-C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewscalars.o)
+C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewscalars.o)
                               Application\GeneratedCode\Core.o (EwSetContains)
-C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewslot.o)
-                              C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewobject.o) (EwMarkSignals)
-C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewstring.o)
-                              C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewobject.o) (EwDisposeStrings)
-C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewtimer.o)
+C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewslot.o)
+                              C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewobject.o) (EwMarkSignals)
+C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewstring.o)
+                              C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewobject.o) (EwDisposeStrings)
+C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewtimer.o)
                               Application\GeneratedCode\Core.o (EwCreateTimer)
 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-init.o)
                               startup_stm32h745xx.o (__libc_init_array)
@@ -137,9 +137,9 @@ c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gc
 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-sp-d16\libgcc.a(_arm_cmpdf2.o)
                               c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-wf_pow.o) (__aeabi_dcmpeq)
 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-sp-d16\libgcc.a(_arm_fixdfsi.o)
-                              C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o) (__aeabi_d2iz)
+                              C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o) (__aeabi_d2iz)
 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-sp-d16\libgcc.a(_arm_truncdfsf2.o)
-                              C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewdebug.o) (__aeabi_d2f)
+                              C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewdebug.o) (__aeabi_d2f)
 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-sp-d16\libgcc.a(_aeabi_uldivmod.o)
                               ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o (__aeabi_uldivmod)
 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-sp-d16\libgcc.a(_udivmoddi4.o)
@@ -165,11 +165,11 @@ hfdcan1             0xa0              Application\Source\fdcan.o
 __lock___atexit_recursive_mutex
                     0x1               c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-lock.o)
 hpb_exti            0x8               ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery.o
-EwDstSurfaceLock    0x30              C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxtasks.o)
+EwDstSurfaceLock    0x30              C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxtasks.o)
 uwTick              0x4               ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
 xQueueRegistry      0x40              ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
 UART_Handle         0x8c              TargetSpecific\ew_bsp_console.o
-EwSrcSurfaceLock    0x30              C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxtasks.o)
+EwSrcSurfaceLock    0x30              C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxtasks.o)
 __lock___dd_hash_mutex
                     0x1               c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-lock.o)
 hbus_i2c4           0x4c              ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
@@ -254,8 +254,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x53 Application\GeneratedCode\Batterie.o
  .debug_macro   0x00000000       0xa9 Application\GeneratedCode\Batterie.o
  .debug_macro   0x00000000       0x9e Application\GeneratedCode\Batterie.o
- .debug_line    0x00000000      0x1db Application\GeneratedCode\Batterie.o
- .debug_str     0x00000000     0xb6b5 Application\GeneratedCode\Batterie.o
+ .debug_line    0x00000000      0x220 Application\GeneratedCode\Batterie.o
+ .debug_str     0x00000000     0xb6cc Application\GeneratedCode\Batterie.o
  .comment       0x00000000       0x7d Application\GeneratedCode\Batterie.o
  .ARM.attributes
                 0x00000000       0x39 Application\GeneratedCode\Batterie.o
@@ -938,8 +938,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x53 Application\GeneratedCode\SetRotaionalSpeed.o
  .debug_macro   0x00000000       0xa9 Application\GeneratedCode\SetRotaionalSpeed.o
  .debug_macro   0x00000000       0x9e Application\GeneratedCode\SetRotaionalSpeed.o
- .debug_line    0x00000000      0x1ed Application\GeneratedCode\SetRotaionalSpeed.o
- .debug_str     0x00000000     0xb6c7 Application\GeneratedCode\SetRotaionalSpeed.o
+ .debug_line    0x00000000      0x232 Application\GeneratedCode\SetRotaionalSpeed.o
+ .debug_str     0x00000000     0xb6de Application\GeneratedCode\SetRotaionalSpeed.o
  .comment       0x00000000       0x7d Application\GeneratedCode\SetRotaionalSpeed.o
  .ARM.attributes
                 0x00000000       0x39 Application\GeneratedCode\SetRotaionalSpeed.o
@@ -5394,8 +5394,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x76 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_ts.o
  .debug_macro   0x00000000       0x90 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_ts.o
  .debug_macro   0x00000000       0x6a ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_ts.o
- .debug_line    0x00000000      0xd52 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_ts.o
- .debug_str     0x00000000   0x19c17f ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_ts.o
+ .debug_line    0x00000000      0xdc5 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_ts.o
+ .debug_str     0x00000000   0x19c196 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_ts.o
  .comment       0x00000000       0x7d ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_ts.o
  .debug_frame   0x00000000      0x210 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_ts.o
  .ARM.attributes
@@ -5996,8 +5996,8 @@ Discarded input sections
  .debug_macro   0x00000000      0x662 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma.o
  .debug_macro   0x00000000       0xa6 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma.o
  .debug_macro   0x00000000      0x783 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma.o
- .debug_line    0x00000000     0x109c ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma.o
- .debug_str     0x00000000   0x1994f2 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma.o
+ .debug_line    0x00000000     0x110f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma.o
+ .debug_str     0x00000000   0x199509 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma.o
  .comment       0x00000000       0x7d ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma.o
  .debug_frame   0x00000000      0x298 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma.o
  .ARM.attributes
@@ -6345,8 +6345,8 @@ Discarded input sections
  .debug_macro   0x00000000      0x662 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_exti.o
  .debug_macro   0x00000000       0xa6 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_exti.o
  .debug_macro   0x00000000      0x783 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_exti.o
- .debug_line    0x00000000      0xaf6 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_exti.o
- .debug_str     0x00000000   0x198c8e ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_exti.o
+ .debug_line    0x00000000      0xb69 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_exti.o
+ .debug_str     0x00000000   0x198ca5 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_exti.o
  .comment       0x00000000       0x7d ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_exti.o
  .debug_frame   0x00000000      0x134 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_exti.o
  .ARM.attributes
@@ -8760,8 +8760,8 @@ Discarded input sections
  .debug_macro   0x00000000      0x662 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc_ex.o
  .debug_macro   0x00000000       0xa6 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc_ex.o
  .debug_macro   0x00000000      0x783 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc_ex.o
- .debug_line    0x00000000     0x136c ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc_ex.o
- .debug_str     0x00000000   0x19946f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc_ex.o
+ .debug_line    0x00000000     0x13df ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc_ex.o
+ .debug_str     0x00000000   0x199486 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc_ex.o
  .comment       0x00000000       0x7d ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc_ex.o
  .debug_frame   0x00000000      0x49c ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc_ex.o
  .ARM.attributes
@@ -9093,8 +9093,8 @@ Discarded input sections
  .debug_macro   0x00000000      0x662 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_spi.o
  .debug_macro   0x00000000       0xa6 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_spi.o
  .debug_macro   0x00000000      0x783 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_spi.o
- .debug_line    0x00000000      0x8e5 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_spi.o
- .debug_str     0x00000000   0x1988b4 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_spi.o
+ .debug_line    0x00000000      0x958 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_spi.o
+ .debug_str     0x00000000   0x1988cb ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_spi.o
  .comment       0x00000000       0x7d ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_spi.o
  .ARM.attributes
                 0x00000000       0x39 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_spi.o
@@ -9242,8 +9242,8 @@ Discarded input sections
  .debug_macro   0x00000000      0x662 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_tim.o
  .debug_macro   0x00000000       0xa6 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_tim.o
  .debug_macro   0x00000000      0x783 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_tim.o
- .debug_line    0x00000000      0x8e5 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_tim.o
- .debug_str     0x00000000   0x1988b4 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_tim.o
+ .debug_line    0x00000000      0x958 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_tim.o
+ .debug_str     0x00000000   0x1988cb ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_tim.o
  .comment       0x00000000       0x7d ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_tim.o
  .ARM.attributes
                 0x00000000       0x39 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_tim.o
@@ -9391,8 +9391,8 @@ Discarded input sections
  .debug_macro   0x00000000      0x662 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_tim_ex.o
  .debug_macro   0x00000000       0xa6 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_tim_ex.o
  .debug_macro   0x00000000      0x783 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_tim_ex.o
- .debug_line    0x00000000      0x8e8 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_tim_ex.o
- .debug_str     0x00000000   0x1988b7 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_tim_ex.o
+ .debug_line    0x00000000      0x95b ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_tim_ex.o
+ .debug_str     0x00000000   0x1988ce ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_tim_ex.o
  .comment       0x00000000       0x7d ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_tim_ex.o
  .ARM.attributes
                 0x00000000       0x39 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_tim_ex.o
@@ -9823,8 +9823,8 @@ Discarded input sections
  .debug_macro   0x00000000      0x662 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart_ex.o
  .debug_macro   0x00000000       0xa6 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart_ex.o
  .debug_macro   0x00000000      0x783 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart_ex.o
- .debug_line    0x00000000      0xc45 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart_ex.o
- .debug_str     0x00000000   0x19910c ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart_ex.o
+ .debug_line    0x00000000      0xcb8 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart_ex.o
+ .debug_str     0x00000000   0x199123 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart_ex.o
  .comment       0x00000000       0x7d ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart_ex.o
  .debug_frame   0x00000000      0x18c ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart_ex.o
  .ARM.attributes
@@ -10624,43 +10624,43 @@ Discarded input sections
  .debug_macro   0x00000000       0xaa ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\timers.o
  .debug_macro   0x00000000       0x80 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\timers.o
  .debug_macro   0x00000000       0x97 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\timers.o
- .debug_line    0x00000000      0x5a7 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\timers.o
- .debug_str     0x00000000     0xb99d ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\timers.o
+ .debug_line    0x00000000      0x603 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\timers.o
+ .debug_str     0x00000000     0xb9b4 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\timers.o
  .comment       0x00000000       0x7d ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\timers.o
  .ARM.attributes
                 0x00000000       0x39 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\timers.o
  .text          0x00000000       0x14 startup_stm32h745xx.o
  .data          0x00000000        0x0 startup_stm32h745xx.o
  .bss           0x00000000        0x0 startup_stm32h745xx.o
- .data          0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextpxl_RGB565.o)
- .bss           0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextpxl_RGB565.o)
- .data          0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxattrtext.o)
- .bss           0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxattrtext.o)
- .data          0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxbidi.o)
- .bss           0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxbidi.o)
- .data          0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxdriver.o)
- .bss           0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxdriver.o)
- .data          0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxtasks.o)
- .data          0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextbmp_RGB565.o)
- .bss           0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextbmp_RGB565.o)
- .data          0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextfnt.o)
- .bss           0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextfnt.o)
- .data          0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewcolor.o)
- .bss           0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewcolor.o)
- .data          0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewdebug.o)
- .bss           0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewdebug.o)
- .data          0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewobject.o)
- .data          0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewpoint.o)
- .bss           0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewpoint.o)
- .data          0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewrect.o)
- .bss           0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewrect.o)
- .data          0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewref.o)
- .bss           0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewref.o)
- .data          0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewresource.o)
- .data          0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewscalars.o)
- .bss           0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewscalars.o)
- .data          0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewslot.o)
- .data          0x00000000        0x0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewtimer.o)
+ .data          0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextpxl_RGB565.o)
+ .bss           0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextpxl_RGB565.o)
+ .data          0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxattrtext.o)
+ .bss           0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxattrtext.o)
+ .data          0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxbidi.o)
+ .bss           0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxbidi.o)
+ .data          0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxdriver.o)
+ .bss           0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxdriver.o)
+ .data          0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxtasks.o)
+ .data          0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextbmp_RGB565.o)
+ .bss           0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextbmp_RGB565.o)
+ .data          0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextfnt.o)
+ .bss           0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextfnt.o)
+ .data          0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewcolor.o)
+ .bss           0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewcolor.o)
+ .data          0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewdebug.o)
+ .bss           0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewdebug.o)
+ .data          0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewobject.o)
+ .data          0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewpoint.o)
+ .bss           0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewpoint.o)
+ .data          0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewrect.o)
+ .bss           0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewrect.o)
+ .data          0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewref.o)
+ .bss           0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewref.o)
+ .data          0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewresource.o)
+ .data          0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewscalars.o)
+ .bss           0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewscalars.o)
+ .data          0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewslot.o)
+ .data          0x00000000        0x0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewtimer.o)
  .text          0x00000000        0x0 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-init.o)
  .data          0x00000000        0x0 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-init.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-init.o)
@@ -10965,8 +10965,8 @@ LOAD ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
 LOAD ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
 LOAD ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\timers.o
 LOAD startup_stm32h745xx.o
-LOAD C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a
-LOAD C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a
+LOAD C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a
+LOAD C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a
                 0x00000080                malloc_getpagesize_P = 0x80
 START GROUP
 LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a
@@ -10998,7 +10998,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x080002a0                . = ALIGN (0x4)
  *(.text)
  .text          0x080002a0       0x40 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-sp-d16/crtbegin.o
- .text          0x080002e0     0x6bc8 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextpxl_RGB565.o)
+ .text          0x080002e0     0x6bc8 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextpxl_RGB565.o)
                 0x080002e0                EwCreateNativeSurface
                 0x08000350                EwCreateConstNativeSurface
                 0x080003d4                EwDestroyNativeSurface
@@ -11153,7 +11153,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x08006e9c                EwScreenWarpRGB565RowSolidBlend
                 0x08006ea0                EwScreenWarpRGB565RowFilterSolid
                 0x08006ea4                EwScreenWarpRGB565RowFilterSolidBlend
- .text          0x08006ea8     0x93b8 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o)
+ .text          0x08006ea8     0x93b8 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o)
                 0x080087cc                EwEnableGfxTaskTracing
                 0x080087dc                EwFreeBitmap
                 0x08008844                EwDoneGraphicsEngine
@@ -11230,7 +11230,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x080100dc                EwFindUserColor
                 0x080100e4                EwGetOverlayArea
                 0x08010160                EwCanDiscardSurface
- .text          0x08010260     0x35c0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxattrtext.o)
+ .text          0x08010260     0x35c0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxattrtext.o)
                 0x080120b0                EwInitAttrText
                 0x080120b4                EwParseFlowString
                 0x080127b0                EwGetFlowTextAdvance
@@ -11255,7 +11255,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x08013748                EwGetNoOfAttrLinkRegions
                 0x08013768                EwGetAttrLinkRect
                 0x080137d8                EwGetAttrLinkBaseline
- .text          0x08013820     0x1b64 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxbidi.o)
+ .text          0x08013820     0x1b64 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxbidi.o)
                 0x080138b0                EwInitBidi
                 0x080138b4                EwCreateBidi
                 0x08013930                EwFreeBidi
@@ -11272,7 +11272,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x08015188                EwBidiReorderIndex
                 0x08015238                EwBidiReverseReorderIndex
                 0x08015350                EwBidiGetTypesAndLevels
- .text          0x08015384     0x1608 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxcore.o)
+ .text          0x08015384     0x1608 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxcore.o)
                 0x08015a50                EwDoneGfxCore
                 0x08015b3c                EwInitGfxCore
                 0x08015dc0                EwCreateSurface
@@ -11296,7 +11296,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x080167cc                EwLockSurface
                 0x08016954                EwLockGlyphCache
                 0x08016984                EwCleanSurfaceCache
- .text          0x0801698c     0x26ac C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxdriver.o)
+ .text          0x0801698c     0x26ac C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxdriver.o)
                 0x080175b8                EwDestroyIndex8Surface
                 0x080175e8                EwGetIndex8SurfaceMemory
                 0x08017624                EwGetIndex8SurfaceMemSize
@@ -11319,7 +11319,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x08018f50                EwCreateAlpha8Surface
                 0x08018fb8                EwCreateConstAlpha8Surface
                 0x08019034                EwFreeVideo
- .text          0x08019038     0x22c0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxtasks.o)
+ .text          0x08019038     0x22c0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxtasks.o)
                 0x08019344                EwGfxTasksInit
                 0x08019348                EwReorderTasks
                 0x0801957c                EwReverseTasks
@@ -11328,7 +11328,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x0801b1f0                EwCompleteTasks
                 0x0801b288                EwCountTasks
                 0x0801b2e8                EwTraceTasks
- .text          0x0801b2f8      0x430 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextbmp_RGB565.o)
+ .text          0x0801b2f8      0x430 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextbmp_RGB565.o)
                 0x0801b2f8                EwBmpInit
                 0x0801b31c                EwBmpDone
                 0x0801b320                EwBmpOpen
@@ -11339,7 +11339,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x0801b530                EwBmpLoadFrame
                 0x0801b6a4                EwBmpLoadClut
                 0x0801b6fc                EwBmpLoadMappingTable
- .text          0x0801b728      0x4d0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextfnt.o)
+ .text          0x0801b728      0x4d0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextfnt.o)
                 0x0801b728                EwFntInit
                 0x0801b72c                EwFntDone
                 0x0801b730                EwFntOpen
@@ -11349,7 +11349,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x0801b7e4                EwFntGetKerning
                 0x0801b84c                EwFntIsGlyphAvailable
                 0x0801b88c                EwFntLoadGlyph
- .text          0x0801bbf8      0x39c C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewcolor.o)
+ .text          0x0801bbf8      0x39c C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewcolor.o)
                 0x0801bbf8                EwNewColor
                 0x0801bc18                EwMinusColor
                 0x0801bc70                EwPlusColor
@@ -11362,7 +11362,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x0801bef0                EwSetColorAlpha
                 0x0801bf24                EwCompColor
                 0x0801bf64                EwGetVariantOfColor
- .text          0x0801bf94      0x83c C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewdebug.o)
+ .text          0x0801bf94      0x83c C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewdebug.o)
                 0x0801bf94                EwPrint
                 0x0801c488                EwTrace
                 0x0801c77c                EwThrow
@@ -11370,7 +11370,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x0801c7a0                EwErrorS
                 0x0801c7b0                EwErrorPD
                 0x0801c7c0                EwErrorDD
- .text          0x0801c7d0      0xb1c C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewheap.o)
+ .text          0x0801c7d0      0xb1c C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewheap.o)
                 0x0801c7d0                EwInitHeap
                 0x0801c7f8                EwDoneHeap
                 0x0801c810                EwAddHeapMemoryPool
@@ -11380,7 +11380,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x0801cd40                EwAllocHeapBlock
                 0x0801cf60                EwFreeHeapBlock
                 0x0801d2cc                EwIsHeapPtr
- .text          0x0801d2ec      0x954 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewobject.o)
+ .text          0x0801d2ec      0x954 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewobject.o)
                 0x0801d2ec                XObject__Init
                 0x0801d2f8                XObject__ReInit
                 0x0801d2fc                XObject__Done
@@ -11399,7 +11399,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x0801da28                EwTestImmediateReclaimMemory
                 0x0801da2c                EwReconstructObjects
                 0x0801da48                EwPrintProfilerStatistic
- .text          0x0801dc40       0xfc C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewpoint.o)
+ .text          0x0801dc40       0xfc C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewpoint.o)
                 0x0801dc40                EwNewPoint
                 0x0801dc48                EwCompPoint
                 0x0801dc80                EwMovePointNeg
@@ -11408,7 +11408,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x0801dce0                EwSetPointX
                 0x0801dd00                EwSetPointY
                 0x0801dd20                EwGetVariantOfPoint
- .text          0x0801dd3c      0x580 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewrect.o)
+ .text          0x0801dd3c      0x580 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewrect.o)
                 0x0801dd3c                EwNewRect
                 0x0801dd4c                EwNewRect2Point
                 0x0801dd80                EwCompRect
@@ -11437,7 +11437,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x0801e250                EwSetRectPoint1
                 0x0801e278                EwSetRectPoint2
                 0x0801e2a0                EwGetVariantOfRect
- .text          0x0801e2bc      0x3a0 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewref.o)
+ .text          0x0801e2bc      0x3a0 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewref.o)
                 0x0801e2bc                EwNewRef
                 0x0801e2cc                EwCompRef
                 0x0801e300                EwOnGetInt8
@@ -11482,7 +11482,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x0801e620                EwOnSetStylesSet
                 0x0801e634                EwOnSetClass
                 0x0801e648                EwOnSetHandle
- .text          0x0801e65c      0x4ec C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewresource.o)
+ .text          0x0801e65c      0x4ec C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewresource.o)
                 0x0801e65c                EwRegisterResource
                 0x0801e6e4                EwDeregisterResource
                 0x0801e738                EwGetLanguage
@@ -11498,7 +11498,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x0801eb18                EwAdaptByteOrder2
                 0x0801eb1c                EwAdaptByteOrder4
                 0x0801eb20                EwReleaseDecompressBuffers
- .text          0x0801eb48       0x98 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewscalars.o)
+ .text          0x0801eb48       0x98 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewscalars.o)
                 0x0801eb48                EwSetContains
                 0x0801eb5c                EwGetVariantOfInt8
                 0x0801eb6c                EwGetVariantOfInt16
@@ -11510,7 +11510,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x0801ebb8                EwGetVariantOfFloat
                 0x0801ebc8                EwGetVariantOfEnum
                 0x0801ebd4                EwGetVariantOfSet
- .text          0x0801ebe0      0x830 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewslot.o)
+ .text          0x0801ebe0      0x830 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewslot.o)
                 0x0801ed38                EwMarkSignals
                 0x0801ed8c                EwDiscardSignals
                 0x0801edd4                EwDisposeObservers
@@ -11531,7 +11531,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x0801f34c                EwNotifyObjObservers
                 0x0801f38c                EwNotifyRefObservers
                 0x0801f3d8                EwNotifyObservers
- .text          0x0801f410     0x1814 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewstring.o)
+ .text          0x0801f410     0x1814 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewstring.o)
                 0x0801f7a8                ToLower
                 0x0801f8cc                EwDisposeStrings
                 0x0801fa24                EwCanMarkString
@@ -11573,7 +11573,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x08020c00                EwGetVariantOfChar
                 0x08020c0c                EwGetCharUpper
                 0x08020c18                EwGetCharLower
- .text          0x08020c24      0x270 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewtimer.o)
+ .text          0x08020c24      0x270 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewtimer.o)
                 0x08020c4c                EwCreateTimer
                 0x08020cd0                EwDestroyTimer
                 0x08020d38                EwStartTimer
@@ -14032,9 +14032,9 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
  .text.MX_GPIO_Init
                 0x08040bf4       0xac Application\Source\gpio.o
                 0x08040bf4                MX_GPIO_Init
- .text.vThreadLEDSystemAlive
-                0x08040ca0       0x20 Application\Source\main.o
  .text.vThreadCANSendMessage
+                0x08040ca0       0x20 Application\Source\main.o
+ .text.vThreadLEDSystemAlive
                 0x08040cc0       0x20 Application\Source\main.o
  .text.GuiThread
                 0x08040ce0       0x20 Application\Source\main.o
@@ -15438,25 +15438,25 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
  .rodata        0x080544d0       0x5c ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_fdcan.o
  .rodata        0x0805452c       0x3a ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o
  *fill*         0x08054566        0x2 
- .rodata        0x08054568      0x204 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextpxl_RGB565.o)
+ .rodata        0x08054568      0x204 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextpxl_RGB565.o)
                 0x08054768                EwPixelDriverVariant
- .rodata        0x0805476c      0xe58 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o)
- .rodata        0x080555c4        0xc C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxattrtext.o)
- .rodata        0x080555d0     0x152e C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxbidi.o)
+ .rodata        0x0805476c      0xe58 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o)
+ .rodata        0x080555c4        0xc C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxattrtext.o)
+ .rodata        0x080555d0     0x152e C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxbidi.o)
  *fill*         0x08056afe        0x2 
- .rodata        0x08056b00       0x84 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxcore.o)
- .rodata        0x08056b84       0x1a C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxdriver.o)
+ .rodata        0x08056b00       0x84 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxcore.o)
+ .rodata        0x08056b84       0x1a C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxdriver.o)
  *fill*         0x08056b9e        0x2 
- .rodata        0x08056ba0      0xed4 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxtasks.o)
- .rodata        0x08057a74       0x24 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextfnt.o)
- .rodata        0x08057a98       0x30 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewdebug.o)
- .rodata        0x08057ac8       0x38 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewobject.o)
+ .rodata        0x08056ba0      0xed4 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxtasks.o)
+ .rodata        0x08057a74       0x24 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextfnt.o)
+ .rodata        0x08057a98       0x30 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewdebug.o)
+ .rodata        0x08057ac8       0x38 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewobject.o)
                 0x08057ac8                __vmt_XObject
- .rodata        0x08057b00        0xc C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewref.o)
+ .rodata        0x08057b00        0xc C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewref.o)
                 0x08057b00                EwNullRef
- .rodata        0x08057b0c        0x8 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewslot.o)
+ .rodata        0x08057b0c        0x8 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewslot.o)
                 0x08057b0c                EwNullSlot
- .rodata        0x08057b14      0x26a C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewstring.o)
+ .rodata        0x08057b14      0x26a C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewstring.o)
  *(.rodata*)
  *fill*         0x08057d7e        0x2 
  .rodata.str1.4
@@ -15495,7 +15495,8 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x0805863c      0x857 Application\Source\ewmain.o
  *fill*         0x08058e93        0x1 
  .rodata.str1.4
-                0x08058e94       0x48 Application\Source\main.o
+                0x08058e94       0x47 Application\Source\main.o
+ *fill*         0x08058edb        0x1 
  .rodata.str1.4
                 0x08058edc      0x1c3 PlatformPackage\RGB565\ewextgfx.o
                                 0x1c7 (size before relaxing)
@@ -15513,22 +15514,22 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x08059298        0x5 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
  *fill*         0x0805929d        0x3 
  .rodata.str1.4
-                0x080592a0       0x62 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxattrtext.o)
+                0x080592a0       0x62 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxattrtext.o)
                                  0x66 (size before relaxing)
  *fill*         0x08059302        0x2 
  .rodata.str1.4
-                0x08059304      0x2b7 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewdebug.o)
+                0x08059304      0x2b7 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewdebug.o)
                                 0x2c3 (size before relaxing)
  *fill*         0x080595bb        0x1 
  .rodata.str1.4
-                0x080595bc      0x1e5 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewheap.o)
+                0x080595bc      0x1e5 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewheap.o)
                                 0x1e9 (size before relaxing)
  *fill*         0x080597a1        0x3 
  .rodata.str1.4
-                0x080597a4      0x290 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewobject.o)
+                0x080597a4      0x290 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewobject.o)
                                 0x294 (size before relaxing)
  .rodata.str1.4
-                0x08059a34       0x38 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewstring.o)
+                0x08059a34       0x38 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewstring.o)
                                  0x3c (size before relaxing)
  .rodata.acosf.str1.1
                 0x08059a6c        0x6 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libm.a(lib_a-wf_acos.o)
@@ -15648,18 +15649,18 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x2000000c                uwTickFreq
                 0x20000010                uwTickPrio
  .data          0x20000014        0x4 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.o
- .data          0x20000018       0x14 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o)
+ .data          0x20000018       0x14 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o)
                 0x2000001c                EwLazyLoadBitmaps
                 0x20000020                EwSVGParserErrorPos
                 0x20000024                EwDiscardBitmaps
                 0x20000028                EwPreserveFramebufferContent
- .data          0x2000002c       0x10 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxcore.o)
+ .data          0x2000002c       0x10 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxcore.o)
                 0x2000002c                EwMaxSurfaceCacheSize
                 0x20000030                EwMaxIssueTasks
                 0x20000034                EwMaxGlyphSurfaceWidth
                 0x20000038                EwMaxGlyphSurfaceHeight
- .data          0x2000003c        0x4 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewheap.o)
- .data          0x20000040        0x4 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewstring.o)
+ .data          0x2000003c        0x4 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewheap.o)
+ .data          0x20000040        0x4 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewstring.o)
                 0x20000040                EwMaxStringCacheSize
  *(.data*)
  .data._impure_ptr
@@ -15737,7 +15738,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
  .bss           0x200012b4     0x2818 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
  .bss           0x20003acc      0x12c ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
                 0x20003ba8                pxCurrentTCB
- .bss           0x20003bf8       0xf4 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o)
+ .bss           0x20003bf8       0xf4 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o)
                 0x20003c18                EwUpdateCycle
                 0x20003c1c                EwFullOffScreenBufferUpdate
                 0x20003c20                EwPrintGfxTasks
@@ -15749,7 +15750,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x20003ce0                EwNoOfDiscardedSurfaces
                 0x20003ce4                EwDiscardedSurfacesMemory
                 0x20003ce8                EwFullScreenUpdate
- .bss           0x20003cec       0x70 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxcore.o)
+ .bss           0x20003cec       0x70 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxcore.o)
                 0x20003cf0                EwGlyphCacheHeads
                 0x20003cf4                EwGlyphCacheTails
                 0x20003cf8                EwGlyphCacheHead
@@ -15767,14 +15768,14 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x20003d44                EwIssuesUsed
                 0x20003d50                EwMaxGlyphWidth
                 0x20003d54                EwMaxGlyphHeight
- .bss           0x20003d5c       0x14 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxtasks.o)
+ .bss           0x20003d5c       0x14 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxtasks.o)
                 0x20003d5c                EwDstSurface
                 0x20003d60                EwSrcSurface
                 0x20003d64                EwTraceTasksProc
                 0x20003d68                EwTraceTasksArg2
                 0x20003d6c                EwTraceTasksArg1
- .bss           0x20003d70        0x8 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewheap.o)
- .bss           0x20003d78       0x48 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewobject.o)
+ .bss           0x20003d70        0x8 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewheap.o)
+ .bss           0x20003d78       0x48 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewobject.o)
                 0x20003d7c                EwObjectsMemory
                 0x20003d80                EwNoOfObjects
                 0x20003d84                EwObjectsMemoryPeak
@@ -15787,12 +15788,12 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x20003db4                EwOffScreenMemoryPeak
                 0x20003db8                EwOffScreenMemory
                 0x20003dbc                EwResourcesEvalMemory
- .bss           0x20003dc0       0x10 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewresource.o)
+ .bss           0x20003dc0       0x10 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewresource.o)
                 0x20003dc4                EwLangId
                 0x20003dc8                EwStylesSet
- .bss           0x20003dd0       0x14 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewslot.o)
- .bss           0x20003de4       0x10 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewstring.o)
- .bss           0x20003df4        0xc C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewtimer.o)
+ .bss           0x20003dd0       0x14 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewslot.o)
+ .bss           0x20003de4       0x10 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewstring.o)
+ .bss           0x20003df4        0xc C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewtimer.o)
  *(.bss*)
  .bss.__malloc_current_mallinfo
                 0x20003e00       0x28 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-mallocr.o)
@@ -15827,7 +15828,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x200040e8                hsdram
  COMMON         0x2000411c        0x4 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
                 0x2000411c                uwTick
- COMMON         0x20004120       0x60 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxtasks.o)
+ COMMON         0x20004120       0x60 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxtasks.o)
                 0x20004120                EwDstSurfaceLock
                 0x20004150                EwSrcSurfaceLock
  COMMON         0x20004180        0x9 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-lock.o)
@@ -16000,47 +16001,47 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
  .ARM.attributes
                 0x00000deb       0x21 startup_stm32h745xx.o
  .ARM.attributes
-                0x00000e0c       0x34 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextpxl_RGB565.o)
+                0x00000e0c       0x34 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextpxl_RGB565.o)
  .ARM.attributes
-                0x00000e40       0x34 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o)
+                0x00000e40       0x34 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o)
  .ARM.attributes
-                0x00000e74       0x34 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxattrtext.o)
+                0x00000e74       0x34 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxattrtext.o)
  .ARM.attributes
-                0x00000ea8       0x34 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxbidi.o)
+                0x00000ea8       0x34 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxbidi.o)
  .ARM.attributes
-                0x00000edc       0x34 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxcore.o)
+                0x00000edc       0x34 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxcore.o)
  .ARM.attributes
-                0x00000f10       0x34 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxdriver.o)
+                0x00000f10       0x34 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxdriver.o)
  .ARM.attributes
-                0x00000f44       0x34 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxtasks.o)
+                0x00000f44       0x34 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxtasks.o)
  .ARM.attributes
-                0x00000f78       0x34 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextbmp_RGB565.o)
+                0x00000f78       0x34 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextbmp_RGB565.o)
  .ARM.attributes
-                0x00000fac       0x34 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextfnt.o)
+                0x00000fac       0x34 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextfnt.o)
  .ARM.attributes
-                0x00000fe0       0x34 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewcolor.o)
+                0x00000fe0       0x34 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewcolor.o)
  .ARM.attributes
-                0x00001014       0x34 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewdebug.o)
+                0x00001014       0x34 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewdebug.o)
  .ARM.attributes
-                0x00001048       0x34 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewheap.o)
+                0x00001048       0x34 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewheap.o)
  .ARM.attributes
-                0x0000107c       0x34 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewobject.o)
+                0x0000107c       0x34 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewobject.o)
  .ARM.attributes
-                0x000010b0       0x34 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewpoint.o)
+                0x000010b0       0x34 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewpoint.o)
  .ARM.attributes
-                0x000010e4       0x34 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewrect.o)
+                0x000010e4       0x34 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewrect.o)
  .ARM.attributes
-                0x00001118       0x34 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewref.o)
+                0x00001118       0x34 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewref.o)
  .ARM.attributes
-                0x0000114c       0x34 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewresource.o)
+                0x0000114c       0x34 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewresource.o)
  .ARM.attributes
-                0x00001180       0x34 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewscalars.o)
+                0x00001180       0x34 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewscalars.o)
  .ARM.attributes
-                0x000011b4       0x34 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewslot.o)
+                0x000011b4       0x34 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewslot.o)
  .ARM.attributes
-                0x000011e8       0x34 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewstring.o)
+                0x000011e8       0x34 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewstring.o)
  .ARM.attributes
-                0x0000121c       0x34 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewtimer.o)
+                0x0000121c       0x34 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewtimer.o)
  .ARM.attributes
                 0x00001250       0x34 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-init.o)
  .ARM.attributes
@@ -16135,7 +16136,7 @@ LOAD c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../l
                 0x00001af6       0x22 c:/program files (x86)/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-sp-d16/crtn.o
 OUTPUT(EmbeddedWizard-STM32H745-Discovery.elf elf32-littlearm)
 
-.debug_info     0x00000000    0xe21d2
+.debug_info     0x00000000    0xe21e9
  .debug_info    0x00000000     0x559f Application\GeneratedCode\Application.o
  .debug_info    0x0000559f    0x17f4c Application\GeneratedCode\BezierClock.o
  .debug_info    0x0001d4eb    0x1b0e4 Application\GeneratedCode\Core.o
@@ -16197,7 +16198,7 @@ OUTPUT(EmbeddedWizard-STM32H745-Discovery.elf elf32-littlearm)
  .debug_info    0x000dbb67      0xc77 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
  .debug_info    0x000dc7de     0x2855 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
  .debug_info    0x000df033     0x30ec ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
- .debug_info    0x000e211f       0xb3 startup_stm32h745xx.o
+ .debug_info    0x000e211f       0xca startup_stm32h745xx.o
 
 .debug_abbrev   0x00000000     0xbca5
  .debug_abbrev  0x00000000      0x204 Application\GeneratedCode\Application.o
@@ -16807,193 +16808,193 @@ OUTPUT(EmbeddedWizard-STM32H745-Discovery.elf elf32-littlearm)
  .debug_macro   0x00048f71       0x10 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
  .debug_macro   0x00048f81       0x74 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
 
-.debug_line     0x00000000    0x38633
- .debug_line    0x00000000      0x4f6 Application\GeneratedCode\Application.o
- .debug_line    0x000004f6     0x247b Application\GeneratedCode\BezierClock.o
- .debug_line    0x00002971     0x4e8a Application\GeneratedCode\Core.o
- .debug_line    0x000077fb      0xbfd Application\GeneratedCode\DriverInterfce.o
- .debug_line    0x000083f8     0x1867 Application\GeneratedCode\Effects.o
- .debug_line    0x00009c5f      0xb65 Application\GeneratedCode\Graphics.o
- .debug_line    0x0000a7c4      0x4fe Application\GeneratedCode\Resources.o
- .debug_line    0x0000acc2      0x7a4 Application\GeneratedCode\SetSpeed.o
- .debug_line    0x0000b466      0x2b1 Application\GeneratedCode\Templates.o
- .debug_line    0x0000b717     0x19fe Application\GeneratedCode\Views.o
- .debug_line    0x0000d115     0x2173 Application\GeneratedCode\WidgetSet.o
- .debug_line    0x0000f288      0xb87 Application\Source\BFFT_CAN.o
- .debug_line    0x0000fe0f      0xadb Application\Source\BFFT_SystemStatusLED.o
- .debug_line    0x000108ea      0x5e1 Application\Source\DeviceDriver.o
- .debug_line    0x00010ecb      0x738 Application\Source\ewmain.o
- .debug_line    0x00011603      0x94d Application\Source\fdcan.o
- .debug_line    0x00011f50      0x8f3 Application\Source\gpio.o
- .debug_line    0x00012843      0xe39 Application\Source\main.o
- .debug_line    0x0001367c      0xf4b PlatformPackage\RGB565\ewextgfx.o
- .debug_line    0x000145c7      0x609 PlatformPackage\RTE\ewextrte.o
- .debug_line    0x00014bd0      0x4c5 TargetSpecific\Drivers\ft5336.o
- .debug_line    0x00015095      0x9c3 TargetSpecific\Drivers\ft5336_reg.o
- .debug_line    0x00015a58      0xbf3 TargetSpecific\ew_bsp_clock.o
- .debug_line    0x0001664b      0xabb TargetSpecific\ew_bsp_console.o
- .debug_line    0x00017106      0xec2 TargetSpecific\ew_bsp_display.o
- .debug_line    0x00017fc8      0xcba TargetSpecific\ew_bsp_event.o
- .debug_line    0x00018c82      0xe39 TargetSpecific\ew_bsp_graphics.o
- .debug_line    0x00019abb      0xa72 TargetSpecific\ew_bsp_inout.o
- .debug_line    0x0001a52d      0xd19 TargetSpecific\ew_bsp_system.o
- .debug_line    0x0001b246      0xcac TargetSpecific\ew_bsp_touch.o
- .debug_line    0x0001bef2      0xd73 TargetSpecific\stm32h7xx_it.o
- .debug_line    0x0001cc65      0x94b TargetSpecific\system_stm32h7xx.o
- .debug_line    0x0001d5b0      0xe15 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
- .debug_line    0x0001e3c5      0xa61 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
- .debug_line    0x0001ee26      0xa91 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery.o
- .debug_line    0x0001f8b7      0xb25 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
- .debug_line    0x000203dc      0xd0a ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_qspi.o
- .debug_line    0x000210e6      0xb2a ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_sdram.o
- .debug_line    0x00021c10      0xdfb ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
- .debug_line    0x00022a0b      0xb80 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_cortex.o
- .debug_line    0x0002358b     0x116f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma2d.o
- .debug_line    0x000246fa     0x19f6 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_fdcan.o
- .debug_line    0x000260f0      0xaff ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_gpio.o
- .debug_line    0x00026bef     0x29a8 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c.o
- .debug_line    0x00029597      0xac0 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c_ex.o
- .debug_line    0x0002a057     0x172e ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_ltdc.o
- .debug_line    0x0002b785      0xfd0 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_mdma.o
- .debug_line    0x0002c755      0xd0c ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr_ex.o
- .debug_line    0x0002d461     0x1076 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_qspi.o
- .debug_line    0x0002e4d7      0xe38 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc.o
- .debug_line    0x0002f30f      0xfc6 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.o
- .debug_line    0x000302d5      0xf46 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc.o
- .debug_line    0x0003121b      0xd67 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_sdram.o
- .debug_line    0x00031f82     0x20b3 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o
- .debug_line    0x00034035      0xbda ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_ll_fmc.o
- .debug_line    0x00034c0f      0xc6d ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
- .debug_line    0x0003587c      0x570 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
- .debug_line    0x00035dec      0x60f ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.o
- .debug_line    0x000363fb      0x611 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
- .debug_line    0x00036a0c      0xc05 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
- .debug_line    0x00037611      0xfac ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
- .debug_line    0x000385bd       0x76 startup_stm32h745xx.o
+.debug_line     0x00000000    0x3a228
+ .debug_line    0x00000000      0x53b Application\GeneratedCode\Application.o
+ .debug_line    0x0000053b     0x24c0 Application\GeneratedCode\BezierClock.o
+ .debug_line    0x000029fb     0x4ecf Application\GeneratedCode\Core.o
+ .debug_line    0x000078ca      0xc42 Application\GeneratedCode\DriverInterfce.o
+ .debug_line    0x0000850c     0x18ac Application\GeneratedCode\Effects.o
+ .debug_line    0x00009db8      0xbaa Application\GeneratedCode\Graphics.o
+ .debug_line    0x0000a962      0x543 Application\GeneratedCode\Resources.o
+ .debug_line    0x0000aea5      0x7e9 Application\GeneratedCode\SetSpeed.o
+ .debug_line    0x0000b68e      0x2f6 Application\GeneratedCode\Templates.o
+ .debug_line    0x0000b984     0x1a43 Application\GeneratedCode\Views.o
+ .debug_line    0x0000d3c7     0x21b8 Application\GeneratedCode\WidgetSet.o
+ .debug_line    0x0000f57f      0xc3f Application\Source\BFFT_CAN.o
+ .debug_line    0x000101be      0xb93 Application\Source\BFFT_SystemStatusLED.o
+ .debug_line    0x00010d51      0x654 Application\Source\DeviceDriver.o
+ .debug_line    0x000113a5      0x7ab Application\Source\ewmain.o
+ .debug_line    0x00011b50      0x9c0 Application\Source\fdcan.o
+ .debug_line    0x00012510      0x966 Application\Source\gpio.o
+ .debug_line    0x00012e76      0xf3a Application\Source\main.o
+ .debug_line    0x00013db0      0xfec PlatformPackage\RGB565\ewextgfx.o
+ .debug_line    0x00014d9c      0x637 PlatformPackage\RTE\ewextrte.o
+ .debug_line    0x000153d3      0x4dc TargetSpecific\Drivers\ft5336.o
+ .debug_line    0x000158af      0x9c3 TargetSpecific\Drivers\ft5336_reg.o
+ .debug_line    0x00016272      0xc94 TargetSpecific\ew_bsp_clock.o
+ .debug_line    0x00016f06      0xb5c TargetSpecific\ew_bsp_console.o
+ .debug_line    0x00017a62      0xfbf TargetSpecific\ew_bsp_display.o
+ .debug_line    0x00018a21      0xda0 TargetSpecific\ew_bsp_event.o
+ .debug_line    0x000197c1      0xf08 TargetSpecific\ew_bsp_graphics.o
+ .debug_line    0x0001a6c9      0xb13 TargetSpecific\ew_bsp_inout.o
+ .debug_line    0x0001b1dc      0xde8 TargetSpecific\ew_bsp_system.o
+ .debug_line    0x0001bfc4      0xd92 TargetSpecific\ew_bsp_touch.o
+ .debug_line    0x0001cd56      0xe70 TargetSpecific\stm32h7xx_it.o
+ .debug_line    0x0001dbc6      0x9be TargetSpecific\system_stm32h7xx.o
+ .debug_line    0x0001e584      0xe88 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
+ .debug_line    0x0001f40c      0xad4 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
+ .debug_line    0x0001fee0      0xb04 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery.o
+ .debug_line    0x000209e4      0xb98 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
+ .debug_line    0x0002157c      0xd7d ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_qspi.o
+ .debug_line    0x000222f9      0xb9d ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_sdram.o
+ .debug_line    0x00022e96      0xe6e ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
+ .debug_line    0x00023d04      0xbf3 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_cortex.o
+ .debug_line    0x000248f7     0x11e2 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma2d.o
+ .debug_line    0x00025ad9     0x1a69 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_fdcan.o
+ .debug_line    0x00027542      0xb72 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_gpio.o
+ .debug_line    0x000280b4     0x2a1b ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c.o
+ .debug_line    0x0002aacf      0xb33 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c_ex.o
+ .debug_line    0x0002b602     0x17a1 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_ltdc.o
+ .debug_line    0x0002cda3     0x1043 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_mdma.o
+ .debug_line    0x0002dde6      0xd7f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr_ex.o
+ .debug_line    0x0002eb65     0x10e9 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_qspi.o
+ .debug_line    0x0002fc4e      0xeab ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc.o
+ .debug_line    0x00030af9     0x1039 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.o
+ .debug_line    0x00031b32      0xfb9 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc.o
+ .debug_line    0x00032aeb      0xdda ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_sdram.o
+ .debug_line    0x000338c5     0x2126 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o
+ .debug_line    0x000359eb      0xc4d ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_ll_fmc.o
+ .debug_line    0x00036638      0xcc9 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
+ .debug_line    0x00037301      0x5b5 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
+ .debug_line    0x000378b6      0x654 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.o
+ .debug_line    0x00037f0a      0x656 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
+ .debug_line    0x00038560      0xc4a ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
+ .debug_line    0x000391aa     0x1008 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
+ .debug_line    0x0003a1b2       0x76 startup_stm32h745xx.o
 
-.debug_str      0x00000000   0x1cd0ea
- .debug_str     0x00000000     0xd1a3 Application\GeneratedCode\Application.o
-                               0xddea (size before relaxing)
- .debug_str     0x0000d1a3     0x557d Application\GeneratedCode\BezierClock.o
-                              0x136b5 (size before relaxing)
- .debug_str     0x00012720     0x4406 Application\GeneratedCode\Core.o
-                              0x146d4 (size before relaxing)
- .debug_str     0x00016b26      0xa74 Application\GeneratedCode\DriverInterfce.o
-                              0x11edd (size before relaxing)
- .debug_str     0x0001759a      0xea7 Application\GeneratedCode\Effects.o
-                               0xfa7a (size before relaxing)
- .debug_str     0x00018441      0x98b Application\GeneratedCode\Graphics.o
-                               0xd75c (size before relaxing)
- .debug_str     0x00018dcc      0x642 Application\GeneratedCode\Resources.o
-                               0xc7f5 (size before relaxing)
- .debug_str     0x0001940e      0x8cf Application\GeneratedCode\SetSpeed.o
-                              0x1040a (size before relaxing)
- .debug_str     0x00019cdd       0x68 Application\GeneratedCode\Templates.o
-                               0xbf0c (size before relaxing)
- .debug_str     0x00019d45      0x75c Application\GeneratedCode\Views.o
-                              0x10499 (size before relaxing)
- .debug_str     0x0001a4a1     0x1751 Application\GeneratedCode\WidgetSet.o
-                              0x14ba0 (size before relaxing)
- .debug_str     0x0001bbf2   0x19757c Application\Source\BFFT_CAN.o
-                             0x19d1cf (size before relaxing)
- .debug_str     0x001b316e       0x54 Application\Source\BFFT_SystemStatusLED.o
-                             0x19c784 (size before relaxing)
- .debug_str     0x001b31c2      0x1a1 Application\Source\DeviceDriver.o
-                               0xde17 (size before relaxing)
- .debug_str     0x001b3363      0x620 Application\Source\ewmain.o
-                               0xfce0 (size before relaxing)
- .debug_str     0x001b3983      0x2f6 Application\Source\fdcan.o
-                             0x1991b1 (size before relaxing)
- .debug_str     0x001b3c79       0x27 Application\Source\gpio.o
-                             0x198ca7 (size before relaxing)
- .debug_str     0x001b3ca0     0x5c21 Application\Source\main.o
-                             0x1a2cf9 (size before relaxing)
- .debug_str     0x001b98c1      0x7bc PlatformPackage\RGB565\ewextgfx.o
-                             0x1a2189 (size before relaxing)
- .debug_str     0x001ba07d      0x389 PlatformPackage\RTE\ewextrte.o
-                               0x9fd1 (size before relaxing)
- .debug_str     0x001ba406     0x1e94 TargetSpecific\Drivers\ft5336.o
-                               0x57d8 (size before relaxing)
- .debug_str     0x001bc29a      0x3db TargetSpecific\Drivers\ft5336_reg.o
-                               0x5209 (size before relaxing)
- .debug_str     0x001bc675      0xa8d TargetSpecific\ew_bsp_clock.o
-                             0x19a65b (size before relaxing)
- .debug_str     0x001bd102      0x74c TargetSpecific\ew_bsp_console.o
-                             0x19a5d6 (size before relaxing)
- .debug_str     0x001bd84e      0xc8c TargetSpecific\ew_bsp_display.o
-                             0x1a2cb1 (size before relaxing)
- .debug_str     0x001be4da       0xad TargetSpecific\ew_bsp_event.o
-                             0x19f2a2 (size before relaxing)
- .debug_str     0x001be587      0x3e0 TargetSpecific\ew_bsp_graphics.o
-                             0x19fa06 (size before relaxing)
- .debug_str     0x001be967       0xfd TargetSpecific\ew_bsp_inout.o
-                             0x19a44d (size before relaxing)
- .debug_str     0x001bea64     0x2cc0 TargetSpecific\ew_bsp_system.o
-                             0x19cd63 (size before relaxing)
- .debug_str     0x001c1724      0x64b TargetSpecific\ew_bsp_touch.o
-                             0x19f765 (size before relaxing)
- .debug_str     0x001c1d6f       0xff TargetSpecific\stm32h7xx_it.o
-                             0x1a1b34 (size before relaxing)
- .debug_str     0x001c1e6e      0x11d TargetSpecific\system_stm32h7xx.o
-                             0x198cdb (size before relaxing)
- .debug_str     0x001c1f8b      0x4ea ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
-                             0x19a5f9 (size before relaxing)
- .debug_str     0x001c2475      0x2fc ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
-                             0x1993dd (size before relaxing)
- .debug_str     0x001c2771      0x270 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery.o
-                             0x199fea (size before relaxing)
- .debug_str     0x001c29e1      0x4d7 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
-                             0x199de8 (size before relaxing)
- .debug_str     0x001c2eb8      0x1a6 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_qspi.o
-                             0x19c2d2 (size before relaxing)
- .debug_str     0x001c305e      0x113 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_sdram.o
-                             0x19a4de (size before relaxing)
- .debug_str     0x001c3171      0x987 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
-                             0x199eeb (size before relaxing)
- .debug_str     0x001c3af8      0x287 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_cortex.o
-                             0x199745 (size before relaxing)
- .debug_str     0x001c3d7f      0x31f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma2d.o
-                             0x19915e (size before relaxing)
- .debug_str     0x001c409e     0x1a00 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_fdcan.o
-                             0x19aa6b (size before relaxing)
- .debug_str     0x001c5a9e      0x1d2 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_gpio.o
-                             0x198f11 (size before relaxing)
- .debug_str     0x001c5c70      0xd8c ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c.o
-                             0x199d7e (size before relaxing)
- .debug_str     0x001c69fc       0xdf ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c_ex.o
-                             0x1991d6 (size before relaxing)
- .debug_str     0x001c6adb      0x421 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_ltdc.o
-                             0x199051 (size before relaxing)
- .debug_str     0x001c6efc      0x4ca ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_mdma.o
-                             0x1990ea (size before relaxing)
- .debug_str     0x001c73c6      0x688 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr_ex.o
-                             0x19932f (size before relaxing)
- .debug_str     0x001c7a4e      0x4f2 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_qspi.o
-                             0x1994bd (size before relaxing)
- .debug_str     0x001c7f40      0x376 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc.o
-                             0x199171 (size before relaxing)
- .debug_str     0x001c82b6      0x676 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.o
-                             0x199688 (size before relaxing)
- .debug_str     0x001c892c      0x215 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc.o
-                             0x198f7f (size before relaxing)
- .debug_str     0x001c8b41      0x381 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_sdram.o
-                             0x199239 (size before relaxing)
- .debug_str     0x001c8ec2      0x976 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o
-                             0x199b6f (size before relaxing)
- .debug_str     0x001c9838      0x76f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_ll_fmc.o
-                             0x199344 (size before relaxing)
- .debug_str     0x001c9fa7      0xb3b ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
-                               0xd976 (size before relaxing)
- .debug_str     0x001caae2      0x163 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
-                               0xa353 (size before relaxing)
- .debug_str     0x001cac45      0x7e2 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.o
-                               0x7e99 (size before relaxing)
- .debug_str     0x001cb427      0x2b3 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
-                               0xab65 (size before relaxing)
- .debug_str     0x001cb6da      0x7e1 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
-                               0xbbf4 (size before relaxing)
- .debug_str     0x001cbebb     0x122f ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
-                               0xc989 (size before relaxing)
+.debug_str      0x00000000   0x1cd101
+ .debug_str     0x00000000     0xd1ba Application\GeneratedCode\Application.o
+                               0xde01 (size before relaxing)
+ .debug_str     0x0000d1ba     0x557d Application\GeneratedCode\BezierClock.o
+                              0x136cc (size before relaxing)
+ .debug_str     0x00012737     0x4406 Application\GeneratedCode\Core.o
+                              0x146eb (size before relaxing)
+ .debug_str     0x00016b3d      0xa74 Application\GeneratedCode\DriverInterfce.o
+                              0x11ef4 (size before relaxing)
+ .debug_str     0x000175b1      0xea7 Application\GeneratedCode\Effects.o
+                               0xfa91 (size before relaxing)
+ .debug_str     0x00018458      0x98b Application\GeneratedCode\Graphics.o
+                               0xd773 (size before relaxing)
+ .debug_str     0x00018de3      0x642 Application\GeneratedCode\Resources.o
+                               0xc80c (size before relaxing)
+ .debug_str     0x00019425      0x8cf Application\GeneratedCode\SetSpeed.o
+                              0x10421 (size before relaxing)
+ .debug_str     0x00019cf4       0x68 Application\GeneratedCode\Templates.o
+                               0xbf23 (size before relaxing)
+ .debug_str     0x00019d5c      0x75c Application\GeneratedCode\Views.o
+                              0x104b0 (size before relaxing)
+ .debug_str     0x0001a4b8     0x1751 Application\GeneratedCode\WidgetSet.o
+                              0x14bb7 (size before relaxing)
+ .debug_str     0x0001bc09   0x19757c Application\Source\BFFT_CAN.o
+                             0x19d1e6 (size before relaxing)
+ .debug_str     0x001b3185       0x54 Application\Source\BFFT_SystemStatusLED.o
+                             0x19c79b (size before relaxing)
+ .debug_str     0x001b31d9      0x1a1 Application\Source\DeviceDriver.o
+                               0xde2e (size before relaxing)
+ .debug_str     0x001b337a      0x620 Application\Source\ewmain.o
+                               0xfcf7 (size before relaxing)
+ .debug_str     0x001b399a      0x2f6 Application\Source\fdcan.o
+                             0x1991c8 (size before relaxing)
+ .debug_str     0x001b3c90       0x27 Application\Source\gpio.o
+                             0x198cbe (size before relaxing)
+ .debug_str     0x001b3cb7     0x5c21 Application\Source\main.o
+                             0x1a2d10 (size before relaxing)
+ .debug_str     0x001b98d8      0x7bc PlatformPackage\RGB565\ewextgfx.o
+                             0x1a21a0 (size before relaxing)
+ .debug_str     0x001ba094      0x389 PlatformPackage\RTE\ewextrte.o
+                               0x9fe8 (size before relaxing)
+ .debug_str     0x001ba41d     0x1e94 TargetSpecific\Drivers\ft5336.o
+                               0x57ef (size before relaxing)
+ .debug_str     0x001bc2b1      0x3db TargetSpecific\Drivers\ft5336_reg.o
+                               0x5220 (size before relaxing)
+ .debug_str     0x001bc68c      0xa8d TargetSpecific\ew_bsp_clock.o
+                             0x19a672 (size before relaxing)
+ .debug_str     0x001bd119      0x74c TargetSpecific\ew_bsp_console.o
+                             0x19a5ed (size before relaxing)
+ .debug_str     0x001bd865      0xc8c TargetSpecific\ew_bsp_display.o
+                             0x1a2cc8 (size before relaxing)
+ .debug_str     0x001be4f1       0xad TargetSpecific\ew_bsp_event.o
+                             0x19f2b9 (size before relaxing)
+ .debug_str     0x001be59e      0x3e0 TargetSpecific\ew_bsp_graphics.o
+                             0x19fa1d (size before relaxing)
+ .debug_str     0x001be97e       0xfd TargetSpecific\ew_bsp_inout.o
+                             0x19a464 (size before relaxing)
+ .debug_str     0x001bea7b     0x2cc0 TargetSpecific\ew_bsp_system.o
+                             0x19cd7a (size before relaxing)
+ .debug_str     0x001c173b      0x64b TargetSpecific\ew_bsp_touch.o
+                             0x19f77c (size before relaxing)
+ .debug_str     0x001c1d86       0xff TargetSpecific\stm32h7xx_it.o
+                             0x1a1b4b (size before relaxing)
+ .debug_str     0x001c1e85      0x11d TargetSpecific\system_stm32h7xx.o
+                             0x198cf2 (size before relaxing)
+ .debug_str     0x001c1fa2      0x4ea ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
+                             0x19a610 (size before relaxing)
+ .debug_str     0x001c248c      0x2fc ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
+                             0x1993f4 (size before relaxing)
+ .debug_str     0x001c2788      0x270 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery.o
+                             0x19a001 (size before relaxing)
+ .debug_str     0x001c29f8      0x4d7 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
+                             0x199dff (size before relaxing)
+ .debug_str     0x001c2ecf      0x1a6 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_qspi.o
+                             0x19c2e9 (size before relaxing)
+ .debug_str     0x001c3075      0x113 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_sdram.o
+                             0x19a4f5 (size before relaxing)
+ .debug_str     0x001c3188      0x987 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
+                             0x199f02 (size before relaxing)
+ .debug_str     0x001c3b0f      0x287 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_cortex.o
+                             0x19975c (size before relaxing)
+ .debug_str     0x001c3d96      0x31f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma2d.o
+                             0x199175 (size before relaxing)
+ .debug_str     0x001c40b5     0x1a00 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_fdcan.o
+                             0x19aa82 (size before relaxing)
+ .debug_str     0x001c5ab5      0x1d2 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_gpio.o
+                             0x198f28 (size before relaxing)
+ .debug_str     0x001c5c87      0xd8c ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c.o
+                             0x199d95 (size before relaxing)
+ .debug_str     0x001c6a13       0xdf ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c_ex.o
+                             0x1991ed (size before relaxing)
+ .debug_str     0x001c6af2      0x421 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_ltdc.o
+                             0x199068 (size before relaxing)
+ .debug_str     0x001c6f13      0x4ca ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_mdma.o
+                             0x199101 (size before relaxing)
+ .debug_str     0x001c73dd      0x688 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr_ex.o
+                             0x199346 (size before relaxing)
+ .debug_str     0x001c7a65      0x4f2 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_qspi.o
+                             0x1994d4 (size before relaxing)
+ .debug_str     0x001c7f57      0x376 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc.o
+                             0x199188 (size before relaxing)
+ .debug_str     0x001c82cd      0x676 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.o
+                             0x19969f (size before relaxing)
+ .debug_str     0x001c8943      0x215 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc.o
+                             0x198f96 (size before relaxing)
+ .debug_str     0x001c8b58      0x381 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_sdram.o
+                             0x199250 (size before relaxing)
+ .debug_str     0x001c8ed9      0x976 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o
+                             0x199b86 (size before relaxing)
+ .debug_str     0x001c984f      0x76f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_ll_fmc.o
+                             0x19935b (size before relaxing)
+ .debug_str     0x001c9fbe      0xb3b ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
+                               0xd98d (size before relaxing)
+ .debug_str     0x001caaf9      0x163 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
+                               0xa36a (size before relaxing)
+ .debug_str     0x001cac5c      0x7e2 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.o
+                               0x7eb0 (size before relaxing)
+ .debug_str     0x001cb43e      0x2b3 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
+                               0xab7c (size before relaxing)
+ .debug_str     0x001cb6f1      0x7e1 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
+                               0xbc0b (size before relaxing)
+ .debug_str     0x001cbed2     0x122f ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
+                               0xc9a0 (size before relaxing)
 
 .comment        0x00000000       0xf2
  .comment       0x00000000       0x7c Application\GeneratedCode\Application.o
@@ -17058,28 +17059,28 @@ OUTPUT(EmbeddedWizard-STM32H745-Discovery.elf elf32-littlearm)
  .comment       0x0000007c       0x7d ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
  .comment       0x0000007c       0x7d ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
  .comment       0x0000007c       0x7d ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
- .comment       0x0000007c       0x76 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextpxl_RGB565.o)
+ .comment       0x0000007c       0x76 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextpxl_RGB565.o)
                                  0x77 (size before relaxing)
- .comment       0x000000f2       0x77 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o)
- .comment       0x000000f2       0x77 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxattrtext.o)
- .comment       0x000000f2       0x77 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxbidi.o)
- .comment       0x000000f2       0x77 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxcore.o)
- .comment       0x000000f2       0x77 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxdriver.o)
- .comment       0x000000f2       0x77 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxtasks.o)
- .comment       0x000000f2       0x77 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextbmp_RGB565.o)
- .comment       0x000000f2       0x77 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextfnt.o)
- .comment       0x000000f2       0x77 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewcolor.o)
- .comment       0x000000f2       0x77 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewdebug.o)
- .comment       0x000000f2       0x77 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewheap.o)
- .comment       0x000000f2       0x77 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewobject.o)
- .comment       0x000000f2       0x77 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewpoint.o)
- .comment       0x000000f2       0x77 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewrect.o)
- .comment       0x000000f2       0x77 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewref.o)
- .comment       0x000000f2       0x77 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewresource.o)
- .comment       0x000000f2       0x77 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewscalars.o)
- .comment       0x000000f2       0x77 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewslot.o)
- .comment       0x000000f2       0x77 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewstring.o)
- .comment       0x000000f2       0x77 C:/Users/maanm/Desktop/fft/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewtimer.o)
+ .comment       0x000000f2       0x77 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfx.o)
+ .comment       0x000000f2       0x77 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxattrtext.o)
+ .comment       0x000000f2       0x77 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxbidi.o)
+ .comment       0x000000f2       0x77 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxcore.o)
+ .comment       0x000000f2       0x77 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxdriver.o)
+ .comment       0x000000f2       0x77 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewgfxtasks.o)
+ .comment       0x000000f2       0x77 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextbmp_RGB565.o)
+ .comment       0x000000f2       0x77 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RGB565\libewgfx-m7-gcc.a(ewextfnt.o)
+ .comment       0x000000f2       0x77 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewcolor.o)
+ .comment       0x000000f2       0x77 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewdebug.o)
+ .comment       0x000000f2       0x77 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewheap.o)
+ .comment       0x000000f2       0x77 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewobject.o)
+ .comment       0x000000f2       0x77 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewpoint.o)
+ .comment       0x000000f2       0x77 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewrect.o)
+ .comment       0x000000f2       0x77 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewref.o)
+ .comment       0x000000f2       0x77 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewresource.o)
+ .comment       0x000000f2       0x77 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewscalars.o)
+ .comment       0x000000f2       0x77 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewslot.o)
+ .comment       0x000000f2       0x77 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewstring.o)
+ .comment       0x000000f2       0x77 C:/Users/maanm/Documents/Embedded Wizard Projects/bfft_driver_interface_HW_library/Application/Project/TrueSTUDIO/STM32H745-Discovery/../../../../PlatformPackage/RTE\libewrte-m7-gcc.a(ewtimer.o)
 
 .debug_frame    0x00000000     0xf878
  .debug_frame   0x00000000       0x78 Application\GeneratedCode\Application.o
