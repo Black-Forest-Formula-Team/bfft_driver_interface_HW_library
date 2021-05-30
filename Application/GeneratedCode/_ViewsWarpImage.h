@@ -161,9 +161,6 @@ EW_DEFINE_METHODS( ViewsWarpImage, ViewsWarpView )
   EW_METHOD( OnSetPoint3,       void )( ViewsWarpView _this, XPoint value )
   EW_METHOD( OnSetPoint2,       void )( ViewsWarpView _this, XPoint value )
   EW_METHOD( OnSetPoint1,       void )( ViewsWarpView _this, XPoint value )
-  EW_METHOD( update,            void )( ViewsWarpView _this, XObject sender )
-  EW_METHOD( RotateAndScale,    void )( ViewsWarpView _this, XPoint aDstPos, XFloat 
-    aAngle, XFloat aScaleX, XFloat aScaleY )
 EW_END_OF_METHODS( ViewsWarpImage )
 
 /* The method Draw() is invoked automatically if parts of the view should be redrawn 
@@ -202,6 +199,9 @@ void ViewsWarpImage_timerSlot( ViewsWarpImage _this, XObject sender );
 
 /* 'C' function for method : 'Views::WarpImage.OnSetAnimated()' */
 void ViewsWarpImage_OnSetAnimated( ViewsWarpImage _this, XBool value );
+
+/* 'C' function for method : 'Views::WarpImage.OnSetColor()' */
+void ViewsWarpImage_OnSetColor( ViewsWarpImage _this, XColor value );
 
 /* 'C' function for method : 'Views::WarpImage.OnSetFrameNumber()' */
 void ViewsWarpImage_OnSetFrameNumber( ViewsWarpImage _this, XInt32 value );

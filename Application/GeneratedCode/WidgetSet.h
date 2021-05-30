@@ -42,6 +42,8 @@
   #error Wrong version of Embedded Wizard Graphics Engine.
 #endif
 
+#include "_WidgetSetGauge.h"
+#include "_WidgetSetGaugeConfig.h"
 #include "_WidgetSetHorizontalValueBar.h"
 #include "_WidgetSetHorizontalValueBarConfig.h"
 #include "_WidgetSetPushButton.h"
@@ -51,6 +53,12 @@
 #include "_WidgetSetVerticalSlider.h"
 #include "_WidgetSetVerticalSliderConfig.h"
 #include "_WidgetSetWidgetConfig.h"
+
+/* Bitmap resource : 'WidgetSet::GaugeNeedleMedium' */
+EW_DECLARE_BITMAP_RES( WidgetSetGaugeNeedleMedium )
+
+/* Bitmap resource : 'WidgetSet::GaugeTrackMedium' */
+EW_DECLARE_BITMAP_RES( WidgetSetGaugeTrackMedium )
 
 /* Bitmap resource : 'WidgetSet::HorizontalValueBarMedium' */
 EW_DECLARE_BITMAP_RES( WidgetSetHorizontalValueBarMedium )
@@ -65,10 +73,9 @@ EW_DECLARE_BITMAP_RES( WidgetSetVerticalSliderTrackMedium )
    bar' widget (WidgetSet::HorizontalValueBar) in its medium size variant. */
 EW_DECLARE_AUTOOBJECT( WidgetSetHorizontalValueBar_Medium, WidgetSetHorizontalValueBarConfig )
 
-/* This autoobject provides the default customization for the 'value display' widget 
-   (WidgetSet::ValueDisplay) in its medium size variant. Widgets using this configuration 
-   display the value and unit aligned at the right widget edge. */
-EW_DECLARE_AUTOOBJECT( WidgetSetValueDisplay_Medium, WidgetSetValueDisplayConfig )
+/* This autoobject provides the default customization for the 'analog gauge' widget 
+   (WidgetSet::Gauge) in its medium size variant. */
+EW_DECLARE_AUTOOBJECT( WidgetSetGauge_Medium, WidgetSetGaugeConfig )
 
 /* This autoobject provides the default customization for the 'vertical slider' 
    widget (WidgetSet::VerticalSlider) in its medium size variant. */

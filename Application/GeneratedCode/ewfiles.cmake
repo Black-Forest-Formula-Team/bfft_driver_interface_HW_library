@@ -6,11 +6,13 @@ set(EMWIFILES
 	"Graphics.c" 
 	"Resources.c" 
 	"Views.c" 
-	"Application.c" 
+	"GUI.c" 
 	"WidgetSet.c" 
 	"Templates.c" 
 	"SetSpeed.c" 
 	"SetRotaionalSpeed.c" 
 	"BezierClock.c" 
 	"Batterie.c" 
-	"DriverInterfce.c")
+	"DriverInterfce.c" 
+	"Dummy.c" 
+	"CAN.c")

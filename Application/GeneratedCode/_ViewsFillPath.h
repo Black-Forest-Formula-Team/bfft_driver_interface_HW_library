@@ -185,6 +185,9 @@ void ViewsFillPath_OnSetColor( ViewsFillPath _this, XColor value );
 /* 'C' function for method : 'Views::FillPath.OnSetOffset()' */
 void ViewsFillPath_OnSetOffset( ViewsFillPath _this, XPoint value );
 
+/* 'C' function for method : 'Views::FillPath.OnSetFillRule()' */
+void ViewsFillPath_OnSetFillRule( ViewsFillPath _this, XEnum value );
+
 /* 'C' function for method : 'Views::FillPath.OnSetPath()' */
 void ViewsFillPath_OnSetPath( ViewsFillPath _this, GraphicsPath value );
 

@@ -45,6 +45,7 @@
 #include "_GraphicsArcPath.h"
 #include "_GraphicsCanvas.h"
 #include "_GraphicsPath.h"
+#include "_GraphicsWarpMatrix.h"
 
 /* The definition Graphics::Edges enumerates the parts of a free scalable frame. 
    It is used to determine, which parts should be drawn. */

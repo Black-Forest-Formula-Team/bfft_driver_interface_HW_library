@@ -88,6 +88,12 @@ void GraphicsArcPath_OnSetEndAngle( GraphicsArcPath _this, XFloat value );
 /* 'C' function for method : 'Graphics::ArcPath.OnSetStartAngle()' */
 void GraphicsArcPath_OnSetStartAngle( GraphicsArcPath _this, XFloat value );
 
+/* 'C' function for method : 'Graphics::ArcPath.OnGetInnerRadius()' */
+XFloat GraphicsArcPath_OnGetInnerRadius( GraphicsArcPath _this );
+
+/* 'C' function for method : 'Graphics::ArcPath.OnSetInnerRadius()' */
+void GraphicsArcPath_OnSetInnerRadius( GraphicsArcPath _this, XFloat value );
+
 /* 'C' function for method : 'Graphics::ArcPath.OnSetRadiusY()' */
 void GraphicsArcPath_OnSetRadiusY( GraphicsArcPath _this, XFloat value );
 

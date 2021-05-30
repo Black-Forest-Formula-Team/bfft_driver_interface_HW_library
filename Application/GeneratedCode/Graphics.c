@@ -28,6 +28,7 @@
 #include "_GraphicsArcPath.h"
 #include "_GraphicsCanvas.h"
 #include "_GraphicsPath.h"
+#include "_GraphicsWarpMatrix.h"
 #include "_ResourcesBitmap.h"
 #include "_ResourcesFont.h"
 #include "Graphics.h"
@@ -889,6 +890,249 @@ EW_DEFINE_CLASS( GraphicsCanvas, ResourcesBitmap, OnDraw, OnDraw, InvalidArea, I
   GraphicsCanvas_Update,
 EW_END_OF_CLASS( GraphicsCanvas )
 
+/* Initializer for the class 'Graphics::WarpMatrix' */
+void GraphicsWarpMatrix__Init( GraphicsWarpMatrix _this, XObject aLink, XHandle aArg )
+{
+  /* At first initialize the super class ... */
+  XObject__Init( &_this->_Super, aLink, aArg );
+
+  /* Allow the Immediate Garbage Collection to evalute the members of this class. */
+  _this->_GCT = EW_CLASS_GCT( GraphicsWarpMatrix );
+
+  /* Setup the VMT pointer */
+  _this->_VMT = EW_CLASS( GraphicsWarpMatrix );
+
+  /* ... and initialize objects, variables, properties, etc. */
+  _this->isIdentity = 1;
+  _this->M11 = 1.000000f;
+  _this->M22 = 1.000000f;
+  _this->M33 = 1.000000f;
+  _this->M44 = 1.000000f;
+}
+
+/* Re-Initializer for the class 'Graphics::WarpMatrix' */
+void GraphicsWarpMatrix__ReInit( GraphicsWarpMatrix _this )
+{
+  /* At first re-initialize the super class ... */
+  XObject__ReInit( &_this->_Super );
+}
+
+/* Finalizer method for the class 'Graphics::WarpMatrix' */
+void GraphicsWarpMatrix__Done( GraphicsWarpMatrix _this )
+{
+  /* Finalize this class */
+  _this->_Super._VMT = EW_CLASS( XObject );
+
+  /* Don't forget to deinitialize the super class ... */
+  XObject__Done( &_this->_Super );
+}
+
+/* 'C' function for method : 'Graphics::WarpMatrix.CalculateZ()' */
+XBool GraphicsWarpMatrix_CalculateZ( GraphicsWarpMatrix _this, XFloat aX, XFloat 
+  aY )
+{
+  XFloat z = (( aX * _this->M31 ) + ( aY * _this->M32 )) + _this->M34;
+  XFloat w = (( aX * _this->M41 ) + ( aY * _this->M42 )) + _this->M44;
+
+  if (( w != 0.000000f ) && ( w != 1.000000f ))
+    z = z / w;
+
+  _this->Z = z;
+  return 1;
+}
+
+/* 'C' function for method : 'Graphics::WarpMatrix.Project()' */
+XBool GraphicsWarpMatrix_Project( GraphicsWarpMatrix _this, XFloat aX, XFloat aY )
+{
+  XFloat eyeDistance = _this->EyeDistance;
+  XFloat x;
+  XFloat y;
+  XFloat z;
+  XFloat w;
+  XFloat q;
+
+  if ( eyeDistance < 0.000000f )
+    return 0;
+
+  x = (( aX * _this->M11 ) + ( aY * _this->M12 )) + _this->M14;
+  y = (( aX * _this->M21 ) + ( aY * _this->M22 )) + _this->M24;
+  z = (( aX * _this->M31 ) + ( aY * _this->M32 )) + _this->M34;
+  w = (( aX * _this->M41 ) + ( aY * _this->M42 )) + _this->M44;
+  q = 1.000000f;
+
+  if (( w != 0.000000f ) && ( w != 1.000000f ))
+  {
+    x = x / w;
+    y = y / w;
+    z = z / w;
+  }
+
+  if ( eyeDistance != -z )
+    q = q / ( z + eyeDistance );
+
+  if ( eyeDistance != 0.000000f )
+    q = q * eyeDistance;
+
+  _this->X = x * q;
+  _this->Y = y * q;
+  _this->Z = z + eyeDistance;
+  return 1;
+}
+
+/* The method Rotate() applies the given angles to the matrix. This corresponds 
+   to the rotation of the source image around the X-, Y- and Z-axis. The angles 
+   are specified in degrees. The method returns 'this' object to the caller. */
+GraphicsWarpMatrix GraphicsWarpMatrix_Rotate( GraphicsWarpMatrix _this, XFloat aAngleX, 
+  XFloat aAngleY, XFloat aAngleZ )
+{
+  XFloat sinX = EwMathSin( aAngleX );
+  XFloat cosX = EwMathCos( aAngleX );
+  XFloat sinY = EwMathSin( aAngleY );
+  XFloat cosY = EwMathCos( aAngleY );
+  XFloat sinZ = EwMathSin( aAngleZ );
+  XFloat cosZ = EwMathCos( aAngleZ );
+  XFloat rotM11 = cosY * cosZ;
+  XFloat rotM21 = sinZ;
+  XFloat rotM31 = -sinY * cosZ;
+  XFloat rotM12 = (( -cosX * cosY ) * sinZ ) + ( sinX * sinY );
+  XFloat rotM22 = cosX * cosZ;
+  XFloat rotM32 = (( cosX * sinY ) * sinZ ) + ( sinX * cosY );
+  XFloat rotM13 = (( sinX * cosY ) * sinZ ) + ( cosX * sinY );
+  XFloat rotM23 = -sinX * cosZ;
+  XFloat rotM33 = (( -sinX * sinY ) * sinZ ) + ( cosX * cosY );
+  XFloat m11 = (( _this->M11 * rotM11 ) + ( _this->M12 * rotM21 )) + ( _this->M13 
+    * rotM31 );
+  XFloat m21 = (( _this->M21 * rotM11 ) + ( _this->M22 * rotM21 )) + ( _this->M23 
+    * rotM31 );
+  XFloat m31 = (( _this->M31 * rotM11 ) + ( _this->M32 * rotM21 )) + ( _this->M33 
+    * rotM31 );
+  XFloat m41 = (( _this->M41 * rotM11 ) + ( _this->M42 * rotM21 )) + ( _this->M43 
+    * rotM31 );
+  XFloat m12 = (( _this->M11 * rotM12 ) + ( _this->M12 * rotM22 )) + ( _this->M13 
+    * rotM32 );
+  XFloat m22 = (( _this->M21 * rotM12 ) + ( _this->M22 * rotM22 )) + ( _this->M23 
+    * rotM32 );
+  XFloat m32 = (( _this->M31 * rotM12 ) + ( _this->M32 * rotM22 )) + ( _this->M33 
+    * rotM32 );
+  XFloat m42 = (( _this->M41 * rotM12 ) + ( _this->M42 * rotM22 )) + ( _this->M43 
+    * rotM32 );
+  XFloat m13 = (( _this->M11 * rotM13 ) + ( _this->M12 * rotM23 )) + ( _this->M13 
+    * rotM33 );
+  XFloat m23 = (( _this->M21 * rotM13 ) + ( _this->M22 * rotM23 )) + ( _this->M23 
+    * rotM33 );
+  XFloat m33 = (( _this->M31 * rotM13 ) + ( _this->M32 * rotM23 )) + ( _this->M33 
+    * rotM33 );
+  XFloat m43 = (( _this->M41 * rotM13 ) + ( _this->M42 * rotM23 )) + ( _this->M43 
+    * rotM33 );
+
+  _this->M11 = m11;
+  _this->M12 = m12;
+  _this->M13 = m13;
+  _this->M21 = m21;
+  _this->M22 = m22;
+  _this->M23 = m23;
+  _this->M31 = m31;
+  _this->M32 = m32;
+  _this->M33 = m33;
+  _this->M41 = m41;
+  _this->M42 = m42;
+  _this->M43 = m43;
+  _this->isIdentity = 0;
+  return _this;
+}
+
+/* The method Translate() applies the given displacement to the matrix. This corresponds 
+   to the translation of the source image by the given values in the X-, Y- and 
+   Z-direction. The method returns 'this' object to the caller. */
+GraphicsWarpMatrix GraphicsWarpMatrix_Translate( GraphicsWarpMatrix _this, XFloat 
+  aDeltaX, XFloat aDeltaY, XFloat aDeltaZ )
+{
+  _this->M14 = (( _this->M14 + ( _this->M11 * aDeltaX )) + ( _this->M12 * aDeltaY )) 
+  + ( _this->M13 * aDeltaZ );
+  _this->M24 = (( _this->M24 + ( _this->M21 * aDeltaX )) + ( _this->M22 * aDeltaY )) 
+  + ( _this->M23 * aDeltaZ );
+  _this->M34 = (( _this->M34 + ( _this->M31 * aDeltaX )) + ( _this->M32 * aDeltaY )) 
+  + ( _this->M33 * aDeltaZ );
+  _this->M44 = (( _this->M44 + ( _this->M41 * aDeltaX )) + ( _this->M42 * aDeltaY )) 
+  + ( _this->M43 * aDeltaZ );
+  _this->isIdentity = 0;
+  return _this;
+}
+
+/* 'C' function for method : 'Graphics::WarpMatrix.DeriveFromQuad()' */
+GraphicsWarpMatrix GraphicsWarpMatrix_DeriveFromQuad( GraphicsWarpMatrix _this, 
+  XFloat aX1, XFloat aY1, XFloat aX2, XFloat aY2, XFloat aX3, XFloat aY3, XFloat 
+  aX4, XFloat aY4 )
+{
+  XFloat deltaX1 = aX2 - aX3;
+  XFloat deltaY1 = aY2 - aY3;
+  XFloat deltaX2 = aX4 - aX3;
+  XFloat deltaY2 = aY4 - aY3;
+  XFloat sumX = (( aX1 - aX2 ) + aX3 ) - aX4;
+  XFloat sumY = (( aY1 - aY2 ) + aY3 ) - aY4;
+  XFloat det = ( deltaX1 * deltaY2 ) - ( deltaY1 * deltaX2 );
+
+  if ( det == 0.000000f )
+    return 0;
+
+  _this->M31 = (( sumX * deltaY2 ) - ( sumY * deltaX2 )) / det;
+  _this->M32 = (( deltaX1 * sumY ) - ( deltaY1 * sumX )) / det;
+  _this->M33 = 0.000000f;
+  _this->M34 = 1.000000f;
+  _this->M11 = ( aX2 - aX1 ) + ( _this->M31 * aX2 );
+  _this->M12 = ( aX4 - aX1 ) + ( _this->M32 * aX4 );
+  _this->M13 = 0.000000f;
+  _this->M14 = aX1;
+  _this->M21 = ( aY2 - aY1 ) + ( _this->M31 * aY2 );
+  _this->M22 = ( aY4 - aY1 ) + ( _this->M32 * aY4 );
+  _this->M23 = 0.000000f;
+  _this->M24 = aY1;
+  _this->M41 = 0.000000f;
+  _this->M42 = 0.000000f;
+  _this->M43 = 0.000000f;
+  _this->M44 = 1.000000f;
+  _this->isIdentity = 0;
+  return _this;
+}
+
+/* The method Assign() copies the coefficients of the given aMatrix into the own 
+   coefficients. The method returns 'this' object to the caller. */
+GraphicsWarpMatrix GraphicsWarpMatrix_Assign( GraphicsWarpMatrix _this, GraphicsWarpMatrix 
+  aMatrix )
+{
+  if ( aMatrix == 0 )
+    return _this;
+
+  _this->M11 = aMatrix->M11;
+  _this->M12 = aMatrix->M12;
+  _this->M13 = aMatrix->M13;
+  _this->M14 = aMatrix->M14;
+  _this->M21 = aMatrix->M21;
+  _this->M22 = aMatrix->M22;
+  _this->M23 = aMatrix->M23;
+  _this->M24 = aMatrix->M24;
+  _this->M31 = aMatrix->M31;
+  _this->M32 = aMatrix->M32;
+  _this->M33 = aMatrix->M33;
+  _this->M34 = aMatrix->M34;
+  _this->M41 = aMatrix->M41;
+  _this->M42 = aMatrix->M42;
+  _this->M43 = aMatrix->M43;
+  _this->M44 = aMatrix->M44;
+  _this->isIdentity = aMatrix->isIdentity;
+  _this->EyeDistance = aMatrix->EyeDistance;
+  return _this;
+}
+
+/* Variants derived from the class : 'Graphics::WarpMatrix' */
+EW_DEFINE_CLASS_VARIANTS( GraphicsWarpMatrix )
+EW_END_OF_CLASS_VARIANTS( GraphicsWarpMatrix )
+
+/* Virtual Method Table (VMT) for the class : 'Graphics::WarpMatrix' */
+EW_DEFINE_CLASS( GraphicsWarpMatrix, XObject, _None, _None, _None, _None, _None, 
+                 _None, "Graphics::WarpMatrix" )
+EW_END_OF_CLASS( GraphicsWarpMatrix )
+
 /* Initializer for the class 'Graphics::Path' */
 void GraphicsPath__Init( GraphicsPath _this, XObject aLink, XHandle aArg )
 {
@@ -1636,6 +1880,28 @@ void GraphicsArcPath_OnSetStartAngle( GraphicsArcPath _this, XFloat value )
   _this->StartAngle = value;
 
   if (( _this->RadiusX > 0.000000f ) && ( _this->RadiusY > 0.000000f ))
+    EwPostSignal( EwNewSlot( _this, GraphicsArcPath_updatePath ), ((XObject)_this ));
+}
+
+/* 'C' function for method : 'Graphics::ArcPath.OnGetInnerRadius()' */
+XFloat GraphicsArcPath_OnGetInnerRadius( GraphicsArcPath _this )
+{
+  return _this->InnerRadiusX;
+}
+
+/* 'C' function for method : 'Graphics::ArcPath.OnSetInnerRadius()' */
+void GraphicsArcPath_OnSetInnerRadius( GraphicsArcPath _this, XFloat value )
+{
+  if (( value == _this->InnerRadiusX ) && ( value == _this->InnerRadiusY ))
+    return;
+
+  _this->InnerRadiusX = value;
+  _this->InnerRadiusY = value;
+
+  if (((( _this->StartAngle != _this->EndAngle ) && ( _this->RadiusX > 0.000000f )) 
+      && ( _this->RadiusY > 0.000000f )) && (((( _this->Style == GraphicsArcStylePie ) 
+      || ( _this->Style == GraphicsArcStylePieRoundedStart )) || ( _this->Style 
+      == GraphicsArcStylePieRoundedEnd )) || ( _this->Style == GraphicsArcStylePieRounded )))
     EwPostSignal( EwNewSlot( _this, GraphicsArcPath_updatePath ), ((XObject)_this ));
 }
 

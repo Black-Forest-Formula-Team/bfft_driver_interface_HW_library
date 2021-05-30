@@ -126,10 +126,6 @@ EW_END_OF_FIELDS( WidgetSetValueDisplayConfig )
 EW_DEFINE_METHODS( WidgetSetValueDisplayConfig, WidgetSetWidgetConfig )
 EW_END_OF_METHODS( WidgetSetValueDisplayConfig )
 
-/* 'C' function for method : 'WidgetSet::ValueDisplayConfig.OnSetValueMarginRight()' */
-void WidgetSetValueDisplayConfig_OnSetValueMarginRight( WidgetSetValueDisplayConfig _this, 
-  XInt32 value );
-
 /* 'C' function for method : 'WidgetSet::ValueDisplayConfig.OnSetValueMarginLeft()' */
 void WidgetSetValueDisplayConfig_OnSetValueMarginLeft( WidgetSetValueDisplayConfig _this, 
   XInt32 value );
@@ -141,10 +137,6 @@ void WidgetSetValueDisplayConfig_OnSetValueColorNegative( WidgetSetValueDisplayC
 /* 'C' function for method : 'WidgetSet::ValueDisplayConfig.OnSetValueColorPositive()' */
 void WidgetSetValueDisplayConfig_OnSetValueColorPositive( WidgetSetValueDisplayConfig _this, 
   XColor value );
-
-/* 'C' function for method : 'WidgetSet::ValueDisplayConfig.OnSetValueAlignment()' */
-void WidgetSetValueDisplayConfig_OnSetValueAlignment( WidgetSetValueDisplayConfig _this, 
-  XSet value );
 
 /* 'C' function for method : 'WidgetSet::ValueDisplayConfig.OnSetValueFont()' */
 void WidgetSetValueDisplayConfig_OnSetValueFont( WidgetSetValueDisplayConfig _this, 
@@ -168,10 +160,6 @@ void WidgetSetValueDisplayConfig_OnSetUnitFont( WidgetSetValueDisplayConfig _thi
 
 /* 'C' function for method : 'WidgetSet::ValueDisplayConfig.OnSetFormatDecimalSign()' */
 void WidgetSetValueDisplayConfig_OnSetFormatDecimalSign( WidgetSetValueDisplayConfig _this, 
-  XString value );
-
-/* 'C' function for method : 'WidgetSet::ValueDisplayConfig.OnSetFormatPlusSign()' */
-void WidgetSetValueDisplayConfig_OnSetFormatPlusSign( WidgetSetValueDisplayConfig _this, 
   XString value );
 
 /* 'C' function for method : 'WidgetSet::ValueDisplayConfig.OnSetLayout()' */

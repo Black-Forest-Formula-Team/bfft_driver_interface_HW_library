@@ -31,11 +31,17 @@
 #include "_CoreTimer.h"
 #include "_CoreView.h"
 #include "_EffectsFloatEffect.h"
+#include "_GraphicsArcPath.h"
+#include "_GraphicsPath.h"
+#include "_GraphicsWarpMatrix.h"
 #include "_ResourcesBitmap.h"
-#include "_ResourcesFont.h"
+#include "_ViewsFillPath.h"
 #include "_ViewsFrame.h"
 #include "_ViewsImage.h"
 #include "_ViewsText.h"
+#include "_ViewsWarpImage.h"
+#include "_WidgetSetGauge.h"
+#include "_WidgetSetGaugeConfig.h"
 #include "_WidgetSetHorizontalValueBar.h"
 #include "_WidgetSetHorizontalValueBarConfig.h"
 #include "_WidgetSetPushButton.h"
@@ -48,7 +54,6 @@
 #include "Core.h"
 #include "Effects.h"
 #include "Graphics.h"
-#include "Resources.h"
 #include "Views.h"
 #include "WidgetSet.h"
 
@@ -61,25 +66,39 @@ static const unsigned int _StringsDefault0[] =
 
 /* Constant values used in this 'C' module only. */
 static const XPoint _Const0000 = { 45, 30 };
-static const XColor _Const0001 = { 0xA7, 0xA9, 0xAC, 0xFF };
-static const XColor _Const0002 = { 0xC4, 0xC6, 0xC9, 0xFF };
-static const XPoint _Const0003 = { 60, 32 };
-static const XPoint _Const0004 = { 39, 45 };
-static const XColor _Const0005 = { 0x00, 0x00, 0x00, 0xFF };
-static const XStringRes _Const0006 = { _StringsDefault0, 0x0002 };
-static const XStringRes _Const0007 = { _StringsDefault0, 0x0006 };
-static const XColor _Const0008 = { 0xFF, 0xFF, 0xFF, 0xFF };
-static const XRect _Const0009 = {{ 0, 0 }, { 200, 30 }};
-static const XRect _Const000A = {{ 0, 0 }, { 200, 50 }};
-static const XPoint _Const000B = { 0, 0 };
-static const XRect _Const000C = {{ 0, 0 }, { 50, 200 }};
-static const XPoint _Const000D = { 0, 200 };
-static const XPoint _Const000E = { 50, 200 };
-static const XPoint _Const000F = { 50, 0 };
-static const XRect _Const0010 = {{ 0, 0 }, { 150, 50 }};
-static const XPoint _Const0011 = { 0, 50 };
-static const XPoint _Const0012 = { 150, 50 };
-static const XPoint _Const0013 = { 150, 0 };
+static const XColor _Const0001 = { 0xB2, 0xD3, 0x39, 0xFF };
+static const XPoint _Const0002 = { -39, 12 };
+static const XPoint _Const0003 = { 0, 10 };
+static const XPoint _Const0004 = { 171, 151 };
+static const XPoint _Const0005 = { 39, 45 };
+static const XColor _Const0006 = { 0x00, 0x00, 0x00, 0xFF };
+static const XStringRes _Const0007 = { _StringsDefault0, 0x0002 };
+static const XStringRes _Const0008 = { _StringsDefault0, 0x0006 };
+static const XColor _Const0009 = { 0xFF, 0xFF, 0xFF, 0xFF };
+static const XRect _Const000A = {{ 0, 0 }, { 200, 30 }};
+static const XRect _Const000B = {{ 0, 0 }, { 200, 50 }};
+static const XPoint _Const000C = { 0, 0 };
+static const XRect _Const000D = {{ 0, 0 }, { 120, 120 }};
+static const XRect _Const000E = {{ 0, 0 }, { 50, 200 }};
+static const XPoint _Const000F = { 0, 200 };
+static const XPoint _Const0010 = { 50, 200 };
+static const XPoint _Const0011 = { 50, 0 };
+static const XRect _Const0012 = {{ 0, 0 }, { 150, 50 }};
+static const XPoint _Const0013 = { 0, 50 };
+static const XPoint _Const0014 = { 150, 50 };
+static const XPoint _Const0015 = { 150, 0 };
+
+/* Include a file containing the bitmap resource : 'WidgetSet::GaugeNeedleMedium' */
+#include "_WidgetSetGaugeNeedleMedium.h"
+
+/* Table with links to derived variants of the bitmap resource : 'WidgetSet::GaugeNeedleMedium' */
+EW_RES_WITHOUT_VARIANTS( WidgetSetGaugeNeedleMedium )
+
+/* Include a file containing the bitmap resource : 'WidgetSet::GaugeTrackMedium' */
+#include "_WidgetSetGaugeTrackMedium.h"
+
+/* Table with links to derived variants of the bitmap resource : 'WidgetSet::GaugeTrackMedium' */
+EW_RES_WITHOUT_VARIANTS( WidgetSetGaugeTrackMedium )
 
 /* Include a file containing the bitmap resource : 'WidgetSet::HorizontalValueBarMedium' */
 #include "_WidgetSetHorizontalValueBarMedium.h"
@@ -119,35 +138,33 @@ void WidgetSetHorizontalValueBar_Medium__Init( WidgetSetHorizontalValueBarConfig
 EW_DEFINE_AUTOOBJECT_VARIANTS( WidgetSetHorizontalValueBar_Medium )
 EW_END_OF_AUTOOBJECT_VARIANTS( WidgetSetHorizontalValueBar_Medium )
 
-/* This autoobject provides the default customization for the 'value display' widget 
-   (WidgetSet::ValueDisplay) in its medium size variant. Widgets using this configuration 
-   display the value and unit aligned at the right widget edge. */
-EW_DEFINE_AUTOOBJECT( WidgetSetValueDisplay_Medium, WidgetSetValueDisplayConfig )
+/* This autoobject provides the default customization for the 'analog gauge' widget 
+   (WidgetSet::Gauge) in its medium size variant. */
+EW_DEFINE_AUTOOBJECT( WidgetSetGauge_Medium, WidgetSetGaugeConfig )
 
-/* Initializer for the auto object 'WidgetSet::ValueDisplay_Medium' */
-void WidgetSetValueDisplay_Medium__Init( WidgetSetValueDisplayConfig _this )
+/* Initializer for the auto object 'WidgetSet::Gauge_Medium' */
+void WidgetSetGauge_Medium__Init( WidgetSetGaugeConfig _this )
 {
-  WidgetSetValueDisplayConfig_OnSetValueMarginRight( _this, 10 );
-  WidgetSetValueDisplayConfig_OnSetValueColorNegative( _this, _Const0001 );
-  WidgetSetValueDisplayConfig_OnSetValueColorPositive( _this, _Const0001 );
-  WidgetSetValueDisplayConfig_OnSetValueAlignment( _this, ViewsTextAlignmentAlignHorzRight 
-  | ViewsTextAlignmentAlignVertCenter );
-  WidgetSetValueDisplayConfig_OnSetValueFont( _this, EwLoadResource( &ResourcesFontLarge, 
-  ResourcesFont ));
-  WidgetSetValueDisplayConfig_OnSetUnitColorNegative( _this, _Const0002 );
-  WidgetSetValueDisplayConfig_OnSetUnitColorPositive( _this, _Const0002 );
-  WidgetSetValueDisplayConfig_OnSetUnitAlignment( _this, ViewsTextAlignmentAlignHorzRight 
-  | ViewsTextAlignmentAlignVertCenter );
-  WidgetSetValueDisplayConfig_OnSetUnitFont( _this, EwLoadResource( &ResourcesFontLarge, 
-  ResourcesFont ));
-  WidgetSetValueDisplayConfig_OnSetFormatPlusSign( _this, 0 );
-  WidgetSetValueDisplayConfig_OnSetLayout( _this, WidgetSetValueDisplayLayoutAlignValueLeftToUnit );
-  WidgetSetValueDisplayConfig_OnSetWidgetMinSize( _this, _Const0003 );
+  WidgetSetGaugeConfig_OnSetSwingElastic( _this, 0 );
+  WidgetSetGaugeConfig_OnSetSwingDuration( _this, 300 );
+  WidgetSetGaugeConfig_OnSetTrackLeftRoundedStart( _this, 1 );
+  WidgetSetGaugeConfig_OnSetTrackLeftColor( _this, _Const0001 );
+  WidgetSetGaugeConfig_OnSetTrackLeftThickness( _this, 21.000000f );
+  WidgetSetGaugeConfig_OnSetTrackLeftRadius( _this, 70.000000f );
+  WidgetSetGaugeConfig_OnSetNeedleMaxAngle( _this, -45.000000f );
+  WidgetSetGaugeConfig_OnSetNeedleMinAngle( _this, 225.000000f );
+  WidgetSetGaugeConfig_OnSetNeedlePivot( _this, _Const0002 );
+  WidgetSetGaugeConfig_OnSetNeedle( _this, EwLoadResource( &WidgetSetGaugeNeedleMedium, 
+  ResourcesBitmap ));
+  WidgetSetGaugeConfig_OnSetCenterOffset( _this, _Const0003 );
+  WidgetSetGaugeConfig_OnSetScale( _this, EwLoadResource( &WidgetSetGaugeTrackMedium, 
+  ResourcesBitmap ));
+  WidgetSetGaugeConfig_OnSetWidgetMinSize( _this, _Const0004 );
 }
 
-/* Table with links to derived variants of the auto object : 'WidgetSet::ValueDisplay_Medium' */
-EW_DEFINE_AUTOOBJECT_VARIANTS( WidgetSetValueDisplay_Medium )
-EW_END_OF_AUTOOBJECT_VARIANTS( WidgetSetValueDisplay_Medium )
+/* Table with links to derived variants of the auto object : 'WidgetSet::Gauge_Medium' */
+EW_DEFINE_AUTOOBJECT_VARIANTS( WidgetSetGauge_Medium )
+EW_END_OF_AUTOOBJECT_VARIANTS( WidgetSetGauge_Medium )
 
 /* This autoobject provides the default customization for the 'vertical slider' 
    widget (WidgetSet::VerticalSlider) in its medium size variant. */
@@ -196,7 +213,7 @@ void WidgetSetVerticalSlider_Medium__Init( WidgetSetVerticalSliderConfig _this )
   &WidgetSetVerticalSliderTrackMedium, ResourcesBitmap ));
   WidgetSetVerticalSliderConfig_OnSetTrackBelowDefault( _this, EwLoadResource( &WidgetSetVerticalSliderTrackMedium, 
   ResourcesBitmap ));
-  WidgetSetVerticalSliderConfig_OnSetWidgetMinSize( _this, _Const0004 );
+  WidgetSetVerticalSliderConfig_OnSetWidgetMinSize( _this, _Const0005 );
 }
 
 /* Table with links to derived variants of the auto object : 'WidgetSet::VerticalSlider_Medium' */
@@ -216,14 +233,14 @@ void WidgetSetValueDisplayConfig__Init( WidgetSetValueDisplayConfig _this, XObje
   _this->_VMT = EW_CLASS( WidgetSetValueDisplayConfig );
 
   /* ... and initialize objects, variables, properties, etc. */
-  _this->ValueColorNegative = _Const0005;
-  _this->ValueColorPositive = _Const0005;
+  _this->ValueColorNegative = _Const0006;
+  _this->ValueColorPositive = _Const0006;
   _this->ValueAlignment = ViewsTextAlignmentAlignHorzCenter | ViewsTextAlignmentAlignVertCenter;
-  _this->UnitColorNegative = _Const0005;
-  _this->UnitColorPositive = _Const0005;
+  _this->UnitColorNegative = _Const0006;
+  _this->UnitColorPositive = _Const0006;
   _this->UnitAlignment = ViewsTextAlignmentAlignHorzCenter | ViewsTextAlignmentAlignVertCenter;
-  _this->FormatDecimalSign = EwShareString( EwLoadString( &_Const0006 ));
-  _this->FormatMinusSign = EwShareString( EwLoadString( &_Const0007 ));
+  _this->FormatDecimalSign = EwShareString( EwLoadString( &_Const0007 ));
+  _this->FormatMinusSign = EwShareString( EwLoadString( &_Const0008 ));
   _this->Layout = WidgetSetValueDisplayLayoutUnitAndValueAreIndependent;
 }
 
@@ -242,17 +259,6 @@ void WidgetSetValueDisplayConfig__Done( WidgetSetValueDisplayConfig _this )
 
   /* Don't forget to deinitialize the super class ... */
   WidgetSetWidgetConfig__Done( &_this->_Super );
-}
-
-/* 'C' function for method : 'WidgetSet::ValueDisplayConfig.OnSetValueMarginRight()' */
-void WidgetSetValueDisplayConfig_OnSetValueMarginRight( WidgetSetValueDisplayConfig _this, 
-  XInt32 value )
-{
-  if ( _this->ValueMarginRight == value )
-    return;
-
-  _this->ValueMarginRight = value;
-  EwPostSignal( EwNewSlot( _this, WidgetSetWidgetConfig_onInvalidate ), ((XObject)_this ));
 }
 
 /* 'C' function for method : 'WidgetSet::ValueDisplayConfig.OnSetValueMarginLeft()' */
@@ -285,17 +291,6 @@ void WidgetSetValueDisplayConfig_OnSetValueColorPositive( WidgetSetValueDisplayC
     return;
 
   _this->ValueColorPositive = value;
-  EwPostSignal( EwNewSlot( _this, WidgetSetWidgetConfig_onInvalidate ), ((XObject)_this ));
-}
-
-/* 'C' function for method : 'WidgetSet::ValueDisplayConfig.OnSetValueAlignment()' */
-void WidgetSetValueDisplayConfig_OnSetValueAlignment( WidgetSetValueDisplayConfig _this, 
-  XSet value )
-{
-  if ( _this->ValueAlignment == value )
-    return;
-
-  _this->ValueAlignment = value;
   EwPostSignal( EwNewSlot( _this, WidgetSetWidgetConfig_onInvalidate ), ((XObject)_this ));
 }
 
@@ -365,17 +360,6 @@ void WidgetSetValueDisplayConfig_OnSetFormatDecimalSign( WidgetSetValueDisplayCo
   EwPostSignal( EwNewSlot( _this, WidgetSetWidgetConfig_onInvalidate ), ((XObject)_this ));
 }
 
-/* 'C' function for method : 'WidgetSet::ValueDisplayConfig.OnSetFormatPlusSign()' */
-void WidgetSetValueDisplayConfig_OnSetFormatPlusSign( WidgetSetValueDisplayConfig _this, 
-  XString value )
-{
-  if ( !EwCompString( _this->FormatPlusSign, value ))
-    return;
-
-  _this->FormatPlusSign = EwShareString( value );
-  EwPostSignal( EwNewSlot( _this, WidgetSetWidgetConfig_onInvalidate ), ((XObject)_this ));
-}
-
 /* 'C' function for method : 'WidgetSet::ValueDisplayConfig.OnSetLayout()' */
 void WidgetSetValueDisplayConfig_OnSetLayout( WidgetSetValueDisplayConfig _this, 
   XEnum value )
@@ -434,15 +418,15 @@ void WidgetSetHorizontalValueBarConfig__Init( WidgetSetHorizontalValueBarConfig 
   /* ... and initialize objects, variables, properties, etc. */
   _this->SwingElastic = 1;
   _this->SwingDuration = 500;
-  _this->CoverTint = _Const0008;
+  _this->CoverTint = _Const0009;
   _this->CoverFrame = -1;
-  _this->NeedleTint = _Const0008;
+  _this->NeedleTint = _Const0009;
   _this->NeedleFrame = -1;
-  _this->TrackRightTint = _Const0008;
+  _this->TrackRightTint = _Const0009;
   _this->TrackRightFrame = -1;
-  _this->TrackLeftTint = _Const0008;
+  _this->TrackLeftTint = _Const0009;
   _this->TrackLeftFrame = -1;
-  _this->FaceTint = _Const0008;
+  _this->FaceTint = _Const0009;
   _this->FaceFrame = -1;
 }
 
@@ -528,6 +512,201 @@ EW_DEFINE_CLASS( WidgetSetHorizontalValueBarConfig, WidgetSetWidgetConfig, Cover
                  "WidgetSet::HorizontalValueBarConfig" )
 EW_END_OF_CLASS( WidgetSetHorizontalValueBarConfig )
 
+/* Initializer for the class 'WidgetSet::GaugeConfig' */
+void WidgetSetGaugeConfig__Init( WidgetSetGaugeConfig _this, XObject aLink, XHandle aArg )
+{
+  /* At first initialize the super class ... */
+  WidgetSetWidgetConfig__Init( &_this->_Super, aLink, aArg );
+
+  /* Allow the Immediate Garbage Collection to evalute the members of this class. */
+  _this->_GCT = EW_CLASS_GCT( WidgetSetGaugeConfig );
+
+  /* Setup the VMT pointer */
+  _this->_VMT = EW_CLASS( WidgetSetGaugeConfig );
+
+  /* ... and initialize objects, variables, properties, etc. */
+  _this->SwingElastic = 1;
+  _this->SwingDuration = 500;
+  _this->TrackRightColor = _Const0009;
+  _this->TrackLeftColor = _Const0009;
+  _this->CoverTint = _Const0009;
+  _this->CoverFrame = -1;
+  _this->NeedleMaxAngle = 45.000000f;
+  _this->NeedleMinAngle = 135.000000f;
+  _this->NeedleRotate = 1;
+  _this->NeedleTint = _Const0009;
+  _this->NeedleFrame = -1;
+  _this->ScaleTint = _Const0009;
+  _this->ScaleFrame = -1;
+}
+
+/* Re-Initializer for the class 'WidgetSet::GaugeConfig' */
+void WidgetSetGaugeConfig__ReInit( WidgetSetGaugeConfig _this )
+{
+  /* At first re-initialize the super class ... */
+  WidgetSetWidgetConfig__ReInit( &_this->_Super );
+}
+
+/* Finalizer method for the class 'WidgetSet::GaugeConfig' */
+void WidgetSetGaugeConfig__Done( WidgetSetGaugeConfig _this )
+{
+  /* Finalize this class */
+  _this->_Super._VMT = EW_CLASS( WidgetSetWidgetConfig );
+
+  /* Don't forget to deinitialize the super class ... */
+  WidgetSetWidgetConfig__Done( &_this->_Super );
+}
+
+/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetSwingElastic()' */
+void WidgetSetGaugeConfig_OnSetSwingElastic( WidgetSetGaugeConfig _this, XBool value )
+{
+  if ( _this->SwingElastic == value )
+    return;
+
+  _this->SwingElastic = value;
+  EwPostSignal( EwNewSlot( _this, WidgetSetWidgetConfig_onInvalidate ), ((XObject)_this ));
+}
+
+/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetSwingDuration()' */
+void WidgetSetGaugeConfig_OnSetSwingDuration( WidgetSetGaugeConfig _this, XInt32 
+  value )
+{
+  if ( _this->SwingDuration == value )
+    return;
+
+  _this->SwingDuration = value;
+  EwPostSignal( EwNewSlot( _this, WidgetSetWidgetConfig_onInvalidate ), ((XObject)_this ));
+}
+
+/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetTrackLeftRoundedStart()' */
+void WidgetSetGaugeConfig_OnSetTrackLeftRoundedStart( WidgetSetGaugeConfig _this, 
+  XBool value )
+{
+  if ( _this->TrackLeftRoundedStart == value )
+    return;
+
+  _this->TrackLeftRoundedStart = value;
+  EwPostSignal( EwNewSlot( _this, WidgetSetWidgetConfig_onInvalidate ), ((XObject)_this ));
+}
+
+/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetTrackLeftColor()' */
+void WidgetSetGaugeConfig_OnSetTrackLeftColor( WidgetSetGaugeConfig _this, XColor 
+  value )
+{
+  if ( !EwCompColor( _this->TrackLeftColor, value ))
+    return;
+
+  _this->TrackLeftColor = value;
+  EwPostSignal( EwNewSlot( _this, WidgetSetWidgetConfig_onInvalidate ), ((XObject)_this ));
+}
+
+/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetTrackLeftThickness()' */
+void WidgetSetGaugeConfig_OnSetTrackLeftThickness( WidgetSetGaugeConfig _this, XFloat 
+  value )
+{
+  if ( _this->TrackLeftThickness == value )
+    return;
+
+  _this->TrackLeftThickness = value;
+  EwPostSignal( EwNewSlot( _this, WidgetSetWidgetConfig_onInvalidate ), ((XObject)_this ));
+}
+
+/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetTrackLeftRadius()' */
+void WidgetSetGaugeConfig_OnSetTrackLeftRadius( WidgetSetGaugeConfig _this, XFloat 
+  value )
+{
+  if ( _this->TrackLeftRadius == value )
+    return;
+
+  _this->TrackLeftRadius = value;
+  EwPostSignal( EwNewSlot( _this, WidgetSetWidgetConfig_onInvalidate ), ((XObject)_this ));
+}
+
+/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetNeedleMaxAngle()' */
+void WidgetSetGaugeConfig_OnSetNeedleMaxAngle( WidgetSetGaugeConfig _this, XFloat 
+  value )
+{
+  if ( _this->NeedleMaxAngle == value )
+    return;
+
+  _this->NeedleMaxAngle = value;
+  EwPostSignal( EwNewSlot( _this, WidgetSetWidgetConfig_onInvalidate ), ((XObject)_this ));
+}
+
+/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetNeedleMinAngle()' */
+void WidgetSetGaugeConfig_OnSetNeedleMinAngle( WidgetSetGaugeConfig _this, XFloat 
+  value )
+{
+  if ( _this->NeedleMinAngle == value )
+    return;
+
+  _this->NeedleMinAngle = value;
+  EwPostSignal( EwNewSlot( _this, WidgetSetWidgetConfig_onInvalidate ), ((XObject)_this ));
+}
+
+/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetNeedlePivot()' */
+void WidgetSetGaugeConfig_OnSetNeedlePivot( WidgetSetGaugeConfig _this, XPoint value )
+{
+  if ( !EwCompPoint( _this->NeedlePivot, value ))
+    return;
+
+  _this->NeedlePivot = value;
+  EwPostSignal( EwNewSlot( _this, WidgetSetWidgetConfig_onInvalidate ), ((XObject)_this ));
+}
+
+/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetNeedle()' */
+void WidgetSetGaugeConfig_OnSetNeedle( WidgetSetGaugeConfig _this, ResourcesBitmap 
+  value )
+{
+  if ( _this->Needle == value )
+    return;
+
+  _this->Needle = value;
+  EwPostSignal( EwNewSlot( _this, WidgetSetWidgetConfig_onInvalidate ), ((XObject)_this ));
+}
+
+/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetCenterOffset()' */
+void WidgetSetGaugeConfig_OnSetCenterOffset( WidgetSetGaugeConfig _this, XPoint 
+  value )
+{
+  if ( !EwCompPoint( _this->CenterOffset, value ))
+    return;
+
+  _this->CenterOffset = value;
+  EwPostSignal( EwNewSlot( _this, WidgetSetWidgetConfig_onInvalidate ), ((XObject)_this ));
+}
+
+/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetScale()' */
+void WidgetSetGaugeConfig_OnSetScale( WidgetSetGaugeConfig _this, ResourcesBitmap 
+  value )
+{
+  if ( _this->Scale == value )
+    return;
+
+  _this->Scale = value;
+  EwPostSignal( EwNewSlot( _this, WidgetSetWidgetConfig_onInvalidate ), ((XObject)_this ));
+}
+
+/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetWidgetMinSize()' */
+void WidgetSetGaugeConfig_OnSetWidgetMinSize( WidgetSetGaugeConfig _this, XPoint 
+  value )
+{
+  if ( !EwCompPoint( _this->WidgetMinSize, value ))
+    return;
+
+  _this->WidgetMinSize = value;
+  EwPostSignal( EwNewSlot( _this, WidgetSetWidgetConfig_onInvalidate ), ((XObject)_this ));
+}
+
+/* Variants derived from the class : 'WidgetSet::GaugeConfig' */
+EW_DEFINE_CLASS_VARIANTS( WidgetSetGaugeConfig )
+EW_END_OF_CLASS_VARIANTS( WidgetSetGaugeConfig )
+
+/* Virtual Method Table (VMT) for the class : 'WidgetSet::GaugeConfig' */
+EW_DEFINE_CLASS( WidgetSetGaugeConfig, WidgetSetWidgetConfig, Cover, SwingDuration, 
+                 SwingDuration, SwingDuration, SwingDuration, SwingDuration, "WidgetSet::GaugeConfig" )
+EW_END_OF_CLASS( WidgetSetGaugeConfig )
+
 /* Initializer for the class 'WidgetSet::VerticalSliderConfig' */
 void WidgetSetVerticalSliderConfig__Init( WidgetSetVerticalSliderConfig _this, XObject aLink, XHandle aArg )
 {
@@ -543,42 +722,42 @@ void WidgetSetVerticalSliderConfig__Init( WidgetSetVerticalSliderConfig _this, X
   /* ... and initialize objects, variables, properties, etc. */
   _this->KeyCodeUp = CoreKeyCodeUp;
   _this->KeyCodeDown = CoreKeyCodeDown;
-  _this->CoverTintActive = _Const0008;
-  _this->CoverTintFocused = _Const0008;
-  _this->CoverTintDisabled = _Const0008;
-  _this->CoverTintDefault = _Const0008;
+  _this->CoverTintActive = _Const0009;
+  _this->CoverTintFocused = _Const0009;
+  _this->CoverTintDisabled = _Const0009;
+  _this->CoverTintDefault = _Const0009;
   _this->CoverFrameActive = -1;
   _this->CoverFrameFocused = -1;
   _this->CoverFrameDisabled = -1;
   _this->CoverFrameDefault = -1;
-  _this->ThumbTintActive = _Const0008;
-  _this->ThumbTintFocused = _Const0008;
-  _this->ThumbTintDisabled = _Const0008;
-  _this->ThumbTintDefault = _Const0008;
+  _this->ThumbTintActive = _Const0009;
+  _this->ThumbTintFocused = _Const0009;
+  _this->ThumbTintDisabled = _Const0009;
+  _this->ThumbTintDefault = _Const0009;
   _this->ThumbFrameActive = -1;
   _this->ThumbFrameFocused = -1;
   _this->ThumbFrameDisabled = -1;
   _this->ThumbFrameDefault = -1;
-  _this->TrackAboveTintActive = _Const0008;
-  _this->TrackAboveTintFocused = _Const0008;
-  _this->TrackAboveTintDisabled = _Const0008;
-  _this->TrackAboveTintDefault = _Const0008;
+  _this->TrackAboveTintActive = _Const0009;
+  _this->TrackAboveTintFocused = _Const0009;
+  _this->TrackAboveTintDisabled = _Const0009;
+  _this->TrackAboveTintDefault = _Const0009;
   _this->TrackAboveFrameActive = -1;
   _this->TrackAboveFrameFocused = -1;
   _this->TrackAboveFrameDisabled = -1;
   _this->TrackAboveFrameDefault = -1;
-  _this->TrackBelowTintActive = _Const0008;
-  _this->TrackBelowTintFocused = _Const0008;
-  _this->TrackBelowTintDisabled = _Const0008;
-  _this->TrackBelowTintDefault = _Const0008;
+  _this->TrackBelowTintActive = _Const0009;
+  _this->TrackBelowTintFocused = _Const0009;
+  _this->TrackBelowTintDisabled = _Const0009;
+  _this->TrackBelowTintDefault = _Const0009;
   _this->TrackBelowFrameActive = -1;
   _this->TrackBelowFrameFocused = -1;
   _this->TrackBelowFrameDisabled = -1;
   _this->TrackBelowFrameDefault = -1;
-  _this->FaceTintActive = _Const0008;
-  _this->FaceTintFocused = _Const0008;
-  _this->FaceTintDisabled = _Const0008;
-  _this->FaceTintDefault = _Const0008;
+  _this->FaceTintActive = _Const0009;
+  _this->FaceTintFocused = _Const0009;
+  _this->FaceTintDisabled = _Const0009;
+  _this->FaceTintDefault = _Const0009;
   _this->FaceFrameActive = -1;
   _this->FaceFrameFocused = -1;
   _this->FaceFrameDisabled = -1;
@@ -946,22 +1125,22 @@ void WidgetSetPushButtonConfig__Init( WidgetSetPushButtonConfig _this, XObject a
   /* ... and initialize objects, variables, properties, etc. */
   _this->PressedFeedbackDuration = 50;
   _this->KeyCode = CoreKeyCodeEnter;
-  _this->LabelColorActive = _Const0005;
-  _this->LabelColorFocused = _Const0005;
-  _this->LabelColorDisabled = _Const0005;
-  _this->LabelColorDefault = _Const0005;
-  _this->IconTintActive = _Const0008;
-  _this->IconTintFocused = _Const0008;
-  _this->IconTintDisabled = _Const0008;
-  _this->IconTintDefault = _Const0008;
+  _this->LabelColorActive = _Const0006;
+  _this->LabelColorFocused = _Const0006;
+  _this->LabelColorDisabled = _Const0006;
+  _this->LabelColorDefault = _Const0006;
+  _this->IconTintActive = _Const0009;
+  _this->IconTintFocused = _Const0009;
+  _this->IconTintDisabled = _Const0009;
+  _this->IconTintDefault = _Const0009;
   _this->LabelAlignment = ViewsTextAlignmentAlignHorzCenter | ViewsTextAlignmentAlignVertCenter;
   _this->IconAlignment = ViewsImageAlignmentAlignHorzCenter | ViewsImageAlignmentAlignVertCenter;
   _this->FaceLayout = CoreLayoutAlignToBottom | CoreLayoutAlignToLeft | CoreLayoutAlignToRight 
   | CoreLayoutAlignToTop | CoreLayoutResizeHorz | CoreLayoutResizeVert;
-  _this->FaceTintActive = _Const0008;
-  _this->FaceTintFocused = _Const0008;
-  _this->FaceTintDisabled = _Const0008;
-  _this->FaceTintDefault = _Const0008;
+  _this->FaceTintActive = _Const0009;
+  _this->FaceTintFocused = _Const0009;
+  _this->FaceTintDisabled = _Const0009;
+  _this->FaceTintDefault = _Const0009;
   _this->FaceFrameActive = -1;
   _this->FaceFrameFocused = -1;
   _this->FaceFrameDisabled = -1;
@@ -1113,7 +1292,7 @@ void WidgetSetValueDisplay__Init( WidgetSetValueDisplay _this, XObject aLink, XH
   /* ... and initialize objects, variables, properties, etc. */
   _this->Super3.viewState = CoreViewStateAlphaBlended | CoreViewStateEnabled | CoreViewStateTouchable 
   | CoreViewStateVisible;
-  CoreRectView__OnSetBounds( _this, _Const0009 );
+  CoreRectView__OnSetBounds( _this, _Const000A );
   _this->CurrentFactor = 1.000000f;
 }
 
@@ -1251,7 +1430,7 @@ void WidgetSetValueDisplay_UpdateViewState( WidgetSetValueDisplay _this, XSet aS
 
   if ( _this->textView1 != 0 )
   {
-    XColor clr = _Const0008;
+    XColor clr = _Const0009;
     XRect r = area;
 
     if ( _this->isNegative )
@@ -1286,7 +1465,7 @@ void WidgetSetValueDisplay_UpdateViewState( WidgetSetValueDisplay _this, XSet aS
 
   if ( _this->textView2 != 0 )
   {
-    XColor clr = _Const0008;
+    XColor clr = _Const0009;
     XRect r = area;
 
     if ( _this->isNegative )
@@ -1353,7 +1532,7 @@ void WidgetSetValueDisplay_onFormatValue( WidgetSetValueDisplay _this, XObject s
     inx = EwStringFindChar( newValueString, '.', 0 );
 
     if (( inx >= 0 ) && ( EwCompString( _this->Appearance->FormatDecimalSign, EwLoadString( 
-        &_Const0006 )) != 0 ))
+        &_Const0007 )) != 0 ))
       newValueString = EwConcatString( EwConcatString( EwStringLeft( newValueString, 
       inx ), _this->Appearance->FormatDecimalSign ), EwStringRemove( newValueString, 
       0, inx + 1 ));
@@ -1550,7 +1729,7 @@ void WidgetSetHorizontalValueBar__Init( WidgetSetHorizontalValueBar _this, XObje
   _this->_VMT = EW_CLASS( WidgetSetHorizontalValueBar );
 
   /* ... and initialize objects, variables, properties, etc. */
-  CoreRectView__OnSetBounds( _this, _Const000A );
+  CoreRectView__OnSetBounds( _this, _Const000B );
   _this->setupCurrentPos = 1;
   EffectsEffect_OnSetTiming((EffectsEffect)&_this->FloatEffect, EffectsTimingBack_Out );
   EffectsEffect_OnSetNoOfCycles((EffectsEffect)&_this->FloatEffect, 1 );
@@ -1692,7 +1871,7 @@ void WidgetSetHorizontalValueBar_UpdateViewState( WidgetSetHorizontalValueBar _t
   != 0 ));
   restack = 0;
   area = EwGetRectORect( _this->Super2.Bounds );
-  needleSize = _Const000B;
+  needleSize = _Const000C;
 
   if ( needsFace && ( _this->frameView1 == 0 ))
   {
@@ -1940,7 +2119,7 @@ void WidgetSetHorizontalValueBar_UpdateViewState( WidgetSetHorizontalValueBar _t
 
   if ( _this->imageView != 0 )
     CoreRectView__OnSetBounds( _this->imageView, EwMoveRectPos( EwNewRect2Point( 
-    _Const000B, needleSize ), EwNewPoint( pos - ( needleSize.X / 2 ), ( EwGetRectH( 
+    _Const000C, needleSize ), EwNewPoint( pos - ( needleSize.X / 2 ), ( EwGetRectH( 
     area ) / 2 ) - ( needleSize.Y / 2 ))));
 }
 
@@ -2164,6 +2343,600 @@ EW_DEFINE_CLASS( WidgetSetHorizontalValueBar, CoreGroup, frameView4, OnUpdate, O
   CoreGroup_Add,
 EW_END_OF_CLASS( WidgetSetHorizontalValueBar )
 
+/* Initializer for the class 'WidgetSet::Gauge' */
+void WidgetSetGauge__Init( WidgetSetGauge _this, XObject aLink, XHandle aArg )
+{
+  /* At first initialize the super class ... */
+  CoreGroup__Init( &_this->_Super, aLink, aArg );
+
+  /* Allow the Immediate Garbage Collection to evalute the members of this class. */
+  _this->_GCT = EW_CLASS_GCT( WidgetSetGauge );
+
+  /* ... then construct all embedded objects */
+  EffectsFloatEffect__Init( &_this->FloatEffect, &_this->_XObject, 0 );
+
+  /* Setup the VMT pointer */
+  _this->_VMT = EW_CLASS( WidgetSetGauge );
+
+  /* ... and initialize objects, variables, properties, etc. */
+  CoreRectView__OnSetBounds( _this, _Const000D );
+  CoreGroup_OnSetEnabled((CoreGroup)_this, 0 );
+  _this->setupCurrentAngle = 1;
+  EffectsEffect_OnSetTiming((EffectsEffect)&_this->FloatEffect, EffectsTimingBack_Out );
+  EffectsEffect_OnSetNoOfCycles((EffectsEffect)&_this->FloatEffect, 1 );
+  _this->MaxValue = 100;
+  _this->CurrentValue = 50;
+  _this->FloatEffect.Super1.OnFinished = EwNewSlot( _this, WidgetSetGauge_onEndFloatEffect );
+  _this->FloatEffect.Super1.OnAnimate = EwNewSlot( _this, WidgetSetGauge_onFloatEffect );
+}
+
+/* Re-Initializer for the class 'WidgetSet::Gauge' */
+void WidgetSetGauge__ReInit( WidgetSetGauge _this )
+{
+  /* At first re-initialize the super class ... */
+  CoreGroup__ReInit( &_this->_Super );
+
+  /* ... then re-construct all embedded objects */
+  EffectsFloatEffect__ReInit( &_this->FloatEffect );
+}
+
+/* Finalizer method for the class 'WidgetSet::Gauge' */
+void WidgetSetGauge__Done( WidgetSetGauge _this )
+{
+  /* Finalize this class */
+  _this->_Super._VMT = EW_CLASS( CoreGroup );
+
+  /* Finalize all embedded objects */
+  EffectsFloatEffect__Done( &_this->FloatEffect );
+
+  /* Don't forget to deinitialize the super class ... */
+  CoreGroup__Done( &_this->_Super );
+}
+
+/* 'C' function for method : 'WidgetSet::Gauge.OnSetBounds()' */
+void WidgetSetGauge_OnSetBounds( WidgetSetGauge _this, XRect value )
+{
+  if ( EwCompRect( _this->Super2.Bounds, value ))
+    EwPostSignal( _this->OnUpdate, ((XObject)_this ));
+
+  if ( _this->Appearance != 0 )
+  {
+    XPoint cs = EwGetRectSize( value );
+    XPoint ns = cs;
+    XPoint delta;
+
+    if ( ns.X < _this->Appearance->WidgetMinSize.X )
+      ns.X = _this->Appearance->WidgetMinSize.X;
+
+    if ( ns.Y < _this->Appearance->WidgetMinSize.Y )
+      ns.Y = _this->Appearance->WidgetMinSize.Y;
+
+    if (( _this->Appearance->WidgetMaxSize.X > 0 ) && ( ns.X > _this->Appearance->WidgetMaxSize.X ))
+      ns.X = _this->Appearance->WidgetMaxSize.X;
+
+    if (( _this->Appearance->WidgetMaxSize.Y > 0 ) && ( ns.Y > _this->Appearance->WidgetMaxSize.Y ))
+      ns.Y = _this->Appearance->WidgetMaxSize.Y;
+
+    delta = EwMovePointNeg( ns, cs );
+
+    if ( delta.X != 0 )
+    {
+      XBool alignToLeft = (( _this->Super3.Layout & CoreLayoutAlignToLeft ) == CoreLayoutAlignToLeft );
+      XBool alignToRight = (( _this->Super3.Layout & CoreLayoutAlignToRight ) == 
+        CoreLayoutAlignToRight );
+
+      if ( alignToLeft && !alignToRight )
+        value.Point2.X = ( value.Point2.X + delta.X );
+      else
+        if ( !alignToLeft && alignToRight )
+          value.Point1.X = ( value.Point1.X - delta.X );
+        else
+        {
+          value.Point1.X = ( value.Point1.X - ( delta.X / 2 ));
+          value.Point2.X = ( value.Point1.X + ns.X );
+        }
+    }
+
+    if ( delta.Y != 0 )
+    {
+      XBool alignToTop = (( _this->Super3.Layout & CoreLayoutAlignToTop ) == CoreLayoutAlignToTop );
+      XBool alignToBottom = (( _this->Super3.Layout & CoreLayoutAlignToBottom ) 
+        == CoreLayoutAlignToBottom );
+
+      if ( alignToTop && !alignToBottom )
+        value.Point2.Y = ( value.Point2.Y + delta.Y );
+      else
+        if ( !alignToTop && alignToBottom )
+          value.Point1.Y = ( value.Point1.Y - delta.Y );
+        else
+        {
+          value.Point1.Y = ( value.Point1.Y - ( delta.Y / 2 ));
+          value.Point2.Y = ( value.Point1.Y + ns.Y );
+        }
+    }
+  }
+
+  CoreGroup_OnSetBounds((CoreGroup)_this, value );
+}
+
+/* The method UpdateViewState() is invoked automatically after the state of the 
+   component has been changed. This method can be overridden and filled with logic 
+   to ensure the visual aspect of the component does reflect its current state. 
+   For example, the 'enabled' state of the component can affect its colors (disabled 
+   components may appear pale). In this case the logic of the method should modify 
+   the respective color properties accordingly to the current 'enabled' state. 
+   The current state of the component is passed as a set in the parameter aState. 
+   It reflects the very basic component state like its visibility or the ability 
+   to react to user inputs. Beside this common state, the method can also involve 
+   any other variables used in the component as long as they reflect its current 
+   state. For example, the toggle switch component can take in account its toggle 
+   state 'on' or 'off' and change accordingly the location of the slider, etc.
+   Usually, this method will be invoked automatically by the framework. Optionally 
+   you can request its invocation by using the method @InvalidateViewState(). */
+void WidgetSetGauge_UpdateViewState( WidgetSetGauge _this, XSet aState )
+{
+  XBool needsScale;
+  XBool needsNeedle;
+  XBool needsCover;
+  XBool needsPath1;
+  XBool needsPath2;
+  XBool restack;
+  XRect area;
+
+  CoreGroup_UpdateViewState((CoreGroup)_this, aState );
+  needsScale = (XBool)(( _this->Appearance != 0 ) && ( _this->Appearance->Scale 
+  != 0 ));
+  needsNeedle = (XBool)(( _this->Appearance != 0 ) && ( _this->Appearance->Needle 
+  != 0 ));
+  needsCover = (XBool)(( _this->Appearance != 0 ) && ( _this->Appearance->Cover 
+  != 0 ));
+  needsPath1 = (XBool)(( _this->Appearance != 0 ) && ( _this->Appearance->TrackLeftThickness 
+  > 0.000000f ));
+  needsPath2 = (XBool)(( _this->Appearance != 0 ) && ( _this->Appearance->TrackRightThickness 
+  > 0.000000f ));
+  restack = 0;
+  area = EwGetRectORect( _this->Super2.Bounds );
+
+  if ( needsScale && ( _this->imageView1 == 0 ))
+  {
+    _this->imageView1 = EwNewObject( ViewsImage, 0 );
+    CoreGroup__Add( _this, ((CoreView)_this->imageView1 ), 0 );
+    restack = 1;
+  }
+  else
+    if ( !needsScale && ( _this->imageView1 != 0 ))
+    {
+      CoreGroup__Remove( _this, ((CoreView)_this->imageView1 ));
+      _this->imageView1 = 0;
+    }
+
+  if ( needsCover && ( _this->imageView2 == 0 ))
+  {
+    _this->imageView2 = EwNewObject( ViewsImage, 0 );
+    CoreGroup__Add( _this, ((CoreView)_this->imageView2 ), 0 );
+    restack = 1;
+  }
+  else
+    if ( !needsCover && ( _this->imageView2 != 0 ))
+    {
+      CoreGroup__Remove( _this, ((CoreView)_this->imageView2 ));
+      _this->imageView2 = 0;
+    }
+
+  if ( needsNeedle && ( _this->warpView == 0 ))
+  {
+    _this->warpView = EwNewObject( ViewsWarpImage, 0 );
+    CoreGroup__Add( _this, ((CoreView)_this->warpView ), 0 );
+    restack = 1;
+  }
+  else
+    if ( !needsNeedle && ( _this->warpView != 0 ))
+    {
+      CoreGroup__Remove( _this, ((CoreView)_this->warpView ));
+      _this->warpView = 0;
+    }
+
+  if ( needsPath1 && ( _this->path1 == 0 ))
+  {
+    _this->path1 = EwNewObject( GraphicsArcPath, 0 );
+    _this->pathView1 = EwNewObject( ViewsFillPath, 0 );
+    CoreGroup__Add( _this, ((CoreView)_this->pathView1 ), 0 );
+    ViewsFillPath_OnSetPath( _this->pathView1, ((GraphicsPath)_this->path1 ));
+    ViewsFillPath_OnSetFillRule( _this->pathView1, GraphicsFillRuleNonZero );
+    restack = 1;
+  }
+  else
+    if ( !needsPath1 && ( _this->path1 != 0 ))
+    {
+      CoreGroup__Remove( _this, ((CoreView)_this->pathView1 ));
+      _this->pathView1 = 0;
+      _this->path1 = 0;
+    }
+
+  if ( needsPath2 && ( _this->path2 == 0 ))
+  {
+    _this->path2 = EwNewObject( GraphicsArcPath, 0 );
+    _this->pathView2 = EwNewObject( ViewsFillPath, 0 );
+    CoreGroup__Add( _this, ((CoreView)_this->pathView2 ), 0 );
+    ViewsFillPath_OnSetPath( _this->pathView2, ((GraphicsPath)_this->path2 ));
+    ViewsFillPath_OnSetFillRule( _this->pathView2, GraphicsFillRuleNonZero );
+    restack = 1;
+  }
+  else
+    if ( !needsPath2 && ( _this->path2 != 0 ))
+    {
+      CoreGroup__Remove( _this, ((CoreView)_this->pathView2 ));
+      _this->pathView2 = 0;
+      _this->path2 = 0;
+    }
+
+  if ( restack )
+  {
+    if ( _this->imageView1 != 0 )
+      CoreGroup__RestackTop( _this, ((CoreView)_this->imageView1 ));
+
+    if ( _this->pathView1 != 0 )
+      CoreGroup__RestackTop( _this, ((CoreView)_this->pathView1 ));
+
+    if ( _this->pathView2 != 0 )
+      CoreGroup__RestackTop( _this, ((CoreView)_this->pathView2 ));
+
+    if ( _this->warpView != 0 )
+      CoreGroup__RestackTop( _this, ((CoreView)_this->warpView ));
+
+    if ( _this->imageView2 != 0 )
+      CoreGroup__RestackTop( _this, ((CoreView)_this->imageView2 ));
+  }
+
+  if ( _this->imageView1 != 0 )
+  {
+    ViewsImage_OnSetBitmap( _this->imageView1, _this->Appearance->Scale );
+    ViewsImage_OnSetColor( _this->imageView1, _this->Appearance->ScaleTint );
+    CoreRectView__OnSetBounds( _this->imageView1, area );
+
+    if ( _this->Appearance->ScaleFrame < 0 )
+    {
+      ViewsImage_OnSetAnimated( _this->imageView1, 1 );
+      ViewsImage_OnSetFrameNumber( _this->imageView1, 0 );
+    }
+    else
+    {
+      ViewsImage_OnSetAnimated( _this->imageView1, 0 );
+      ViewsImage_OnSetFrameNumber( _this->imageView1, _this->Appearance->ScaleFrame );
+    }
+  }
+
+  if ( _this->imageView2 != 0 )
+  {
+    ViewsImage_OnSetBitmap( _this->imageView2, _this->Appearance->Cover );
+    ViewsImage_OnSetColor( _this->imageView2, _this->Appearance->CoverTint );
+    CoreRectView__OnSetBounds( _this->imageView2, area );
+
+    if ( _this->Appearance->CoverFrame < 0 )
+    {
+      ViewsImage_OnSetAnimated( _this->imageView2, 1 );
+      ViewsImage_OnSetFrameNumber( _this->imageView2, 0 );
+    }
+    else
+    {
+      ViewsImage_OnSetAnimated( _this->imageView2, 0 );
+      ViewsImage_OnSetFrameNumber( _this->imageView2, _this->Appearance->CoverFrame );
+    }
+  }
+
+  if ( _this->warpView != 0 )
+  {
+    GraphicsWarpMatrix matrix = EwNewObject( GraphicsWarpMatrix, 0 );
+    GraphicsWarpMatrix_Rotate( matrix, 0.000000f, 0.000000f, -_this->currentAngle );
+
+    if ( _this->Appearance->NeedleRadius != 0.000000f )
+      GraphicsWarpMatrix_Translate( matrix, _this->Appearance->NeedleRadius, 0.000000f, 
+      0.000000f );
+
+    if ( !_this->Appearance->NeedleRotate )
+      GraphicsWarpMatrix_Rotate( matrix, 0.000000f, 0.000000f, _this->currentAngle );
+
+    ViewsWarpView_OnSetSourceAnchor((ViewsWarpView)_this->warpView, _this->Appearance->NeedlePivot );
+    ViewsWarpImage_OnSetBitmap( _this->warpView, _this->Appearance->Needle );
+    ViewsWarpImage_OnSetColor( _this->warpView, _this->Appearance->NeedleTint );
+
+    if ( _this->Appearance->NeedleFrame < 0 )
+    {
+      ViewsWarpImage_OnSetAnimated( _this->warpView, 1 );
+      ViewsWarpImage_OnSetFrameNumber( _this->warpView, 0 );
+    }
+    else
+    {
+      ViewsWarpImage_OnSetAnimated( _this->warpView, 0 );
+      ViewsWarpImage_OnSetFrameNumber( _this->warpView, _this->Appearance->NeedleFrame );
+    }
+
+    ViewsWarpView_Warp3D((ViewsWarpView)_this->warpView, EwMovePointPos( EwGetRectCenter( 
+    area ), _this->Appearance->CenterOffset ), matrix );
+  }
+
+  if ( _this->pathView1 != 0 )
+  {
+    CoreRectView__OnSetBounds( _this->pathView1, area );
+    ViewsFillPath_OnSetOffset( _this->pathView1, EwMovePointPos( EwGetRectCenter( 
+    area ), _this->Appearance->CenterOffset ));
+    ViewsFillPath_OnSetColor( _this->pathView1, _this->Appearance->TrackLeftColor );
+  }
+
+  if ( _this->pathView2 != 0 )
+  {
+    CoreRectView__OnSetBounds( _this->pathView2, area );
+    ViewsFillPath_OnSetOffset( _this->pathView2, EwMovePointPos( EwGetRectCenter( 
+    area ), _this->Appearance->CenterOffset ));
+    ViewsFillPath_OnSetColor( _this->pathView2, _this->Appearance->TrackRightColor );
+  }
+
+  if ( _this->path1 != 0 )
+  {
+    GraphicsArcPath_OnSetStyle( _this->path1, GraphicsArcStylePie );
+    GraphicsArcPath_OnSetInnerRadius( _this->path1, _this->Appearance->TrackLeftRadius 
+    - ( _this->Appearance->TrackLeftThickness * 0.500000f ));
+    GraphicsArcPath_OnSetRadius( _this->path1, GraphicsArcPath_OnGetInnerRadius( 
+    _this->path1 ) + _this->Appearance->TrackLeftThickness );
+    GraphicsArcPath_OnSetStartAngle( _this->path1, -_this->Appearance->NeedleMinAngle );
+    GraphicsArcPath_OnSetEndAngle( _this->path1, -_this->currentAngle );
+
+    if ( _this->Appearance->TrackLeftRoundedStart && _this->Appearance->TrackLeftRoundedEnd )
+      GraphicsArcPath_OnSetStyle( _this->path1, GraphicsArcStylePieRounded );
+    else
+      if ( _this->Appearance->TrackLeftRoundedStart )
+        GraphicsArcPath_OnSetStyle( _this->path1, GraphicsArcStylePieRoundedStart );
+      else
+        if ( _this->Appearance->TrackLeftRoundedEnd )
+          GraphicsArcPath_OnSetStyle( _this->path1, GraphicsArcStylePieRoundedEnd );
+        else
+          GraphicsArcPath_OnSetStyle( _this->path1, GraphicsArcStylePie );
+  }
+
+  if ( _this->path2 != 0 )
+  {
+    GraphicsArcPath_OnSetStyle( _this->path2, GraphicsArcStylePie );
+    GraphicsArcPath_OnSetInnerRadius( _this->path2, _this->Appearance->TrackRightRadius 
+    - ( _this->Appearance->TrackRightThickness * 0.500000f ));
+    GraphicsArcPath_OnSetRadius( _this->path2, GraphicsArcPath_OnGetInnerRadius( 
+    _this->path2 ) + _this->Appearance->TrackRightThickness );
+    GraphicsArcPath_OnSetStartAngle( _this->path2, -_this->currentAngle );
+    GraphicsArcPath_OnSetEndAngle( _this->path2, -_this->Appearance->NeedleMaxAngle );
+
+    if ( _this->Appearance->TrackRightRoundedStart && _this->Appearance->TrackRightRoundedEnd )
+      GraphicsArcPath_OnSetStyle( _this->path2, GraphicsArcStylePieRounded );
+    else
+      if ( _this->Appearance->TrackRightRoundedStart )
+        GraphicsArcPath_OnSetStyle( _this->path2, GraphicsArcStylePieRoundedStart );
+      else
+        if ( _this->Appearance->TrackRightRoundedEnd )
+          GraphicsArcPath_OnSetStyle( _this->path2, GraphicsArcStylePieRoundedEnd );
+        else
+          GraphicsArcPath_OnSetStyle( _this->path2, GraphicsArcStylePie );
+  }
+}
+
+/* 'C' function for method : 'WidgetSet::Gauge.onUpdateAngle()' */
+void WidgetSetGauge_onUpdateAngle( WidgetSetGauge _this, XObject sender )
+{
+  XFloat angleMin;
+  XFloat angleMax;
+  XFloat newAngle;
+  XInt32 swingDuration;
+  XFloat ratio;
+
+  /* Dummy expressions to avoid the 'C' warning 'unused argument'. */
+  EW_UNUSED_ARG( sender );
+
+  angleMin = 135.000000f;
+  angleMax = 45.000000f;
+  newAngle = _this->currentAngle;
+  swingDuration = 0;
+
+  if ( _this->Appearance != 0 )
+  {
+    angleMin = _this->Appearance->NeedleMinAngle;
+    angleMax = _this->Appearance->NeedleMaxAngle;
+    swingDuration = _this->Appearance->SwingDuration;
+  }
+
+  if ( _this->setupCurrentAngle && ( _this->MaxValue != _this->MinValue ))
+  {
+    _this->currentAngle = ((((XFloat)-_this->MinValue ) * ( angleMax - angleMin )) 
+    / (XFloat)( _this->MaxValue - _this->MinValue )) + angleMin;
+    newAngle = _this->currentAngle;
+    _this->setupCurrentAngle = 0;
+    EwPostSignal( _this->OnUpdate, ((XObject)_this ));
+  }
+
+  if ( _this->MaxValue != _this->MinValue )
+    newAngle = (((XFloat)( WidgetSetGauge_OnGetCurrentValue( _this ) - _this->MinValue ) 
+    * ( angleMax - angleMin )) / (XFloat)( _this->MaxValue - _this->MinValue )) 
+    + angleMin;
+
+  if ( newAngle == _this->currentAngle )
+    return;
+
+  EffectsEffect_OnSetEnabled((EffectsEffect)&_this->FloatEffect, 0 );
+
+  if (( swingDuration <= 0 ) || ( angleMax == angleMin ))
+  {
+    _this->currentAngle = newAngle;
+    CoreGroup_InvalidateViewState((CoreGroup)_this );
+    EwPostSignal( _this->OnUpdate, ((XObject)_this ));
+    return;
+  }
+
+  ratio = ( newAngle - _this->currentAngle ) / ( angleMax - angleMin );
+
+  if ( ratio < 0.000000f )
+    ratio = -ratio;
+
+  if ( _this->Appearance->SwingElastic )
+    EffectsEffect_OnSetTiming((EffectsEffect)&_this->FloatEffect, EffectsTimingBack_Out );
+  else
+    EffectsEffect_OnSetTiming((EffectsEffect)&_this->FloatEffect, EffectsTimingFastIn_EaseOut );
+
+  _this->FloatEffect.Value1 = _this->currentAngle;
+  _this->FloatEffect.Value2 = newAngle;
+  EffectsEffect_OnSetCycleDuration((EffectsEffect)&_this->FloatEffect, ( 10 + ( 
+  swingDuration / 2 )) + ((XInt32)((XFloat)swingDuration * ratio ) / 2 ));
+  EffectsEffect_OnSetEnabled((EffectsEffect)&_this->FloatEffect, 1 );
+}
+
+/* 'C' function for method : 'WidgetSet::Gauge.onEndFloatEffect()' */
+void WidgetSetGauge_onEndFloatEffect( WidgetSetGauge _this, XObject sender )
+{
+  /* Dummy expressions to avoid the 'C' warning 'unused argument'. */
+  EW_UNUSED_ARG( sender );
+
+  EwPostSignal( _this->OnUpdate, ((XObject)_this ));
+}
+
+/* 'C' function for method : 'WidgetSet::Gauge.onFloatEffect()' */
+void WidgetSetGauge_onFloatEffect( WidgetSetGauge _this, XObject sender )
+{
+  /* Dummy expressions to avoid the 'C' warning 'unused argument'. */
+  EW_UNUSED_ARG( sender );
+
+  _this->currentAngle = _this->FloatEffect.Value;
+  CoreGroup_InvalidateViewState((CoreGroup)_this );
+  EwPostSignal( _this->OnUpdate, ((XObject)_this ));
+}
+
+/* 'C' function for method : 'WidgetSet::Gauge.onConfigChanged()' */
+void WidgetSetGauge_onConfigChanged( WidgetSetGauge _this, XObject sender )
+{
+  /* Dummy expressions to avoid the 'C' warning 'unused argument'. */
+  EW_UNUSED_ARG( sender );
+
+  EwPostSignal( EwNewSlot( _this, WidgetSetGauge_onUpdateAngle ), ((XObject)_this ));
+
+  if ( _this->Appearance != 0 )
+    CoreRectView__OnSetBounds( _this, _this->Super2.Bounds );
+
+  CoreGroup_InvalidateViewState((CoreGroup)_this );
+  EwPostSignal( _this->OnUpdate, ((XObject)_this ));
+}
+
+/* 'C' function for method : 'WidgetSet::Gauge.onOutlet()' */
+void WidgetSetGauge_onOutlet( WidgetSetGauge _this, XObject sender )
+{
+  /* Dummy expressions to avoid the 'C' warning 'unused argument'. */
+  EW_UNUSED_ARG( sender );
+
+  if ( _this->Outlet.Object != 0 )
+    WidgetSetGauge_OnSetCurrentValue( _this, EwOnGetInt32( _this->Outlet ));
+}
+
+/* 'C' function for method : 'WidgetSet::Gauge.OnSetOutlet()' */
+void WidgetSetGauge_OnSetOutlet( WidgetSetGauge _this, XRef value )
+{
+  if ( !EwCompRef( _this->Outlet, value ))
+    return;
+
+  if ( _this->Outlet.Object != 0 )
+    EwDetachRefObserver( EwNewSlot( _this, WidgetSetGauge_onOutlet ), _this->Outlet, 
+      0 );
+
+  _this->Outlet = value;
+
+  if ( value.Object != 0 )
+    EwAttachRefObserver( EwNewSlot( _this, WidgetSetGauge_onOutlet ), value, 0 );
+
+  if ( value.Object != 0 )
+    EwPostSignal( EwNewSlot( _this, WidgetSetGauge_onOutlet ), ((XObject)_this ));
+}
+
+/* 'C' function for method : 'WidgetSet::Gauge.OnGetCurrentValue()' */
+XInt32 WidgetSetGauge_OnGetCurrentValue( WidgetSetGauge _this )
+{
+  XInt32 value = _this->CurrentValue;
+
+  if ( _this->MinValue > _this->MaxValue )
+  {
+    if ( value < _this->MaxValue )
+      value = _this->MaxValue;
+
+    if ( value > _this->MinValue )
+      value = _this->MinValue;
+  }
+  else
+  {
+    if ( value < _this->MinValue )
+      value = _this->MinValue;
+
+    if ( value > _this->MaxValue )
+      value = _this->MaxValue;
+  }
+
+  return value;
+}
+
+/* 'C' function for method : 'WidgetSet::Gauge.OnSetCurrentValue()' */
+void WidgetSetGauge_OnSetCurrentValue( WidgetSetGauge _this, XInt32 value )
+{
+  if ( _this->CurrentValue == value )
+    return;
+
+  _this->CurrentValue = value;
+  EwPostSignal( EwNewSlot( _this, WidgetSetGauge_onUpdateAngle ), ((XObject)_this ));
+  EwPostSignal( _this->OnUpdate, ((XObject)_this ));
+}
+
+/* 'C' function for method : 'WidgetSet::Gauge.OnSetAppearance()' */
+void WidgetSetGauge_OnSetAppearance( WidgetSetGauge _this, WidgetSetGaugeConfig 
+  value )
+{
+  if ( _this->Appearance == value )
+    return;
+
+  if ( _this->Appearance != 0 )
+    EwDetachObjObserver( EwNewSlot( _this, WidgetSetGauge_onConfigChanged ), (XObject)_this->Appearance, 
+      0 );
+
+  _this->Appearance = value;
+
+  if ( value != 0 )
+    EwAttachObjObserver( EwNewSlot( _this, WidgetSetGauge_onConfigChanged ), (XObject)value, 
+      0 );
+
+  EwPostSignal( EwNewSlot( _this, WidgetSetGauge_onConfigChanged ), ((XObject)_this ));
+}
+
+/* Variants derived from the class : 'WidgetSet::Gauge' */
+EW_DEFINE_CLASS_VARIANTS( WidgetSetGauge )
+EW_END_OF_CLASS_VARIANTS( WidgetSetGauge )
+
+/* Virtual Method Table (VMT) for the class : 'WidgetSet::Gauge' */
+EW_DEFINE_CLASS( WidgetSetGauge, CoreGroup, imageView1, OnUpdate, Outlet, FloatEffect, 
+                 currentAngle, currentAngle, "WidgetSet::Gauge" )
+  CoreRectView_initLayoutContext,
+  CoreView_GetRoot,
+  CoreGroup_Draw,
+  CoreView_HandleEvent,
+  CoreGroup_CursorHitTest,
+  CoreRectView_ArrangeView,
+  CoreRectView_MoveView,
+  CoreRectView_GetExtent,
+  CoreGroup_ChangeViewState,
+  WidgetSetGauge_OnSetBounds,
+  CoreGroup_drawContent,
+  CoreGroup_OnSetFocus,
+  CoreGroup_OnSetBuffered,
+  CoreGroup_OnSetOpacity,
+  CoreGroup_IsDialog,
+  CoreGroup_DispatchEvent,
+  CoreGroup_BroadcastEvent,
+  CoreGroup_UpdateLayout,
+  WidgetSetGauge_UpdateViewState,
+  CoreGroup_InvalidateArea,
+  CoreGroup_FindSiblingView,
+  CoreGroup_RestackTop,
+  CoreGroup_Remove,
+  CoreGroup_Add,
+EW_END_OF_CLASS( WidgetSetGauge )
+
 /* Initializer for the class 'WidgetSet::VerticalSlider' */
 void WidgetSetVerticalSlider__Init( WidgetSetVerticalSlider _this, XObject aLink, XHandle aArg )
 {
@@ -2183,7 +2956,7 @@ void WidgetSetVerticalSlider__Init( WidgetSetVerticalSlider _this, XObject aLink
   _this->_VMT = EW_CLASS( WidgetSetVerticalSlider );
 
   /* ... and initialize objects, variables, properties, etc. */
-  CoreRectView__OnSetBounds( _this, _Const000C );
+  CoreRectView__OnSetBounds( _this, _Const000E );
   CoreTimer_OnSetPeriod( &_this->RepetitionTimer, 0 );
   CoreTimer_OnSetBegin( &_this->RepetitionTimer, 50 );
   _this->KeyHandlerDown.Filter = CoreKeyCodeDown;
@@ -2191,10 +2964,10 @@ void WidgetSetVerticalSlider__Init( WidgetSetVerticalSlider _this, XObject aLink
   CoreView_OnSetLayout((CoreView)&_this->TouchHandler, CoreLayoutAlignToBottom | 
   CoreLayoutAlignToLeft | CoreLayoutAlignToRight | CoreLayoutAlignToTop | CoreLayoutResizeHorz 
   | CoreLayoutResizeVert );
-  CoreQuadView_OnSetPoint4((CoreQuadView)&_this->TouchHandler, _Const000D );
-  CoreQuadView_OnSetPoint3((CoreQuadView)&_this->TouchHandler, _Const000E );
-  CoreQuadView_OnSetPoint2((CoreQuadView)&_this->TouchHandler, _Const000F );
-  CoreQuadView_OnSetPoint1((CoreQuadView)&_this->TouchHandler, _Const000B );
+  CoreQuadView__OnSetPoint4( &_this->TouchHandler, _Const000F );
+  CoreQuadView__OnSetPoint3( &_this->TouchHandler, _Const0010 );
+  CoreQuadView__OnSetPoint2( &_this->TouchHandler, _Const0011 );
+  CoreQuadView__OnSetPoint1( &_this->TouchHandler, _Const000C );
   CoreSimpleTouchHandler_OnSetRetargetOffset( &_this->TouchHandler, 16 );
   CoreSimpleTouchHandler_OnSetMaxStrikeCount( &_this->TouchHandler, 100 );
   _this->StepSize = 1;
@@ -2358,7 +3131,7 @@ void WidgetSetVerticalSlider_UpdateViewState( WidgetSetVerticalSlider _this, XSe
   != 0 )) || ( _this->Appearance->CoverActive != 0 )));
   restack = 0;
   area = EwGetRectORect( _this->Super2.Bounds );
-  thumbSize = _Const000B;
+  thumbSize = _Const000C;
 
   if ( needsFace && ( _this->frameView1 == 0 ))
   {
@@ -2451,7 +3224,7 @@ void WidgetSetVerticalSlider_UpdateViewState( WidgetSetVerticalSlider _this, XSe
   {
     ResourcesBitmap bitmap = 0;
     XInt32 frameNo = -1;
-    XColor tint = _Const0008;
+    XColor tint = _Const0009;
 
     if ( !isEnabled )
     {
@@ -2494,7 +3267,7 @@ void WidgetSetVerticalSlider_UpdateViewState( WidgetSetVerticalSlider _this, XSe
   {
     ResourcesBitmap bitmap = 0;
     XInt32 frameNo = -1;
-    XColor tint = _Const0008;
+    XColor tint = _Const0009;
     XSet edges = GraphicsEdgesBottom | GraphicsEdgesInterior | GraphicsEdgesLeft 
       | GraphicsEdgesRight;
 
@@ -2544,7 +3317,7 @@ void WidgetSetVerticalSlider_UpdateViewState( WidgetSetVerticalSlider _this, XSe
   {
     ResourcesBitmap bitmap = 0;
     XInt32 frameNo = -1;
-    XColor tint = _Const0008;
+    XColor tint = _Const0009;
     XSet edges = GraphicsEdgesInterior | GraphicsEdgesLeft | GraphicsEdgesRight 
       | GraphicsEdgesTop;
 
@@ -2594,7 +3367,7 @@ void WidgetSetVerticalSlider_UpdateViewState( WidgetSetVerticalSlider _this, XSe
   {
     ResourcesBitmap bitmap = 0;
     XInt32 frameNo = -1;
-    XColor tint = _Const0008;
+    XColor tint = _Const0009;
 
     if ( !isEnabled )
     {
@@ -2637,7 +3410,7 @@ void WidgetSetVerticalSlider_UpdateViewState( WidgetSetVerticalSlider _this, XSe
   {
     ResourcesBitmap bitmap = 0;
     XInt32 frameNo = -1;
-    XColor tint = _Const0008;
+    XColor tint = _Const0009;
 
     if ( !isEnabled )
     {
@@ -2744,7 +3517,7 @@ void WidgetSetVerticalSlider_UpdateViewState( WidgetSetVerticalSlider _this, XSe
 
   if (( _this->imageView != 0 ) && ( _this->imageView->Bitmap != 0 ))
   {
-    XRect thumbArea = EwNewRect2Point( _Const000B, thumbSize );
+    XRect thumbArea = EwNewRect2Point( _Const000C, thumbSize );
     CoreRectView__OnSetBounds( _this->imageView, EwMoveRectPos( EwMoveRectNeg( thumbArea, 
     EwGetRectCenter( thumbArea )), EwNewPoint( EwGetRectW( area ) / 2, newThumbPos )));
   }
@@ -3239,17 +4012,17 @@ void WidgetSetPushButton__Init( WidgetSetPushButton _this, XObject aLink, XHandl
   _this->_VMT = EW_CLASS( WidgetSetPushButton );
 
   /* ... and initialize objects, variables, properties, etc. */
-  CoreRectView__OnSetBounds( _this, _Const0010 );
+  CoreRectView__OnSetBounds( _this, _Const0012 );
   CoreTimer_OnSetPeriod( &_this->FlashTimer, 0 );
   CoreTimer_OnSetBegin( &_this->FlashTimer, 50 );
   _this->KeyHandler.Filter = CoreKeyCodeEnter;
   CoreView_OnSetLayout((CoreView)&_this->TouchHandler, CoreLayoutAlignToBottom | 
   CoreLayoutAlignToLeft | CoreLayoutAlignToRight | CoreLayoutAlignToTop | CoreLayoutResizeHorz 
   | CoreLayoutResizeVert );
-  CoreQuadView_OnSetPoint4((CoreQuadView)&_this->TouchHandler, _Const0011 );
-  CoreQuadView_OnSetPoint3((CoreQuadView)&_this->TouchHandler, _Const0012 );
-  CoreQuadView_OnSetPoint2((CoreQuadView)&_this->TouchHandler, _Const0013 );
-  CoreQuadView_OnSetPoint1((CoreQuadView)&_this->TouchHandler, _Const000B );
+  CoreQuadView__OnSetPoint4( &_this->TouchHandler, _Const0013 );
+  CoreQuadView__OnSetPoint3( &_this->TouchHandler, _Const0014 );
+  CoreQuadView__OnSetPoint2( &_this->TouchHandler, _Const0015 );
+  CoreQuadView__OnSetPoint1( &_this->TouchHandler, _Const000C );
   CoreSimpleTouchHandler_OnSetRetargetOffset( &_this->TouchHandler, 16 );
   CoreSimpleTouchHandler_OnSetMaxStrikeCount( &_this->TouchHandler, 100 );
   _this->IconFrameActive = -1;
@@ -3452,7 +4225,7 @@ void WidgetSetPushButton_UpdateViewState( WidgetSetPushButton _this, XSet aState
   {
     ResourcesBitmap bitmap = 0;
     XInt32 frameNo = -1;
-    XColor tint = _Const0008;
+    XColor tint = _Const0009;
     XSet layout = _this->Appearance->FaceLayout;
     XRect r = area;
 
@@ -3533,7 +4306,7 @@ void WidgetSetPushButton_UpdateViewState( WidgetSetPushButton _this, XSet aState
   if (( _this->imageView != 0 ) && ( _this->Appearance != 0 ))
   {
     XInt32 frameNo = -1;
-    XColor clr = _Const0008;
+    XColor clr = _Const0009;
 
     if ( !isEnabled )
     {
@@ -3600,12 +4373,12 @@ void WidgetSetPushButton_UpdateViewState( WidgetSetPushButton _this, XSet aState
       | ViewsImageAlignmentAlignVertCenter );
       ViewsImage_OnSetBitmap( _this->imageView, _this->Icon );
       ViewsImage_OnSetFrameNumber( _this->imageView, frameNo );
-      ViewsImage_OnSetColor( _this->imageView, _Const0008 );
+      ViewsImage_OnSetColor( _this->imageView, _Const0009 );
     }
 
   if ( _this->textView != 0 )
   {
-    XColor clr = _Const0008;
+    XColor clr = _Const0009;
 
     if ( !isEnabled )
       clr = _this->Appearance->LabelColorDisabled;

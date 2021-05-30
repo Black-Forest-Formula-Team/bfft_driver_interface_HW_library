@@ -104,10 +104,27 @@ XBool GraphicsWarpMatrix_CalculateZ( GraphicsWarpMatrix _this, XFloat aX, XFloat
 /* 'C' function for method : 'Graphics::WarpMatrix.Project()' */
 XBool GraphicsWarpMatrix_Project( GraphicsWarpMatrix _this, XFloat aX, XFloat aY );
 
+/* The method Rotate() applies the given angles to the matrix. This corresponds 
+   to the rotation of the source image around the X-, Y- and Z-axis. The angles 
+   are specified in degrees. The method returns 'this' object to the caller. */
+GraphicsWarpMatrix GraphicsWarpMatrix_Rotate( GraphicsWarpMatrix _this, XFloat aAngleX, 
+  XFloat aAngleY, XFloat aAngleZ );
+
+/* The method Translate() applies the given displacement to the matrix. This corresponds 
+   to the translation of the source image by the given values in the X-, Y- and 
+   Z-direction. The method returns 'this' object to the caller. */
+GraphicsWarpMatrix GraphicsWarpMatrix_Translate( GraphicsWarpMatrix _this, XFloat 
+  aDeltaX, XFloat aDeltaY, XFloat aDeltaZ );
+
 /* 'C' function for method : 'Graphics::WarpMatrix.DeriveFromQuad()' */
 GraphicsWarpMatrix GraphicsWarpMatrix_DeriveFromQuad( GraphicsWarpMatrix _this, 
   XFloat aX1, XFloat aY1, XFloat aX2, XFloat aY2, XFloat aX3, XFloat aY3, XFloat 
   aX4, XFloat aY4 );
+
+/* The method Assign() copies the coefficients of the given aMatrix into the own 
+   coefficients. The method returns 'this' object to the caller. */
+GraphicsWarpMatrix GraphicsWarpMatrix_Assign( GraphicsWarpMatrix _this, GraphicsWarpMatrix 
+  aMatrix );
 
 #ifdef __cplusplus
   }
