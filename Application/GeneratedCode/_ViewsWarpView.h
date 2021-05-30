@@ -131,9 +131,6 @@ EW_DEFINE_METHODS( ViewsWarpView, CoreQuadView )
   EW_METHOD( OnSetPoint3,       void )( ViewsWarpView _this, XPoint value )
   EW_METHOD( OnSetPoint2,       void )( ViewsWarpView _this, XPoint value )
   EW_METHOD( OnSetPoint1,       void )( ViewsWarpView _this, XPoint value )
-  EW_METHOD( update,            void )( ViewsWarpView _this, XObject sender )
-  EW_METHOD( RotateAndScale,    void )( ViewsWarpView _this, XPoint aDstPos, XFloat 
-    aAngle, XFloat aScaleX, XFloat aScaleY )
 EW_END_OF_METHODS( ViewsWarpView )
 
 /* 'C' function for method : 'Views::WarpView.OnSetPoint4()' */
@@ -154,38 +151,23 @@ void ViewsWarpView_calculateLight( ViewsWarpView _this );
 /* 'C' function for method : 'Views::WarpView.update()' */
 void ViewsWarpView_update( ViewsWarpView _this, XObject sender );
 
-/* Wrapper function for the virtual method : 'Views::WarpView.update()' */
-void ViewsWarpView__update( void* _this, XObject sender );
-
-/* 'C' function for method : 'Views::WarpView.OnSetQuality()' */
-void ViewsWarpView_OnSetQuality( ViewsWarpView _this, XBool value );
-
 /* 'C' function for method : 'Views::WarpView.OnSetSourceAnchor()' */
 void ViewsWarpView_OnSetSourceAnchor( ViewsWarpView _this, XPoint value );
 
-/* 'C' function for method : 'Views::WarpView.OnSetVisible()' */
-void ViewsWarpView_OnSetVisible( ViewsWarpView _this, XBool value );
-
-/* The method RotateAndScale() performs a 2D rotation and scaling of the source 
-   image. The transformation is performed around a reference position specified 
-   in the property @SourceAnchor. This allows e.g. a rotation around the center 
-   of the image, etc. The rotation angle is passed in the parameter aAngle as a 
-   value in the range 0 .. 360°. The values passed in the parameters aScaleX and 
-   aScaleY determine additional scaling factors for the image in the horizontal 
-   and vertical direction. If no scaling should be performed, the value 1.0 can 
-   be passed to these parameters. In contrast, if no rotation is desired, 0.0 can 
-   be passed to the parameter aAngle.
+/* The method Warp3D() performs a 2D or 3D transformation of the source image. The 
+   transformation is performed around a reference position specified in the property 
+   @SourceAnchor. This allows e.g. a rotation around the center of the image, etc. 
+   The kind of transformation is determined by the warp matrix passed in the parameter 
+   aMatrix. The corresponding Graphics::WarpMatrix class provides several method 
+   for different kinds of transformations. Even one matrix can describe a complex 
+   transformation composed of several separate steps.
    The transformed image appears on the screen at the position aDstPos relative 
    to the top-left corner of this view's @Owner. The view itself takes the shape 
    resulting from this transformation and adapts its @Point1 .. @Point4 coordinates 
-   accordingly. More sophisticated 2D and 3D transformations are performed by the 
-   method @Warp3D(). */
-void ViewsWarpView_RotateAndScale( ViewsWarpView _this, XPoint aDstPos, XFloat aAngle, 
-  XFloat aScaleX, XFloat aScaleY );
-
-/* Wrapper function for the virtual method : 'Views::WarpView.RotateAndScale()' */
-void ViewsWarpView__RotateAndScale( void* _this, XPoint aDstPos, XFloat aAngle, 
-  XFloat aScaleX, XFloat aScaleY );
+   accordingly. Simple 2D rotation and scaling operations can be performed by the 
+   method @RotateAndScale(). */
+void ViewsWarpView_Warp3D( ViewsWarpView _this, XPoint aDstPos, GraphicsWarpMatrix 
+  aMatrix );
 
 #ifdef __cplusplus
   }

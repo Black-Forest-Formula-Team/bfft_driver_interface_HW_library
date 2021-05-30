@@ -25,7 +25,6 @@
 *******************************************************************************/
 
 #include "ewlocale.h"
-#include "_ApplicationApplication.h"
 #include "_CoreCursorEvent.h"
 #include "_CoreCursorGrabEvent.h"
 #include "_CoreCursorHit.h"
@@ -62,6 +61,7 @@
 #include "_EffectsPointEffect.h"
 #include "_EffectsShowHideTransition.h"
 #include "_EffectsTransition.h"
+#include "_GUIGUI.h"
 #include "_GraphicsCanvas.h"
 #include "_ResourcesBitmap.h"
 #include "_ViewsText.h"
@@ -165,7 +165,7 @@ static const XStringRes _Const0017 = { _StringsDefault1, 0x014B };
 const XPoint EwScreenSize = { 480, 272 };
 
 /* Global constant containing the main application class. */
-const XClass EwApplicationClass = EW_CLASS( ApplicationApplication );
+const XClass EwApplicationClass = EW_CLASS( GUIGUI );
 
 /* Global constant containing the user defined application title. */
 const char* EwApplicationTitle = "";
@@ -1325,13 +1325,13 @@ XPoint CoreQuadView_ArrangeView( CoreQuadView _this, XRect aBounds, XEnum aForma
   }
   else
   {
-    CoreQuadView_OnSetPoint1( _this, EwNewPoint( x1 + ((( context->point1.X - ex ) 
+    CoreQuadView__OnSetPoint1( _this, EwNewPoint( x1 + ((( context->point1.X - ex ) 
     * w ) / ew ), y1 + ((( context->point1.Y - ey ) * h ) / eh )));
-    CoreQuadView_OnSetPoint2( _this, EwNewPoint( x1 + ((( context->point2.X - ex ) 
+    CoreQuadView__OnSetPoint2( _this, EwNewPoint( x1 + ((( context->point2.X - ex ) 
     * w ) / ew ), y1 + ((( context->point2.Y - ey ) * h ) / eh )));
-    CoreQuadView_OnSetPoint3( _this, EwNewPoint( x1 + ((( context->point3.X - ex ) 
+    CoreQuadView__OnSetPoint3( _this, EwNewPoint( x1 + ((( context->point3.X - ex ) 
     * w ) / ew ), y1 + ((( context->point3.Y - ey ) * h ) / eh )));
-    CoreQuadView_OnSetPoint4( _this, EwNewPoint( x1 + ((( context->point4.X - ex ) 
+    CoreQuadView__OnSetPoint4( _this, EwNewPoint( x1 + ((( context->point4.X - ex ) 
     * w ) / ew ), y1 + ((( context->point4.Y - ey ) * h ) / eh )));
     _this->Super1.layoutContext = ((CoreLayoutContext)context );
   }
@@ -1361,10 +1361,10 @@ void CoreQuadView_MoveView( CoreQuadView _this, XPoint aOffset, XBool aFastMove 
   }
   else
   {
-    CoreQuadView_OnSetPoint1( _this, EwMovePointPos( _this->Point1, aOffset ));
-    CoreQuadView_OnSetPoint2( _this, EwMovePointPos( _this->Point2, aOffset ));
-    CoreQuadView_OnSetPoint3( _this, EwMovePointPos( _this->Point3, aOffset ));
-    CoreQuadView_OnSetPoint4( _this, EwMovePointPos( _this->Point4, aOffset ));
+    CoreQuadView__OnSetPoint1( _this, EwMovePointPos( _this->Point1, aOffset ));
+    CoreQuadView__OnSetPoint2( _this, EwMovePointPos( _this->Point2, aOffset ));
+    CoreQuadView__OnSetPoint3( _this, EwMovePointPos( _this->Point3, aOffset ));
+    CoreQuadView__OnSetPoint4( _this, EwMovePointPos( _this->Point4, aOffset ));
   }
 }
 
@@ -1475,6 +1475,12 @@ void CoreQuadView_OnSetPoint4( CoreQuadView _this, XPoint value )
   }
 }
 
+/* Wrapper function for the virtual method : 'Core::QuadView.OnSetPoint4()' */
+void CoreQuadView__OnSetPoint4( void* _this, XPoint value )
+{
+  ((CoreQuadView)_this)->_VMT->OnSetPoint4((CoreQuadView)_this, value );
+}
+
 /* 'C' function for method : 'Core::QuadView.OnSetPoint3()' */
 void CoreQuadView_OnSetPoint3( CoreQuadView _this, XPoint value )
 {
@@ -1501,6 +1507,12 @@ void CoreQuadView_OnSetPoint3( CoreQuadView _this, XPoint value )
     | CoreViewStatePendingLayout;
     EwPostSignal( EwNewSlot( _this->Super1.Owner, CoreGroup_updateComponent ), ((XObject)_this ));
   }
+}
+
+/* Wrapper function for the virtual method : 'Core::QuadView.OnSetPoint3()' */
+void CoreQuadView__OnSetPoint3( void* _this, XPoint value )
+{
+  ((CoreQuadView)_this)->_VMT->OnSetPoint3((CoreQuadView)_this, value );
 }
 
 /* 'C' function for method : 'Core::QuadView.OnSetPoint2()' */
@@ -1531,6 +1543,12 @@ void CoreQuadView_OnSetPoint2( CoreQuadView _this, XPoint value )
   }
 }
 
+/* Wrapper function for the virtual method : 'Core::QuadView.OnSetPoint2()' */
+void CoreQuadView__OnSetPoint2( void* _this, XPoint value )
+{
+  ((CoreQuadView)_this)->_VMT->OnSetPoint2((CoreQuadView)_this, value );
+}
+
 /* 'C' function for method : 'Core::QuadView.OnSetPoint1()' */
 void CoreQuadView_OnSetPoint1( CoreQuadView _this, XPoint value )
 {
@@ -1557,6 +1575,12 @@ void CoreQuadView_OnSetPoint1( CoreQuadView _this, XPoint value )
     | CoreViewStatePendingLayout;
     EwPostSignal( EwNewSlot( _this->Super1.Owner, CoreGroup_updateComponent ), ((XObject)_this ));
   }
+}
+
+/* Wrapper function for the virtual method : 'Core::QuadView.OnSetPoint1()' */
+void CoreQuadView__OnSetPoint1( void* _this, XPoint value )
+{
+  ((CoreQuadView)_this)->_VMT->OnSetPoint1((CoreQuadView)_this, value );
 }
 
 /* The method IsPointInside() verifies whether the specified position aPoint lies 
@@ -1629,6 +1653,10 @@ EW_DEFINE_CLASS( CoreQuadView, CoreView, _None, _None, _None, _None, _None, _Non
   CoreQuadView_MoveView,
   CoreQuadView_GetExtent,
   CoreView_ChangeViewState,
+  CoreQuadView_OnSetPoint4,
+  CoreQuadView_OnSetPoint3,
+  CoreQuadView_OnSetPoint2,
+  CoreQuadView_OnSetPoint1,
 EW_END_OF_CLASS( CoreQuadView )
 
 /* Initializer for the class 'Core::RectView' */
@@ -2753,6 +2781,15 @@ void CoreGroup_OnSetBuffered( CoreGroup _this, XBool value )
 void CoreGroup__OnSetBuffered( void* _this, XBool value )
 {
   ((CoreGroup)_this)->_VMT->OnSetBuffered((CoreGroup)_this, value );
+}
+
+/* 'C' function for method : 'Core::Group.OnSetEnabled()' */
+void CoreGroup_OnSetEnabled( CoreGroup _this, XBool value )
+{
+  if ( value )
+    CoreView__ChangeViewState( _this, CoreViewStateEnabled, 0 );
+  else
+    CoreView__ChangeViewState( _this, 0, CoreViewStateEnabled );
 }
 
 /* 'C' function for method : 'Core::Group.OnSetOpacity()' */
@@ -7674,6 +7711,10 @@ EW_DEFINE_CLASS( CoreSimpleTouchHandler, CoreQuadView, OnDrag, OnDrag, stateReta
   CoreQuadView_MoveView,
   CoreQuadView_GetExtent,
   CoreView_ChangeViewState,
+  CoreQuadView_OnSetPoint4,
+  CoreQuadView_OnSetPoint3,
+  CoreQuadView_OnSetPoint2,
+  CoreQuadView_OnSetPoint1,
 EW_END_OF_CLASS( CoreSimpleTouchHandler )
 
 /* Initializer for the class 'Core::RotateTouchHandler' */

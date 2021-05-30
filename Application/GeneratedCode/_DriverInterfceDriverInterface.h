@@ -45,8 +45,8 @@
 #include "_CoreGroup.h"
 #include "_CoreOutline.h"
 #include "_CoreSlideTouchHandler.h"
-#include "_DriverInterfceFirstSeit.h"
-#include "_DriverInterfceSecoundSeit.h"
+#include "_DriverInterfceDummySide.h"
+#include "_DriverInterfceStartSide.h"
 #include "_EffectsPointEffect.h"
 #include "_ViewsImage.h"
 
@@ -101,11 +101,11 @@
 
 /* Deklaration of class : 'DriverInterfce::DriverInterface' */
 EW_DEFINE_FIELDS( DriverInterfceDriverInterface, CoreGroup )
-  EW_OBJECT  ( Image,           ViewsImage )
+  EW_OBJECT  ( FormulaStudentImage, ViewsImage )
   EW_OBJECT  ( SlideTouchHandler, CoreSlideTouchHandler )
   EW_OBJECT  ( Outline,         CoreOutline )
-  EW_OBJECT  ( FirstSeit,       DriverInterfceFirstSeit )
-  EW_OBJECT  ( SecoundSeit,     DriverInterfceSecoundSeit )
+  EW_OBJECT  ( FirstSeit,       DriverInterfceStartSide )
+  EW_OBJECT  ( SecoundSeit,     DriverInterfceDummySide )
   EW_OBJECT  ( PointEffect,     EffectsPointEffect )
 EW_END_OF_FIELDS( DriverInterfceDriverInterface )
 

@@ -43,8 +43,8 @@
 #endif
 
 #include "_DriverInterfceDriverInterface.h"
-#include "_DriverInterfceFirstSeit.h"
-#include "_DriverInterfceSecoundSeit.h"
+#include "_DriverInterfceDummySide.h"
+#include "_DriverInterfceStartSide.h"
 
 #ifdef __cplusplus
   }

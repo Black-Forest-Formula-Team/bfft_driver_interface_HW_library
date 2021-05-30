@@ -30,6 +30,7 @@
 #include "_EffectsEffectTimerClass.h"
 #include "_GraphicsCanvas.h"
 #include "_GraphicsPath.h"
+#include "_GraphicsWarpMatrix.h"
 #include "_ResourcesBitmap.h"
 #include "_ResourcesFont.h"
 #include "_ViewsFillPath.h"
@@ -39,6 +40,8 @@
 #include "_ViewsRectangle.h"
 #include "_ViewsStrokePath.h"
 #include "_ViewsText.h"
+#include "_ViewsWarpImage.h"
+#include "_ViewsWarpView.h"
 #include "Core.h"
 #include "Effects.h"
 #include "Graphics.h"
@@ -48,8 +51,10 @@
 /* Compressed strings for the language 'Default'. */
 static const unsigned int _StringsDefault0[] =
 {
-  0x0000000C, /* ratio 166.67 % */
-  0xB8000900, 0x3F9FE452, 0x06130800, 0x00000004, 0x00000000
+  0x0000005E, /* ratio 85.11 % */
+  0xB8000900, 0x3F9FE452, 0x0C520000, 0xC004E22C, 0x0020001B, 0x061001B4, 0x72001D00,
+  0x8001A400, 0x8745A207, 0x2800E11E, 0x19801183, 0x46271990, 0x8880019C, 0x2B198BC7,
+  0xC73001BA, 0x14894A24, 0x387C6E3F, 0x004FA113, 0x00000101, 0x00000000
 };
 
 /* Constant values used in this 'C' module only. */
@@ -58,6 +63,28 @@ static const XPoint _Const0001 = { 1, 1 };
 static const XPoint _Const0002 = { 0, 0 };
 static const XRect _Const0003 = {{ 0, 0 }, { 0, 0 }};
 static const XStringRes _Const0004 = { _StringsDefault0, 0x0002 };
+static const XStringRes _Const0005 = { _StringsDefault0, 0x0006 };
+
+#ifndef EW_DONT_CHECK_INDEX
+  /* This function is used to check the indices when accessing an array.
+     If you don't want this verification add the define EW_DONT_CHECK_INDEX
+     to your Makefile or project settings. */
+  static int EwCheckIndex( int aIndex, int aRange, const char* aFile, int aLine )
+  {
+    if (( aIndex < 0 ) || ( aIndex >= aRange ))
+    {
+      EwPrint( "[FATAL ERROR in %s:%d] Array index %d out of bounds %d",
+                aFile, aLine, aIndex, aRange );
+      EwPanic();
+    }
+    return aIndex;
+  }
+
+  #define EwCheckIndex( aIndex, aRange ) \
+    EwCheckIndex( aIndex, aRange, __FILE__, __LINE__ )
+#else
+  #define EwCheckIndex( aIndex, aRange ) aIndex
+#endif
 
 /* Initializer for the class 'Views::Line' */
 void ViewsLine__Init( ViewsLine _this, XObject aLink, XHandle aArg )
@@ -2356,6 +2383,697 @@ EW_DEFINE_CLASS( ViewsText, CoreRectView, Font, OnUpdate, flowString, flowString
   ViewsText_OnSetBounds,
 EW_END_OF_CLASS( ViewsText )
 
+/* Initializer for the class 'Views::WarpView' */
+void ViewsWarpView__Init( ViewsWarpView _this, XObject aLink, XHandle aArg )
+{
+  /* At first initialize the super class ... */
+  CoreQuadView__Init( &_this->_Super, aLink, aArg );
+
+  /* Allow the Immediate Garbage Collection to evalute the members of this class. */
+  _this->_GCT = EW_CLASS_GCT( ViewsWarpView );
+
+  /* Setup the VMT pointer */
+  _this->_VMT = EW_CLASS( ViewsWarpView );
+
+  /* ... and initialize objects, variables, properties, etc. */
+  _this->Super2.viewState = CoreViewStateAlphaBlended | CoreViewStateVisible;
+  _this->Shininess = 5.000000f;
+  _this->Quality = 1;
+}
+
+/* Re-Initializer for the class 'Views::WarpView' */
+void ViewsWarpView__ReInit( ViewsWarpView _this )
+{
+  /* At first re-initialize the super class ... */
+  CoreQuadView__ReInit( &_this->_Super );
+}
+
+/* Finalizer method for the class 'Views::WarpView' */
+void ViewsWarpView__Done( ViewsWarpView _this )
+{
+  /* Finalize this class */
+  _this->_Super._VMT = EW_CLASS( CoreQuadView );
+
+  /* Don't forget to deinitialize the super class ... */
+  CoreQuadView__Done( &_this->_Super );
+}
+
+/* 'C' function for method : 'Views::WarpView.OnSetPoint4()' */
+void ViewsWarpView_OnSetPoint4( ViewsWarpView _this, XPoint value )
+{
+  if ( !EwCompPoint( value, _this->Super1.Point4 ))
+    return;
+
+  CoreQuadView_OnSetPoint4((CoreQuadView)_this, value );
+  _this->vertices[ 3 ][ 0 ] = (XFloat)value.X;
+  _this->vertices[ 3 ][ 1 ] = (XFloat)value.Y;
+  _this->vertices[ 3 ][ 2 ] = 1.000000f;
+  _this->newUpdateCase = 'E';
+  _this->matrix = 0;
+  EwPostSignal( EwNewSlot( _this, ViewsWarpView_update ), ((XObject)_this ));
+}
+
+/* 'C' function for method : 'Views::WarpView.OnSetPoint3()' */
+void ViewsWarpView_OnSetPoint3( ViewsWarpView _this, XPoint value )
+{
+  if ( !EwCompPoint( value, _this->Super1.Point3 ))
+    return;
+
+  CoreQuadView_OnSetPoint3((CoreQuadView)_this, value );
+  _this->vertices[ 2 ][ 0 ] = (XFloat)value.X;
+  _this->vertices[ 2 ][ 1 ] = (XFloat)value.Y;
+  _this->vertices[ 2 ][ 2 ] = 1.000000f;
+  _this->newUpdateCase = 'E';
+  _this->matrix = 0;
+  EwPostSignal( EwNewSlot( _this, ViewsWarpView_update ), ((XObject)_this ));
+}
+
+/* 'C' function for method : 'Views::WarpView.OnSetPoint2()' */
+void ViewsWarpView_OnSetPoint2( ViewsWarpView _this, XPoint value )
+{
+  if ( !EwCompPoint( value, _this->Super1.Point2 ))
+    return;
+
+  CoreQuadView_OnSetPoint2((CoreQuadView)_this, value );
+  _this->vertices[ 1 ][ 0 ] = (XFloat)value.X;
+  _this->vertices[ 1 ][ 1 ] = (XFloat)value.Y;
+  _this->vertices[ 1 ][ 2 ] = 1.000000f;
+  _this->newUpdateCase = 'E';
+  _this->matrix = 0;
+  EwPostSignal( EwNewSlot( _this, ViewsWarpView_update ), ((XObject)_this ));
+}
+
+/* 'C' function for method : 'Views::WarpView.OnSetPoint1()' */
+void ViewsWarpView_OnSetPoint1( ViewsWarpView _this, XPoint value )
+{
+  if ( !EwCompPoint( value, _this->Super1.Point1 ))
+    return;
+
+  CoreQuadView_OnSetPoint1((CoreQuadView)_this, value );
+  _this->vertices[ 0 ][ 0 ] = (XFloat)value.X;
+  _this->vertices[ 0 ][ 1 ] = (XFloat)value.Y;
+  _this->vertices[ 0 ][ 2 ] = 1.000000f;
+  _this->newUpdateCase = 'E';
+  _this->matrix = 0;
+  EwPostSignal( EwNewSlot( _this, ViewsWarpView_update ), ((XObject)_this ));
+}
+
+/* 'C' function for method : 'Views::WarpView.calculateLight()' */
+void ViewsWarpView_calculateLight( ViewsWarpView _this )
+{
+  XFloat lx;
+  XFloat ly;
+  XFloat lz;
+  XFloat ax;
+  XFloat ay;
+  XFloat az;
+  XFloat bx;
+  XFloat by;
+  XFloat bz;
+  XFloat nx;
+  XFloat ny;
+  XFloat nz;
+  XFloat nlen;
+  XInt32 i;
+
+  if ( _this->LightingEffect == 0.000000f )
+    return;
+
+  lx = 240.000000f;
+  ly = 240.000000f;
+  lz = -10000000.000000f;
+  ax = _this->vertices[ 1 ][ 0 ] - _this->vertices[ 0 ][ 0 ];
+  ay = _this->vertices[ 1 ][ 1 ] - _this->vertices[ 0 ][ 1 ];
+  az = _this->vertices[ 1 ][ 2 ] - _this->vertices[ 0 ][ 2 ];
+  bx = _this->vertices[ 3 ][ 0 ] - _this->vertices[ 0 ][ 0 ];
+  by = _this->vertices[ 3 ][ 1 ] - _this->vertices[ 0 ][ 1 ];
+  bz = _this->vertices[ 3 ][ 2 ] - _this->vertices[ 0 ][ 2 ];
+  nx = ( ay * bz ) - ( az * by );
+  ny = ( az * bx ) - ( ax * bz );
+  nz = ( ax * by ) - ( ay * bx );
+  nlen = EwMathSqrt((( nx * nx ) + ( ny * ny )) + ( nz * nz ));
+
+  if ( nlen > 0.000000f )
+  {
+    nlen = 1.000000f / nlen;
+    nx = nx * nlen;
+    ny = ny * nlen;
+    nz = nz * nlen;
+  }
+
+  for ( i = 0; i < 4; i = i + 1 )
+  {
+    XFloat vlx = _this->vertices[ EwCheckIndex( i, 4 )][ 0 ] - lx;
+    XFloat vly = _this->vertices[ EwCheckIndex( i, 4 )][ 1 ] - ly;
+    XFloat vlz = _this->vertices[ EwCheckIndex( i, 4 )][ 2 ] - lz;
+    XFloat vllen = EwMathSqrt((( vlx * vlx ) + ( vly * vly )) + ( vlz * vlz ));
+    XFloat light;
+
+    if ( vllen > 0.000000f )
+    {
+      vllen = 1.000000f / vllen;
+      vlx = vlx * vllen;
+      vly = vly * vllen;
+      vlz = vlz * vllen;
+    }
+
+    light = (( vlx * nx ) + ( vly * ny )) + ( vlz * nz );
+
+    if ( light < 0.000000f )
+      light = -light;
+
+    light = EwMathPow( light, _this->Shininess );
+    light = (( _this->LightingEffect * light ) + 1.000000f ) - _this->LightingEffect;
+    _this->lighting[ EwCheckIndex( i, 4 )] = (XInt32)( light * 257.000000f );
+
+    if ( _this->lighting[ EwCheckIndex( i, 4 )] > 256 )
+      _this->lighting[ EwCheckIndex( i, 4 )] = 256;
+  }
+}
+
+/* 'C' function for method : 'Views::WarpView.update()' */
+void ViewsWarpView_update( ViewsWarpView _this, XObject sender )
+{
+  /* Dummy expressions to avoid the 'C' warning 'unused argument'. */
+  EW_UNUSED_ARG( sender );
+
+  if ( _this->newUpdateCase == 0x0000 )
+    return;
+
+  if ( _this->newUpdateCase == 'E' )
+  {
+    GraphicsWarpMatrix m = EwNewObject( GraphicsWarpMatrix, 0 );
+    m = GraphicsWarpMatrix_DeriveFromQuad( m, _this->vertices[ 0 ][ 0 ], _this->vertices[ 
+    0 ][ 1 ], _this->vertices[ 1 ][ 0 ], _this->vertices[ 1 ][ 1 ], _this->vertices[ 
+    2 ][ 0 ], _this->vertices[ 2 ][ 1 ], _this->vertices[ 3 ][ 0 ], _this->vertices[ 
+    3 ][ 1 ]);
+
+    if ( m != 0 )
+    {
+      GraphicsWarpMatrix_CalculateZ( m, 0.000000f, 0.000000f );
+      _this->vertices[ 0 ][ 2 ] = m->Z * 240.000000f;
+      GraphicsWarpMatrix_CalculateZ( m, 1.000000f, 0.000000f );
+      _this->vertices[ 1 ][ 2 ] = m->Z * 240.000000f;
+      GraphicsWarpMatrix_CalculateZ( m, 1.000000f, 1.000000f );
+      _this->vertices[ 2 ][ 2 ] = m->Z * 240.000000f;
+      GraphicsWarpMatrix_CalculateZ( m, 0.000000f, 1.000000f );
+      _this->vertices[ 3 ][ 2 ] = m->Z * 240.000000f;
+    }
+
+    ViewsWarpView_calculateLight( _this );
+  }
+
+  if (((( _this->newUpdateCase == 'M' ) && ( _this->matrix != 0 )) && ( _this->bitmapSize.X 
+      != 0 )) && ( _this->bitmapSize.Y != 0 ))
+  {
+    XRect sourceArea = EwIntersectRect2( _this->SourceArea, EwNewRect2Point( _Const0002, 
+      _this->bitmapSize ));
+    XPoint sourceAnchor = _this->SourceAnchor;
+    XFloat l = (XFloat)( sourceArea.Point1.X - sourceAnchor.X );
+    XFloat r = (XFloat)( sourceArea.Point2.X - sourceAnchor.X );
+    XFloat t = (XFloat)( sourceArea.Point1.Y - sourceAnchor.Y );
+    XFloat b = (XFloat)( sourceArea.Point2.Y - sourceAnchor.Y );
+    GraphicsWarpMatrix_Project( _this->matrix, l, t );
+    _this->vertices[ 0 ][ 0 ] = _this->matrix->X + _this->dstPosX;
+    _this->vertices[ 0 ][ 1 ] = _this->matrix->Y + _this->dstPosY;
+    _this->vertices[ 0 ][ 2 ] = _this->matrix->Z;
+    GraphicsWarpMatrix_Project( _this->matrix, r, t );
+    _this->vertices[ 1 ][ 0 ] = _this->matrix->X + _this->dstPosX;
+    _this->vertices[ 1 ][ 1 ] = _this->matrix->Y + _this->dstPosY;
+    _this->vertices[ 1 ][ 2 ] = _this->matrix->Z;
+    GraphicsWarpMatrix_Project( _this->matrix, r, b );
+    _this->vertices[ 2 ][ 0 ] = _this->matrix->X + _this->dstPosX;
+    _this->vertices[ 2 ][ 1 ] = _this->matrix->Y + _this->dstPosY;
+    _this->vertices[ 2 ][ 2 ] = _this->matrix->Z;
+    GraphicsWarpMatrix_Project( _this->matrix, l, b );
+    _this->vertices[ 3 ][ 0 ] = _this->matrix->X + _this->dstPosX;
+    _this->vertices[ 3 ][ 1 ] = _this->matrix->Y + _this->dstPosY;
+    _this->vertices[ 3 ][ 2 ] = _this->matrix->Z;
+
+    if (( _this->Super2.Owner != 0 ) && (( _this->Super2.viewState & CoreViewStateVisible ) 
+        == CoreViewStateVisible ))
+      CoreGroup__InvalidateArea( _this->Super2.Owner, CoreView__GetExtent( _this ));
+
+    _this->Super1.Point1 = EwNewPoint((XInt32)( _this->vertices[ 0 ][ 0 ] + 0.500000f ), 
+    (XInt32)( _this->vertices[ 0 ][ 1 ] + 0.500000f ));
+    _this->Super1.Point2 = EwNewPoint((XInt32)( _this->vertices[ 1 ][ 0 ] + 0.500000f ), 
+    (XInt32)( _this->vertices[ 1 ][ 1 ] + 0.500000f ));
+    _this->Super1.Point3 = EwNewPoint((XInt32)( _this->vertices[ 2 ][ 0 ] + 0.500000f ), 
+    (XInt32)( _this->vertices[ 2 ][ 1 ] + 0.500000f ));
+    _this->Super1.Point4 = EwNewPoint((XInt32)( _this->vertices[ 3 ][ 0 ] + 0.500000f ), 
+    (XInt32)( _this->vertices[ 3 ][ 1 ] + 0.500000f ));
+    ViewsWarpView_calculateLight( _this );
+  }
+
+  _this->oldUpdateCase = _this->newUpdateCase;
+  _this->newUpdateCase = 0x0000;
+
+  if (( _this->Super2.Owner != 0 ) && (( _this->Super2.viewState & CoreViewStateVisible ) 
+      == CoreViewStateVisible ))
+    CoreGroup__InvalidateArea( _this->Super2.Owner, CoreView__GetExtent( _this ));
+}
+
+/* 'C' function for method : 'Views::WarpView.OnSetSourceAnchor()' */
+void ViewsWarpView_OnSetSourceAnchor( ViewsWarpView _this, XPoint value )
+{
+  if ( !EwCompPoint( value, _this->SourceAnchor ))
+    return;
+
+  _this->SourceAnchor = value;
+
+  if (( _this->oldUpdateCase != 'E' ) && ( _this->newUpdateCase == 0x0000 ))
+  {
+    _this->newUpdateCase = _this->oldUpdateCase;
+    EwPostSignal( EwNewSlot( _this, ViewsWarpView_update ), ((XObject)_this ));
+  }
+}
+
+/* The method Warp3D() performs a 2D or 3D transformation of the source image. The 
+   transformation is performed around a reference position specified in the property 
+   @SourceAnchor. This allows e.g. a rotation around the center of the image, etc. 
+   The kind of transformation is determined by the warp matrix passed in the parameter 
+   aMatrix. The corresponding Graphics::WarpMatrix class provides several method 
+   for different kinds of transformations. Even one matrix can describe a complex 
+   transformation composed of several separate steps.
+   The transformed image appears on the screen at the position aDstPos relative 
+   to the top-left corner of this view's @Owner. The view itself takes the shape 
+   resulting from this transformation and adapts its @Point1 .. @Point4 coordinates 
+   accordingly. Simple 2D rotation and scaling operations can be performed by the 
+   method @RotateAndScale(). */
+void ViewsWarpView_Warp3D( ViewsWarpView _this, XPoint aDstPos, GraphicsWarpMatrix 
+  aMatrix )
+{
+  XRect sourceArea;
+  XPoint sourceAnchor;
+  XFloat l;
+  XFloat r;
+  XFloat t;
+  XFloat b;
+
+  if ( aMatrix == 0 )
+  {
+    EwThrow( EwLoadString( &_Const0005 ));
+    return;
+  }
+
+  if ( _this->matrix == 0 )
+    _this->matrix = EwNewObject( GraphicsWarpMatrix, 0 );
+
+  GraphicsWarpMatrix_Assign( _this->matrix, aMatrix );
+  _this->dstPosX = (XFloat)aDstPos.X;
+  _this->dstPosY = (XFloat)aDstPos.Y;
+  _this->oldUpdateCase = 'M';
+  _this->newUpdateCase = 0x0000;
+
+  if (( _this->bitmapSize.X == 0 ) || ( _this->bitmapSize.Y == 0 ))
+    return;
+
+  sourceArea = EwIntersectRect2( _this->SourceArea, EwNewRect2Point( _Const0002, 
+  _this->bitmapSize ));
+  sourceAnchor = _this->SourceAnchor;
+  l = (XFloat)( sourceArea.Point1.X - sourceAnchor.X );
+  r = (XFloat)( sourceArea.Point2.X - sourceAnchor.X );
+  t = (XFloat)( sourceArea.Point1.Y - sourceAnchor.Y );
+  b = (XFloat)( sourceArea.Point2.Y - sourceAnchor.Y );
+  GraphicsWarpMatrix_Project( _this->matrix, l, t );
+  _this->vertices[ 0 ][ 0 ] = _this->matrix->X + _this->dstPosX;
+  _this->vertices[ 0 ][ 1 ] = _this->matrix->Y + _this->dstPosY;
+  _this->vertices[ 0 ][ 2 ] = _this->matrix->Z;
+  GraphicsWarpMatrix_Project( _this->matrix, r, t );
+  _this->vertices[ 1 ][ 0 ] = _this->matrix->X + _this->dstPosX;
+  _this->vertices[ 1 ][ 1 ] = _this->matrix->Y + _this->dstPosY;
+  _this->vertices[ 1 ][ 2 ] = _this->matrix->Z;
+  GraphicsWarpMatrix_Project( _this->matrix, r, b );
+  _this->vertices[ 2 ][ 0 ] = _this->matrix->X + _this->dstPosX;
+  _this->vertices[ 2 ][ 1 ] = _this->matrix->Y + _this->dstPosY;
+  _this->vertices[ 2 ][ 2 ] = _this->matrix->Z;
+  GraphicsWarpMatrix_Project( _this->matrix, l, b );
+  _this->vertices[ 3 ][ 0 ] = _this->matrix->X + _this->dstPosX;
+  _this->vertices[ 3 ][ 1 ] = _this->matrix->Y + _this->dstPosY;
+  _this->vertices[ 3 ][ 2 ] = _this->matrix->Z;
+
+  if (( _this->Super2.Owner != 0 ) && (( _this->Super2.viewState & CoreViewStateVisible ) 
+      == CoreViewStateVisible ))
+    CoreGroup__InvalidateArea( _this->Super2.Owner, CoreView__GetExtent( _this ));
+
+  _this->Super1.Point1 = EwNewPoint((XInt32)( _this->vertices[ 0 ][ 0 ] + 0.500000f ), 
+  (XInt32)( _this->vertices[ 0 ][ 1 ] + 0.500000f ));
+  _this->Super1.Point2 = EwNewPoint((XInt32)( _this->vertices[ 1 ][ 0 ] + 0.500000f ), 
+  (XInt32)( _this->vertices[ 1 ][ 1 ] + 0.500000f ));
+  _this->Super1.Point3 = EwNewPoint((XInt32)( _this->vertices[ 2 ][ 0 ] + 0.500000f ), 
+  (XInt32)( _this->vertices[ 2 ][ 1 ] + 0.500000f ));
+  _this->Super1.Point4 = EwNewPoint((XInt32)( _this->vertices[ 3 ][ 0 ] + 0.500000f ), 
+  (XInt32)( _this->vertices[ 3 ][ 1 ] + 0.500000f ));
+
+  if (( _this->Super2.Owner != 0 ) && (( _this->Super2.viewState & CoreViewStateVisible ) 
+      == CoreViewStateVisible ))
+    CoreGroup__InvalidateArea( _this->Super2.Owner, CoreView__GetExtent( _this ));
+
+  ViewsWarpView_calculateLight( _this );
+}
+
+/* Variants derived from the class : 'Views::WarpView' */
+EW_DEFINE_CLASS_VARIANTS( ViewsWarpView )
+EW_END_OF_CLASS_VARIANTS( ViewsWarpView )
+
+/* Virtual Method Table (VMT) for the class : 'Views::WarpView' */
+EW_DEFINE_CLASS( ViewsWarpView, CoreQuadView, matrix, dstPosY, dstPosY, dstPosY, 
+                 dstPosY, dstPosY, "Views::WarpView" )
+  CoreQuadView_initLayoutContext,
+  CoreView_GetRoot,
+  CoreView_Draw,
+  CoreView_HandleEvent,
+  CoreView_CursorHitTest,
+  CoreQuadView_ArrangeView,
+  CoreQuadView_MoveView,
+  CoreQuadView_GetExtent,
+  CoreView_ChangeViewState,
+  ViewsWarpView_OnSetPoint4,
+  ViewsWarpView_OnSetPoint3,
+  ViewsWarpView_OnSetPoint2,
+  ViewsWarpView_OnSetPoint1,
+EW_END_OF_CLASS( ViewsWarpView )
+
+/* Initializer for the class 'Views::WarpImage' */
+void ViewsWarpImage__Init( ViewsWarpImage _this, XObject aLink, XHandle aArg )
+{
+  /* At first initialize the super class ... */
+  ViewsWarpView__Init( &_this->_Super, aLink, aArg );
+
+  /* Allow the Immediate Garbage Collection to evalute the members of this class. */
+  _this->_GCT = EW_CLASS_GCT( ViewsWarpImage );
+
+  /* Setup the VMT pointer */
+  _this->_VMT = EW_CLASS( ViewsWarpImage );
+
+  /* ... and initialize objects, variables, properties, etc. */
+  _this->Color4 = _Const0000;
+  _this->Color3 = _Const0000;
+  _this->Color2 = _Const0000;
+  _this->Color1 = _Const0000;
+  _this->Endless = 1;
+  _this->Opacity = 255;
+}
+
+/* Re-Initializer for the class 'Views::WarpImage' */
+void ViewsWarpImage__ReInit( ViewsWarpImage _this )
+{
+  /* At first re-initialize the super class ... */
+  ViewsWarpView__ReInit( &_this->_Super );
+}
+
+/* Finalizer method for the class 'Views::WarpImage' */
+void ViewsWarpImage__Done( ViewsWarpImage _this )
+{
+  /* Finalize this class */
+  _this->_Super._VMT = EW_CLASS( ViewsWarpView );
+
+  /* Don't forget to deinitialize the super class ... */
+  ViewsWarpView__Done( &_this->_Super );
+}
+
+/* The method Draw() is invoked automatically if parts of the view should be redrawn 
+   on the screen. This can occur when e.g. the view has been moved or the appearance 
+   of the view has changed before.
+   Draw() is invoked automatically by the framework, you never will need to invoke 
+   this method directly. However you can request an invocation of this method by 
+   calling the method InvalidateArea() of the views @Owner. Usually this is also 
+   unnecessary unless you are developing your own view.
+   The passed parameters determine the drawing destination aCanvas and the area 
+   to redraw aClip in the coordinate space of the canvas. The parameter aOffset 
+   contains the displacement between the origin of the views owner and the origin 
+   of the canvas. You will need it to convert views coordinates into these of the 
+   canvas.
+   The parameter aOpacity contains the opacity descended from this view's @Owner. 
+   It lies in range 0 .. 255. If the view implements its own 'Opacity', 'Color', 
+   etc. properties, the Draw() method should calculate the resulting real opacity 
+   by mixing the values of these properties with the one passed in aOpacity parameter.
+   The parameter aBlend contains the blending mode descended from this view's @Owner. 
+   It determines, whether the view should be drawn with alpha-blending active or 
+   not. If aBlend is false, the outputs of the view should overwrite the corresponding 
+   pixel in the drawing destination aCanvas. If aBlend is true, the outputs should 
+   be mixed with the pixel already stored in aCanvas. For this purpose all Graphics 
+   Engine functions provide a parameter to specify the mode for the respective drawing 
+   operation. If the view implements its own 'Blend' property, the Draw() method 
+   should calculate the resulting real blend mode by using logical AND operation 
+   of the value of the property and the one passed in aBlend parameter. */
+void ViewsWarpImage_Draw( ViewsWarpImage _this, GraphicsCanvas aCanvas, XRect aClip, 
+  XPoint aOffset, XInt32 aOpacity, XBool aBlend )
+{
+  XInt32 frameNr = _this->FrameNumber;
+  XColor c1;
+  XColor c2;
+  XColor c3;
+  XColor c4;
+  XInt32 opacity;
+  XFloat ofsX;
+  XFloat ofsY;
+  XRect area;
+
+  if ( _this->animFrameNumber >= 0 )
+    frameNr = _this->animFrameNumber;
+
+  if (( _this->Bitmap == 0 ) || ( frameNr >= _this->Bitmap->NoOfFrames ))
+    return;
+
+  ResourcesBitmap__Update( _this->Bitmap );
+  c1 = _this->Color1;
+  c2 = _this->Color2;
+  c3 = _this->Color3;
+  c4 = _this->Color4;
+  opacity = ((( aOpacity + 1 ) * _this->Opacity ) >> 8 ) + 1;
+  ofsX = (XFloat)aOffset.X;
+  ofsY = (XFloat)aOffset.Y;
+  area = EwIntersectRect2( _this->Super1.SourceArea, EwNewRect2Point( _Const0002, 
+  _this->Super1.bitmapSize ));
+  aBlend = (XBool)( aBlend && (( _this->Super3.viewState & CoreViewStateAlphaBlended ) 
+  == CoreViewStateAlphaBlended ));
+
+  if ( opacity < 256 )
+  {
+    c1.Alpha = (XUInt8)(( c1.Alpha * opacity ) >> 8 );
+    c2.Alpha = (XUInt8)(( c2.Alpha * opacity ) >> 8 );
+    c3.Alpha = (XUInt8)(( c3.Alpha * opacity ) >> 8 );
+    c4.Alpha = (XUInt8)(( c4.Alpha * opacity ) >> 8 );
+  }
+
+  if ( _this->Super1.LightingEffect > 0.000000f )
+  {
+    if ( _this->Super1.lighting[ 0 ] < 256 )
+      c1.Alpha = (XUInt8)(( c1.Alpha * _this->Super1.lighting[ 0 ]) >> 8 );
+
+    if ( _this->Super1.lighting[ 1 ] < 256 )
+      c2.Alpha = (XUInt8)(( c2.Alpha * _this->Super1.lighting[ 1 ]) >> 8 );
+
+    if ( _this->Super1.lighting[ 2 ] < 256 )
+      c3.Alpha = (XUInt8)(( c3.Alpha * _this->Super1.lighting[ 2 ]) >> 8 );
+
+    if ( _this->Super1.lighting[ 3 ] < 256 )
+      c4.Alpha = (XUInt8)(( c4.Alpha * _this->Super1.lighting[ 3 ]) >> 8 );
+  }
+
+  aClip = EwIntersectRect2( aClip, EwMoveRectPos( _this->Super1.Clipping, aOffset ));
+  GraphicsCanvas_WarpBitmap( aCanvas, aClip, _this->Bitmap, frameNr, _this->Super1.vertices[ 
+  0 ][ 0 ] + ofsX, _this->Super1.vertices[ 0 ][ 1 ] + ofsY, _this->Super1.vertices[ 
+  0 ][ 2 ], _this->Super1.vertices[ 1 ][ 0 ] + ofsX, _this->Super1.vertices[ 1 ][ 
+  1 ] + ofsY, _this->Super1.vertices[ 1 ][ 2 ], _this->Super1.vertices[ 2 ][ 0 ] 
+  + ofsX, _this->Super1.vertices[ 2 ][ 1 ] + ofsY, _this->Super1.vertices[ 2 ][ 
+  2 ], _this->Super1.vertices[ 3 ][ 0 ] + ofsX, _this->Super1.vertices[ 3 ][ 1 ] 
+  + ofsY, _this->Super1.vertices[ 3 ][ 2 ], area, c1, c2, c3, c4, aBlend, _this->Super1.Quality );
+}
+
+/* 'C' function for method : 'Views::WarpImage.observerSlot()' */
+void ViewsWarpImage_observerSlot( ViewsWarpImage _this, XObject sender )
+{
+  XPoint oldBitmapSize;
+
+  /* Dummy expressions to avoid the 'C' warning 'unused argument'. */
+  EW_UNUSED_ARG( sender );
+
+  oldBitmapSize = _this->Super1.bitmapSize;
+
+  if ( _this->Bitmap != 0 )
+    _this->Super1.bitmapSize = _this->Bitmap->FrameSize;
+  else
+    _this->Super1.bitmapSize = _Const0002;
+
+  if ((( !EwCompPoint( oldBitmapSize, _this->Super1.bitmapSize ) || (( _this->Super1.oldUpdateCase 
+      == 'E' ) && ( _this->Super1.newUpdateCase == 0x0000 ))) && ( _this->Super3.Owner 
+      != 0 )) && (( _this->Super3.viewState & CoreViewStateVisible ) == CoreViewStateVisible ))
+    CoreGroup__InvalidateArea( _this->Super3.Owner, CoreView__GetExtent( _this ));
+
+  if ((( _this->Super1.oldUpdateCase != 'E' ) && ( _this->Super1.newUpdateCase == 
+      0x0000 )) && EwCompPoint( oldBitmapSize, _this->Super1.bitmapSize ))
+  {
+    _this->Super1.newUpdateCase = _this->Super1.oldUpdateCase;
+    EwPostSignal( EwNewSlot( _this, ViewsWarpView_update ), ((XObject)_this ));
+  }
+}
+
+/* 'C' function for method : 'Views::WarpImage.timerSlot()' */
+void ViewsWarpImage_timerSlot( ViewsWarpImage _this, XObject sender )
+{
+  XInt32 frameNr;
+  XInt32 period;
+
+  /* Dummy expressions to avoid the 'C' warning 'unused argument'. */
+  EW_UNUSED_ARG( sender );
+
+  frameNr = _this->animFrameNumber;
+  period = 0;
+
+  if ( _this->Bitmap != 0 )
+    period = _this->Bitmap->NoOfFrames * _this->Bitmap->FrameDelay;
+
+  if ((( _this->timer != 0 ) && ( _this->animFrameNumber < 0 )) && ( period > 0 ))
+    _this->startTime = _this->timer->Time - ( _this->FrameNumber * _this->Bitmap->FrameDelay );
+
+  if (( _this->timer != 0 ) && ( period > 0 ))
+  {
+    XInt32 time = (XInt32)( _this->timer->Time - _this->startTime );
+    frameNr = time / _this->Bitmap->FrameDelay;
+
+    if ( time >= period )
+    {
+      frameNr = frameNr % _this->Bitmap->NoOfFrames;
+      _this->startTime = _this->timer->Time - ( time % period );
+
+      if ( !_this->Endless )
+      {
+        frameNr = _this->Bitmap->NoOfFrames - 1;
+        period = 0;
+      }
+    }
+  }
+
+  if ((( frameNr != _this->animFrameNumber ) && ( _this->Super3.Owner != 0 )) && 
+      (( _this->Super3.viewState & CoreViewStateVisible ) == CoreViewStateVisible ))
+    CoreGroup__InvalidateArea( _this->Super3.Owner, CoreView__GetExtent( _this ));
+
+  _this->animFrameNumber = frameNr;
+
+  if (( period == 0 ) && ( _this->timer != 0 ))
+  {
+    EwDetachObjObserver( EwNewSlot( _this, ViewsWarpImage_timerSlot ), (XObject)_this->timer, 
+      0 );
+    _this->timer = 0;
+    EwSignal( _this->OnFinished, ((XObject)_this ));
+  }
+}
+
+/* 'C' function for method : 'Views::WarpImage.OnSetAnimated()' */
+void ViewsWarpImage_OnSetAnimated( ViewsWarpImage _this, XBool value )
+{
+  if ( _this->Animated == value )
+    return;
+
+  _this->Animated = value;
+  _this->animFrameNumber = -1;
+
+  if ( !value && ( _this->timer != 0 ))
+  {
+    EwDetachObjObserver( EwNewSlot( _this, ViewsWarpImage_timerSlot ), (XObject)_this->timer, 
+      0 );
+    _this->timer = 0;
+  }
+
+  if ( value )
+  {
+    _this->timer = ((CoreTimer)EwGetAutoObject( &EffectsEffectTimer, EffectsEffectTimerClass ));
+    EwAttachObjObserver( EwNewSlot( _this, ViewsWarpImage_timerSlot ), (XObject)_this->timer, 
+      0 );
+    EwPostSignal( EwNewSlot( _this, ViewsWarpImage_timerSlot ), ((XObject)_this ));
+  }
+
+  if (( _this->Super3.Owner != 0 ) && (( _this->Super3.viewState & CoreViewStateVisible ) 
+      == CoreViewStateVisible ))
+    CoreGroup__InvalidateArea( _this->Super3.Owner, CoreView__GetExtent( _this ));
+}
+
+/* 'C' function for method : 'Views::WarpImage.OnSetColor()' */
+void ViewsWarpImage_OnSetColor( ViewsWarpImage _this, XColor value )
+{
+  if ((( !EwCompColor( value, _this->Color1 ) && !EwCompColor( value, _this->Color2 )) 
+      && !EwCompColor( value, _this->Color3 )) && !EwCompColor( value, _this->Color4 ))
+    return;
+
+  _this->Color1 = value;
+  _this->Color2 = value;
+  _this->Color3 = value;
+  _this->Color4 = value;
+
+  if (( _this->Super3.Owner != 0 ) && (( _this->Super3.viewState & CoreViewStateVisible ) 
+      == CoreViewStateVisible ))
+    CoreGroup__InvalidateArea( _this->Super3.Owner, CoreView__GetExtent( _this ));
+}
+
+/* 'C' function for method : 'Views::WarpImage.OnSetFrameNumber()' */
+void ViewsWarpImage_OnSetFrameNumber( ViewsWarpImage _this, XInt32 value )
+{
+  if ( value < 0 )
+    value = 0;
+
+  if (( value == _this->FrameNumber ) && ( _this->animFrameNumber == -1 ))
+    return;
+
+  _this->FrameNumber = value;
+
+  if ( _this->timer == 0 )
+    _this->animFrameNumber = -1;
+
+  if (( _this->Super3.Owner != 0 ) && (( _this->Super3.viewState & CoreViewStateVisible ) 
+      == CoreViewStateVisible ))
+    CoreGroup__InvalidateArea( _this->Super3.Owner, CoreView__GetExtent( _this ));
+}
+
+/* 'C' function for method : 'Views::WarpImage.OnSetBitmap()' */
+void ViewsWarpImage_OnSetBitmap( ViewsWarpImage _this, ResourcesBitmap value )
+{
+  if ( value == _this->Bitmap )
+    return;
+
+  if (( _this->Bitmap != 0 ) && _this->Bitmap->Mutable )
+    EwDetachObjObserver( EwNewSlot( _this, ViewsWarpImage_observerSlot ), (XObject)_this->Bitmap, 
+      0 );
+
+  _this->Bitmap = value;
+  _this->animFrameNumber = -1;
+
+  if (( value != 0 ) && value->Mutable )
+    EwAttachObjObserver( EwNewSlot( _this, ViewsWarpImage_observerSlot ), (XObject)value, 
+      0 );
+
+  if ( _this->Animated )
+  {
+    ViewsWarpImage_OnSetAnimated( _this, 0 );
+    ViewsWarpImage_OnSetAnimated( _this, 1 );
+  }
+
+  EwSignal( EwNewSlot( _this, ViewsWarpImage_observerSlot ), ((XObject)_this ));
+}
+
+/* Variants derived from the class : 'Views::WarpImage' */
+EW_DEFINE_CLASS_VARIANTS( ViewsWarpImage )
+EW_END_OF_CLASS_VARIANTS( ViewsWarpImage )
+
+/* Virtual Method Table (VMT) for the class : 'Views::WarpImage' */
+EW_DEFINE_CLASS( ViewsWarpImage, ViewsWarpView, timer, OnFinished, startTime, startTime, 
+                 startTime, startTime, "Views::WarpImage" )
+  CoreQuadView_initLayoutContext,
+  CoreView_GetRoot,
+  ViewsWarpImage_Draw,
+  CoreView_HandleEvent,
+  CoreView_CursorHitTest,
+  CoreQuadView_ArrangeView,
+  CoreQuadView_MoveView,
+  CoreQuadView_GetExtent,
+  CoreView_ChangeViewState,
+  ViewsWarpView_OnSetPoint4,
+  ViewsWarpView_OnSetPoint3,
+  ViewsWarpView_OnSetPoint2,
+  ViewsWarpView_OnSetPoint1,
+EW_END_OF_CLASS( ViewsWarpImage )
+
 /* Initializer for the class 'Views::FillPath' */
 void ViewsFillPath__Init( ViewsFillPath _this, XObject aLink, XHandle aArg )
 {
@@ -2561,6 +3279,22 @@ void ViewsFillPath_OnSetOffset( ViewsFillPath _this, XPoint value )
     return;
 
   _this->Offset = value;
+
+  if ((( _this->Super2.Owner != 0 ) && (( _this->Super2.viewState & CoreViewStateVisible ) 
+      == CoreViewStateVisible )) && ( _this->Path != 0 ))
+    CoreGroup__InvalidateArea( _this->Super2.Owner, _this->Super1.Bounds );
+
+  if ( _this->Buffered )
+    EwPostSignal( EwNewSlot( _this, ViewsFillPath_updateBuffer ), ((XObject)_this ));
+}
+
+/* 'C' function for method : 'Views::FillPath.OnSetFillRule()' */
+void ViewsFillPath_OnSetFillRule( ViewsFillPath _this, XEnum value )
+{
+  if ( value == _this->FillRule )
+    return;
+
+  _this->FillRule = value;
 
   if ((( _this->Super2.Owner != 0 ) && (( _this->Super2.viewState & CoreViewStateVisible ) 
       == CoreViewStateVisible )) && ( _this->Path != 0 ))

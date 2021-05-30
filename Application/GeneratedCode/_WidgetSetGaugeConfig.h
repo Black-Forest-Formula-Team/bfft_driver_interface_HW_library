@@ -141,8 +141,27 @@ EW_END_OF_FIELDS( WidgetSetGaugeConfig )
 EW_DEFINE_METHODS( WidgetSetGaugeConfig, WidgetSetWidgetConfig )
 EW_END_OF_METHODS( WidgetSetGaugeConfig )
 
-/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetCover()' */
-void WidgetSetGaugeConfig_OnSetCover( WidgetSetGaugeConfig _this, ResourcesBitmap 
+/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetSwingElastic()' */
+void WidgetSetGaugeConfig_OnSetSwingElastic( WidgetSetGaugeConfig _this, XBool value );
+
+/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetSwingDuration()' */
+void WidgetSetGaugeConfig_OnSetSwingDuration( WidgetSetGaugeConfig _this, XInt32 
+  value );
+
+/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetTrackLeftRoundedStart()' */
+void WidgetSetGaugeConfig_OnSetTrackLeftRoundedStart( WidgetSetGaugeConfig _this, 
+  XBool value );
+
+/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetTrackLeftColor()' */
+void WidgetSetGaugeConfig_OnSetTrackLeftColor( WidgetSetGaugeConfig _this, XColor 
+  value );
+
+/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetTrackLeftThickness()' */
+void WidgetSetGaugeConfig_OnSetTrackLeftThickness( WidgetSetGaugeConfig _this, XFloat 
+  value );
+
+/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetTrackLeftRadius()' */
+void WidgetSetGaugeConfig_OnSetTrackLeftRadius( WidgetSetGaugeConfig _this, XFloat 
   value );
 
 /* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetNeedleMaxAngle()' */
@@ -153,16 +172,23 @@ void WidgetSetGaugeConfig_OnSetNeedleMaxAngle( WidgetSetGaugeConfig _this, XFloa
 void WidgetSetGaugeConfig_OnSetNeedleMinAngle( WidgetSetGaugeConfig _this, XFloat 
   value );
 
+/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetNeedlePivot()' */
+void WidgetSetGaugeConfig_OnSetNeedlePivot( WidgetSetGaugeConfig _this, XPoint value );
+
 /* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetNeedle()' */
 void WidgetSetGaugeConfig_OnSetNeedle( WidgetSetGaugeConfig _this, ResourcesBitmap 
+  value );
+
+/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetCenterOffset()' */
+void WidgetSetGaugeConfig_OnSetCenterOffset( WidgetSetGaugeConfig _this, XPoint 
   value );
 
 /* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetScale()' */
 void WidgetSetGaugeConfig_OnSetScale( WidgetSetGaugeConfig _this, ResourcesBitmap 
   value );
 
-/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetWidgetMaxSize()' */
-void WidgetSetGaugeConfig_OnSetWidgetMaxSize( WidgetSetGaugeConfig _this, XPoint 
+/* 'C' function for method : 'WidgetSet::GaugeConfig.OnSetWidgetMinSize()' */
+void WidgetSetGaugeConfig_OnSetWidgetMinSize( WidgetSetGaugeConfig _this, XPoint 
   value );
 
 #ifdef __cplusplus
