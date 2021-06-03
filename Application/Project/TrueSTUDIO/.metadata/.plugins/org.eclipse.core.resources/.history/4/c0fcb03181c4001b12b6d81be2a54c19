@@ -1,0 +1,30 @@
+/*
+ * CANSubscriber.c
+ *
+ *  Created on: 03.06.2021
+ *      Author: maanm
+ */
+#include "CANSubscriber.h"
+
+eCANSubscriber_t eCANSubscriber_Init(
+      psCANSubscriber_t const _this,
+      const eCANSubscriberType_t ceCANSubscriberType,
+      const uint32_t cu32CANId)
+{
+   _this->_Priv.eCANSubcriberType = ceCANSubscriberType;
+   _this->
+
+
+}
+
+eCANSubscriber_t eCANSubscriber_DeInit(psCANSubscriber_t const _this)
+{
+
+}
+
+eCANSubscriber_t eCANSubscriber_GetSubscriberType(
+      psCANSubscriber_t const _this,
+      const peCANSubscriberType_t ceCANSubscriberType)
+{
+
+}

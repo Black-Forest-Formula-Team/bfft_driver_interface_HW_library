@@ -1,0 +1,18 @@
+/*
+ * CANSubscriber.h
+ *
+ *  Created on: 03.06.2021
+ *      Author: maanm
+ */
+
+#ifndef APPLICATION_SOURCE_BFFT_CAN_CANSUBSCRIBER_H_
+#define APPLICATION_SOURCE_BFFT_CAN_CANSUBSCRIBER_H_
+#include "main.h"
+typedef struct CANSubscriber
+{
+   sCANID_t;
+
+}sCANSubscriber_t;
+
+
+#endif /* APPLICATION_SOURCE_BFFT_CAN_CANSUBSCRIBER_H_ */

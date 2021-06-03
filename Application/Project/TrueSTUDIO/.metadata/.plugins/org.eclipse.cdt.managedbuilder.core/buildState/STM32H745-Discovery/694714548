@@ -1,0 +1,13 @@
+#
+#Thu Jun 03 18:06:21 CEST 2021
+BUILD/Application/Source/fdcan.o=1
+BUILD/EmbeddedWizard-STM32H745-Discovery.elf=1
+BUILD/Application/Source/BFFT/globals.o=1
+BUILD/Application/Source/BFFT/CAN/CANSubscriber.o=1
+Application/Source/BFFT/externals.h=1
+BUILD/Application/Source/BFFT_CAN.o=1
+BUILD/Application/Source/main.o=1
+BUILD/Application/Source/gpio.o=1
+BUILD/EmbeddedWizard-STM32H745-Discovery=1
+BUILD/Application/Source/BFFT/CAN/CANID.o=1
+BUILD/Application/Source/BFFT_SystemStatusLED.o=1

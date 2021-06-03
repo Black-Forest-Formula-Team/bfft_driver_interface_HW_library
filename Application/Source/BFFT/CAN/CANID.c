@@ -6,13 +6,13 @@
  */
 
 #include "CANID.h"
-
+#include "externals.h"
 //-------------- Private Begin---------------------
 
 volatile static uint32_t _u32CurrentBufferPosition = 0u;
 volatile static const uint32_t _cu32InvalidID = 0xFFFFFFFFu;
 
-static eCANID_t _eIsIDExisting(const uint32_t cu32CANID);
+static eCAN_t _eIsIDExisting(const uint32_t cu32CANID);
 
 //-------------- Private End ---------------------
 
@@ -25,7 +25,7 @@ static eCANID_t _eIsIDExisting(const uint32_t cu32CANID);
  * @param ceCANIDSelect: Used for selection which ID should be set. Default STD_ID is selected
  * @ret Error handling
  */
-eCANID_t eCANID_Init(psCANID_t const _this, const uint32_t cu32CANID, const eCANID_t ceCANIDSelect)
+eCAN_t eCANID_Init(psCANID_t const _this, const uint32_t cu32CANID, const eCANID_t ceCANIDSelect)
 {
    if(NULL == _this)
       return eCAN_ERROR;
@@ -33,7 +33,7 @@ eCANID_t eCANID_Init(psCANID_t const _this, const uint32_t cu32CANID, const eCAN
    _this->_priv._u32CAN_STDID = _cu32InvalidID;
    _this->_priv._u32CAN_EXTID = _cu32InvalidID;
 
-   return eSetID(_this, cu32CANID, ceCANIDSelect);
+   return eCANID_SetID(_this, cu32CANID, ceCANIDSelect);
 }
 
 
@@ -43,7 +43,7 @@ eCANID_t eCANID_Init(psCANID_t const _this, const uint32_t cu32CANID, const eCAN
  * @param _this: Pointer to object
  * @ret Error handling
  */
-eCANID_t eCANID_DeInit(psCANID_t const _this)
+eCAN_t eCANID_DeInit(psCANID_t const _this)
 {
    if(NULL == _this)
       return eCAN_ERROR;
@@ -63,7 +63,7 @@ eCANID_t eCANID_DeInit(psCANID_t const _this)
  * @param pu32CANID: Serves as return value for the ID
  * @ret Error handling
  */
-eCANID_t eGetID(const psCANID_t const _this, const eCANID_t ceCANIDSelect, uint32_t* const pu32CANID)
+eCAN_t eCANID_GetID(const psCANID_t const _this, const eCANID_t ceCANIDSelect, uint32_t* const pu32CANID)
 {
    if((NULL == _this) || (NULL == pu32CANID))
       return eCAN_ERROR;
@@ -94,7 +94,7 @@ eCANID_t eGetID(const psCANID_t const _this, const eCANID_t ceCANIDSelect, uint3
  * @param ceCANIDSelect: Used for selection which ID should be returned. Default STD_ID is selected
  * @ret Error handling
  */
-eCANID_t eSetID(psCANID_t const _this, const uint32_t cu32CANID, const eCANID_t ceCANIDSelect)
+eCAN_t eCANID_SetID(psCANID_t const _this, const uint32_t cu32CANID, const eCANID_t ceCANIDSelect)
 {
    if((NULL == _this) || (eCAN_OKAY == _eIsIDExisting(cu32CANID)) || (BUFFER_SIZE <= _u32CurrentBufferPosition))
       return eCAN_ERROR;
@@ -126,7 +126,7 @@ eCANID_t eSetID(psCANID_t const _this, const uint32_t cu32CANID, const eCANID_t 
  * @param cu32CANID: Contains the ID that should be checked/validated
  * @ret Error handling
  */
-eCANID_t eIsValidID(const psCANID_t const _this, const uint32_t cu32CANID)
+eCAN_t eCANID_IsValidID(const psCANID_t const _this, const uint32_t cu32CANID)
 {
    if(((eCAN_OKAY != _eIsIDExisting(cu32CANID)) || (_cu32InvalidID == cu32CANID)))
       return eCAN_ERROR;
@@ -141,7 +141,7 @@ eCANID_t eIsValidID(const psCANID_t const _this, const uint32_t cu32CANID)
  * @param cu32CANID: Contains the ID that should be checked/validated
  * @ret Error handling
  */
-eCANID_t _eIsIDExisting(const uint32_t cu32CANID)
+eCAN_t _eIsIDExisting(const uint32_t cu32CANID)
 {
    for(uint8_t pos = 0u; pos < BUFFER_SIZE; pos++)
    {

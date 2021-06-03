@@ -8,7 +8,10 @@
 #ifndef APPLICATION_SOURCE_BFFT_CAN_CANID_H_
 #define APPLICATION_SOURCE_BFFT_CAN_CANID_H_
 
-#include "main.h"
+#include <stdint.h>
+#include "stm32h7xx_hal.h"
+#include "../externals.h"
+#include "CAN.h"
 
 /**
  * @fn eCANID
@@ -18,8 +21,6 @@ typedef enum eCANID
 {
    eCAN_STD_ID = 0u,
    eCAN_EXT_ID,
-   eCAN_ERROR,
-   eCAN_OKAY
 } eCANID_t;
 
 
@@ -47,10 +48,10 @@ typedef sCANID_t* psCANID_t;
 
 
 // Function declarations
-eCANID_t eCANID_Init(psCANID_t const _this, const uint32_t cu32CANID, const eCANID_t ceCANIDSelect);
-eCANID_t eCANID_DeInit(psCANID_t const _this);
-eCANID_t eGetID(const psCANID_t const _this, const eCANID_t ceCANIDSelect, uint32_t* const pu32CANID);
-eCANID_t eSetID(psCANID_t const _this, const uint32_t cu32CANID, const eCANID_t ceCANIDSelect);
-eCANID_t eIsValidID(const psCANID_t const _this, const uint32_t cu32CANID);
+eCAN_t eCANID_Init(psCANID_t const _this, const uint32_t cu32CANID, const eCANID_t ceCANIDSelect);
+eCAN_t eCANID_DeInit(psCANID_t const _this);
+eCAN_t eCANID_GetID(const psCANID_t const _this, const eCANID_t ceCANIDSelect, uint32_t* const pu32CANID);
+eCAN_t eCANID_SetID(psCANID_t const _this, const uint32_t cu32CANID, const eCANID_t ceCANIDSelect);
+eCAN_t eCANID_IsValidID(const psCANID_t const _this, const uint32_t cu32CANID);
 
 #endif /* APPLICATION_SOURCE_BFFT_CAN_CANID_H_ */
