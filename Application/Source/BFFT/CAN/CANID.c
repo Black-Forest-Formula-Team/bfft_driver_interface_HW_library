@@ -1,0 +1,153 @@
+/*
+ * CANID.cpp
+ *
+ *  Created on: 28 May 2021
+ *      Author: Nutzer
+ */
+
+#include "CANID.h"
+
+//-------------- Private Begin---------------------
+
+volatile static uint32_t _u32CurrentBufferPosition = 0u;
+volatile static const uint32_t _cu32InvalidID = 0xFFFFFFFFu;
+
+static eCANID_t _eIsIDExisting(const uint32_t cu32CANID);
+
+//-------------- Private End ---------------------
+
+
+/**
+ * @fn eCANID_Init
+ * @brief Constructor for CANID
+ * @param _this: Pointer to object
+ * @param cu32CANID: Contains the ID that should be set
+ * @param ceCANIDSelect: Used for selection which ID should be set. Default STD_ID is selected
+ * @ret Error handling
+ */
+eCANID_t eCANID_Init(psCANID_t const _this, const uint32_t cu32CANID, const eCANID_t ceCANIDSelect)
+{
+   if(NULL == _this)
+      return eCAN_ERROR;
+
+   _this->_priv._u32CAN_STDID = _cu32InvalidID;
+   _this->_priv._u32CAN_EXTID = _cu32InvalidID;
+
+   return eSetID(_this, cu32CANID, ceCANIDSelect);
+}
+
+
+/**
+ * @fn eCANID_DeInit
+ * @brief Destructor for CANID
+ * @param _this: Pointer to object
+ * @ret Error handling
+ */
+eCANID_t eCANID_DeInit(psCANID_t const _this)
+{
+   if(NULL == _this)
+      return eCAN_ERROR;
+
+   _this->_priv._u32CAN_STDID = _cu32InvalidID;
+   _this->_priv._u32CAN_EXTID = _cu32InvalidID;
+
+   return eCAN_OKAY;
+}
+
+
+/**
+ * @fn eGetID
+ * @brief Getter method to return the ID
+ * @param _this: Pointer to object
+ * @param ceCANIDSelect: Used for selection which ID should be returned. Default STD_ID is selected
+ * @param pu32CANID: Serves as return value for the ID
+ * @ret Error handling
+ */
+eCANID_t eGetID(const psCANID_t const _this, const eCANID_t ceCANIDSelect, uint32_t* const pu32CANID)
+{
+   if((NULL == _this) || (NULL == pu32CANID))
+      return eCAN_ERROR;
+
+   switch(ceCANIDSelect)
+   {
+      case eCAN_STD_ID:
+         *pu32CANID = _this->_priv._u32CAN_STDID;
+         break;
+
+      case eCAN_EXT_ID:
+         *pu32CANID = _this->_priv._u32CAN_EXTID;
+         break;
+
+      default:
+         return eCAN_ERROR;
+   }
+
+   return eCAN_OKAY;
+}
+
+
+/**
+ * @fn eSetID
+ * @brief Setter method to set a CAN ID
+ * @param _this: Pointer to object
+ * @param cu32CANID: Contains the ID that should be set
+ * @param ceCANIDSelect: Used for selection which ID should be returned. Default STD_ID is selected
+ * @ret Error handling
+ */
+eCANID_t eSetID(psCANID_t const _this, const uint32_t cu32CANID, const eCANID_t ceCANIDSelect)
+{
+   if((NULL == _this) || (eCAN_OKAY == _eIsIDExisting(cu32CANID)) || (BUFFER_SIZE <= _u32CurrentBufferPosition))
+      return eCAN_ERROR;
+
+   switch(ceCANIDSelect)
+   {
+      case eCAN_STD_ID:
+         _this->_priv._u32CAN_STDID = cu32CANID;
+         break;
+
+      case eCAN_EXT_ID:
+         _this->_priv._u32CAN_EXTID = cu32CANID;
+         break;
+
+      default:
+         return eCAN_ERROR;
+   }
+
+   au32VecUsedCANIDs[_u32CurrentBufferPosition++] = cu32CANID;
+
+   return eCAN_OKAY;
+}
+
+
+/**
+ * @fn eIsValidID
+ * @brief Check if the ID was set or is default (==> invalid/not defined)
+ * @param _this: Pointer to object
+ * @param cu32CANID: Contains the ID that should be checked/validated
+ * @ret Error handling
+ */
+eCANID_t eIsValidID(const psCANID_t const _this, const uint32_t cu32CANID)
+{
+   if(((eCAN_OKAY != _eIsIDExisting(cu32CANID)) || (_cu32InvalidID == cu32CANID)))
+      return eCAN_ERROR;
+
+   return eCAN_OKAY;
+}
+
+
+/**
+ * @fn _eIsIDExisting
+ * @brief Check if the ID is available/not used already
+ * @param cu32CANID: Contains the ID that should be checked/validated
+ * @ret Error handling
+ */
+eCANID_t _eIsIDExisting(const uint32_t cu32CANID)
+{
+   for(uint8_t pos = 0u; pos < BUFFER_SIZE; pos++)
+   {
+      if(cu32CANID == au32VecUsedCANIDs[pos])
+         return eCAN_OKAY;
+   }
+
+   return eCAN_ERROR;
+}
