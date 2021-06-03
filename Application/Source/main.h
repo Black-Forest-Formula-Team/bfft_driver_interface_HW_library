@@ -33,7 +33,8 @@ extern "C" {
 #include "stdbool.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "./BFFT./externals.h"
+#include "./BFFT./CAN./CANID.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
