@@ -6,7 +6,6 @@
  */
 
 #include "CANID.h"
-#include "externals.h"
 //-------------- Private Begin---------------------
 
 volatile static uint32_t _u32CurrentBufferPosition = 0u;

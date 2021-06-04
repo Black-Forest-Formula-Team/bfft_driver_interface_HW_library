@@ -8,10 +8,7 @@
 #ifndef APPLICATION_SOURCE_BFFT_CAN_CANID_H_
 #define APPLICATION_SOURCE_BFFT_CAN_CANID_H_
 
-#include <stdint.h>
-#include "stm32h7xx_hal.h"
-#include "../externals.h"
-#include "CAN.h"
+#include "main.h"
 
 /**
  * @fn eCANID

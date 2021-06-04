@@ -13,7 +13,7 @@ typedef enum eCAN
 {
    eCAN_ERROR = 0,
    eCAN_OKAY
-}eCAN_t;
+} eCAN_t;
 
 
 #endif /* APPLICATION_SOURCE_BFFT_CAN_CAN_H_ */

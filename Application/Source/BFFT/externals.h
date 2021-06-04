@@ -9,8 +9,10 @@
 #define APPLICATION_SOURCE_BFFT_EXTERNALS_H_
 
 
-#include "./BFFT./CAN./CANID.h"
-#include "./BFFT./CAN./CANSubscriber.h"
+#include "main.h"
+
+// Forward declaration
+typedef struct CANSubscriber* psCANSubscriber_t;
 
 #define BUFFER_SIZE 50u
 
