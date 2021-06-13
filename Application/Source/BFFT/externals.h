@@ -18,5 +18,8 @@ typedef struct CANSubscriber* psCANSubscriber_t;
 
 extern volatile uint32_t au32VecUsedCANIDs[BUFFER_SIZE];
 extern volatile psCANSubscriber_t apsVecCANSubscriber[BUFFER_SIZE];
-
+extern FDCAN_HandleTypeDef hfdcan1;
+extern volatile FDCAN_TxHeaderTypeDef xCANTxHeader;
+extern volatile FDCAN_RxHeaderTypeDef xCANRxHeader;
+extern volatile FDCAN_FilterTypeDef xCANFilter;
 #endif /* APPLICATION_SOURCE_BFFT_EXTERNALS_H_ */

@@ -1,3 +1,0 @@
-BFFT_CAN.c:31:8:s8CANInit	24	static
-BFFT_CAN.c:56:8:s8CANSendMessage	8	static
-BFFT_CAN.c:71:8:s8CANReceiveMessage	16	static

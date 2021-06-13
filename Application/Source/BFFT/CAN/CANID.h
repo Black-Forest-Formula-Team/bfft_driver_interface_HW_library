@@ -43,7 +43,7 @@ typedef struct CANID
 } sCANID_t;
 typedef sCANID_t* psCANID_t;
 
-
+typedef enum eCAN eCAN_t;
 // Function declarations
 eCAN_t eCANID_Init(psCANID_t const _this, const uint32_t cu32CANID, const eCANID_t ceCANIDSelect);
 eCAN_t eCANID_DeInit(psCANID_t const _this);

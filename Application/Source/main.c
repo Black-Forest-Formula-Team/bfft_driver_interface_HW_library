@@ -42,10 +42,7 @@
 #include "ew_bsp_system.h"
 #include "ew_bsp_console.h"
 #include "main.h"
-#include "BFFT_CAN.h"
 #include "gpio.h"
-#include "BFFT.h"
-#include "BFFT_SystemStatusLED.h"
 #include "stdio.h"
 #include "DeviceDriver.h"
 
@@ -57,7 +54,6 @@
   #define STACK_SIZE    configMINIMAL_STACK_SIZE
   static void GuiThread( const void* arg );
  static void vThreadLEDSystemAlive(const void *argument);
-  static void vThreadCANSendMessage(const void *argument);
 #endif
 
 
@@ -134,7 +130,7 @@ int main( void )
   DeviceDriver_Initialize();
   MX_GPIO_Init();
   MX_FDCAN1_Init();
-  s8CANInit();
+
 
   /* initialize console interface for debug messages */
   EwBspConsoleInit();
@@ -144,12 +140,11 @@ int main( void )
    osThreadCreate( osThread( EwThreadHandle ), (void*)0 );
 
    /* creation of vThreadLEDSystemAliveHandle*/
+
    osThreadDef(vThreadLEDSystemAliveHandle ,vThreadLEDSystemAlive , osPriorityNormal, 0, STACK_SIZE );
    osThreadCreate(osThread(vThreadLEDSystemAliveHandle), (void*)0);
 
-   /* creation of ThreadCANSendMe*/
-   osThreadDef(vThreadCANSendMessageHandle ,vThreadCANSendMessage ,osPriorityAboveNormal , 0, STACK_SIZE );
-   osThreadCreate(osThread(vThreadCANSendMessageHandle), (void*)0);
+
 
 
   /* ...and start scheduler */
@@ -194,19 +189,7 @@ static void GuiThread( const void* arg )
   /* de-initialize Embedded Wizard application */
   EwDone();
 }
-static void vThreadCANSendMessage(const void *argument)
-{
-  /* USER CODE BEGIN vThreadCANSendMessage */
-  /* Infinite loop */
-   TickType_t xPreviousWakeTime = xTaskGetTickCount();
 
-   while(1)
-   {
-	   s8CANSendMessage();
-      vTaskDelayUntil(&xPreviousWakeTime, 200u/portTICK_RATE_MS);
-   }
-  /* USER CODE END vThreadCANSendMessage */
-}
 
 /* USER CODE BEGIN Header_vThreadLEDSystemAlive */
 /**
