@@ -8,6 +8,17 @@
 
 volatile static uint32_t _u32CurrentBufferPosition = 0u;
 
+
+/**
+ * @fn eCANSubscriber_Init
+ * @brief Constructor for CANSubscriber
+ * @param _this: Pointer to object
+ * @param psCANID: Pointer to CANID object
+ * @param ceCANSubscriberType: Contains the subscriber type
+ * @param cu32CANId: Contains the ID that should be set
+ * @param ceCANID_type: Select STD or EXT ID
+ * @ret Error handling
+ */
 eCAN_t eCANSubscriber_Init(
       psCANSubscriber_t const _this,
       psCANID_t const psCANID,
@@ -29,6 +40,13 @@ eCAN_t eCANSubscriber_Init(
    return eCAN_OKAY;
 }
 
+
+/**
+ * @fn eCANSubscriber_DeInit
+ * @brief Destructor for CANSubscriber
+ * @param _this: Pointer to object
+ * @ret Error handling
+ */
 eCAN_t eCANSubscriber_DeInit(psCANSubscriber_t const _this)
 {
    if((NULL == _this))
@@ -40,6 +58,14 @@ eCAN_t eCANSubscriber_DeInit(psCANSubscriber_t const _this)
    return eCAN_OKAY;
 }
 
+
+/**
+ * @fn eCANSubscriber_GetSubscriberType
+ * @brief Getter methode to return the type of the subscriber
+ * @param _this: Pointer to object
+ * @param peCANSubscriberType: Pointer to return the subscriber type
+ * @ret Error handling
+ */
 eCAN_t eCANSubscriber_GetSubscriberType(
       psCANSubscriber_t const _this,
       peCANSubscriberType_t const peCANSubscriberType)
