@@ -8,6 +8,7 @@
 #ifndef APPLICATION_SOURCE_BFFT_CAN_CAN_H_
 #define APPLICATION_SOURCE_BFFT_CAN_CAN_H_
 
+#include "main.h"
 
 typedef enum eCAN
 {
@@ -15,5 +16,7 @@ typedef enum eCAN
    eCAN_OKAY
 } eCAN_t;
 
+
+eCAN_t eCAN_Start(void);
 
 #endif /* APPLICATION_SOURCE_BFFT_CAN_CAN_H_ */

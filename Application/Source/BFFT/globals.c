@@ -9,3 +9,6 @@
 
 volatile uint32_t au32VecUsedCANIDs[BUFFER_SIZE];
 volatile psCANSubscriber_t apsVecCANSubscriber[BUFFER_SIZE];
+volatile FDCAN_TxHeaderTypeDef xCANTxHeader;
+volatile FDCAN_RxHeaderTypeDef xCANRxHeader;
+volatile FDCAN_FilterTypeDef xCANFilter;

@@ -1922,7 +1922,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x22 Application\Source\BFFT\CAN\CANSubscriber.o
  .debug_macro   0x00000000       0x10 Application\Source\BFFT\CAN\CANSubscriber.o
  .debug_macro   0x00000000       0x58 Application\Source\BFFT\CAN\CANSubscriber.o
- .debug_line    0x00000000      0xb10 Application\Source\BFFT\CAN\CANSubscriber.o
+ .debug_line    0x00000000      0xb11 Application\Source\BFFT\CAN\CANSubscriber.o
  .debug_str     0x00000000   0x198d50 Application\Source\BFFT\CAN\CANSubscriber.o
  .comment       0x00000000       0x7d Application\Source\BFFT\CAN\CANSubscriber.o
  .debug_frame   0x00000000       0x50 Application\Source\BFFT\CAN\CANSubscriber.o
