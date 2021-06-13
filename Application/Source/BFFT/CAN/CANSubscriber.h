@@ -14,6 +14,10 @@
 typedef struct CANID* psCANID_t;
 typedef enum eCANID eCANID_t;
 
+/**
+ * @fn CANSubscriberType
+ * @brief Type of Can Subscriber
+ */
 typedef enum CANSubscriberType
 {
    eCANTypeInvalid = 0,
@@ -23,6 +27,10 @@ typedef enum CANSubscriberType
 } eCANSubscriberType_t;
 typedef eCANSubscriberType_t* peCANSubscriberType_t;
 
+/**
+ * @fn CANSubscriber_Priv
+ * @brief private attribute of CANSubscriber
+ */
 typedef struct CANSubscriber_Priv
 {
   eCANSubscriberType_t eCANSubcriberType;
@@ -30,6 +38,10 @@ typedef struct CANSubscriber_Priv
 } sCANSubscriber_Priv_t;
 typedef sCANSubscriber_Priv_t* psCANSubscriber_Priv_t;
 
+/**
+ * @fn CANSubscriber
+ * @brief CANSubscriber class
+ */
 typedef struct CANSubscriber
 {
    psCANID_t psCANID;
@@ -38,6 +50,8 @@ typedef struct CANSubscriber
 } sCANSubscriber_t;
 typedef sCANSubscriber_t* psCANSubscriber_t;
 
+
+/*-------------Function declaration-------*/
 eCAN_t eCANSubscriber_Init(
       psCANSubscriber_t const _this,
       psCANID_t const psCANID,
