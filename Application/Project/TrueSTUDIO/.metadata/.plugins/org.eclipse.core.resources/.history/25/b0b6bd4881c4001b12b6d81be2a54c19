@@ -1,0 +1,39 @@
+/*
+ * CANSubscriber.c
+ *
+ *  Created on: 03.06.2021
+ *      Author: maanm
+ */
+#include "CANSubscriber.h"
+
+volatile static uint32_t _u32CurrentBufferPosition = 0u;
+
+eCAN_t eCANSubscriber_Init(
+      psCANSubscriber_t const _this,
+      const eCANSubscriberType_t ceCANSubscriberType,
+      const uint32_t cu32CANId,
+      const eCANID_t ceCANID_type)
+{
+   if((NULL == _this) || (BUFFER_SIZE <= _u32CurrentBufferPosition))
+      return eCANSubscriber_ERROR;
+
+   _this->_Priv.eCANSubcriberType = ceCANSubscriberType;
+   if(eCAN_OKAY != eCANID_Init(&_this->sCANID, cu32CANId, ceCANID_type))
+      return eCANSubscriber_ERROR;
+
+   apsVecCANSubscriber[_u32CurrentBufferPosition++] = _this;
+
+   return eCANSubscriber_OKAY;
+}
+
+eCAN_t eCANSubscriber_DeInit(psCANSubscriber_t const _this)
+{
+
+}
+
+eCAN_t eCANSubscriber_GetSubscriberType(
+      psCANSubscriber_t const _this,
+      const peCANSubscriberType_t ceCANSubscriberType)
+{
+
+}

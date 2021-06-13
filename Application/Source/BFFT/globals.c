@@ -8,3 +8,4 @@
 #include "externals.h"
 
 volatile uint32_t au32VecUsedCANIDs[BUFFER_SIZE];
+volatile psCANSubscriber_t apsVecCANSubscriber[BUFFER_SIZE];
