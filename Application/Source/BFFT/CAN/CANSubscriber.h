@@ -14,6 +14,7 @@
 typedef struct CANID* psCANID_t;
 typedef enum eCANID eCANID_t;
 typedef enum eCAN eCAN_t;
+
 /**
  * @fn CANSubscriberType
  * @brief Type of Can Subscriber
