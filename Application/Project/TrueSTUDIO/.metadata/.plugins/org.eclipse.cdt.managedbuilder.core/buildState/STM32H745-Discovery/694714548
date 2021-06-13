@@ -1,6 +1,0 @@
-#
-#Sun Jun 13 15:30:13 CEST 2021
-BUILD/EmbeddedWizard-STM32H745-Discovery=1
-Application/Source/BFFT/CAN/CAN.c=1
-BUILD/EmbeddedWizard-STM32H745-Discovery.elf=1
-BUILD/Application/Source/BFFT/CAN/CAN.o=1

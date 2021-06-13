@@ -54,7 +54,6 @@
   #define STACK_SIZE    configMINIMAL_STACK_SIZE
   static void GuiThread( const void* arg );
  static void vThreadLEDSystemAlive(const void *argument);
-  static void vThreadCANSendMessage(const void *argument);
 #endif
 
 
@@ -131,7 +130,7 @@ int main( void )
   DeviceDriver_Initialize();
   MX_GPIO_Init();
   MX_FDCAN1_Init();
-  s8CANInit();
+
 
   /* initialize console interface for debug messages */
   EwBspConsoleInit();

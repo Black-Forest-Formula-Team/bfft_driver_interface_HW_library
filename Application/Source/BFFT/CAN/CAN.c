@@ -14,6 +14,11 @@ static eCAN_t eCAN_FilterInit(void);
 static uint32_t u32CANTxBufferNumber = FDCAN_TX_BUFFER0;
 static const uint32_t cu32TxId = 0;
 
+/**
+ * @fn eCAN_Start
+ * @brief start of CAN
+ * @ret Error handling
+ */
 eCAN_t eCAN_Start(void)
 {
    if((eCAN_OKAY != eCAN_GeneralInit()) || (eCAN_OKAY != eCAN_TxInit()) || (eCAN_OKAY != eCAN_FilterInit()))
@@ -22,7 +27,11 @@ eCAN_t eCAN_Start(void)
   return eCAN_OKAY;
 }
 
-
+/**
+ * @fn eCAN_GeneralInit
+ * @brief initialize of CAN BUS
+ * @ret Error handling
+ */
 static eCAN_t eCAN_GeneralInit(void)
 {
    if(HAL_OK != HAL_FDCAN_Start(&hfdcan1))
@@ -34,6 +43,11 @@ static eCAN_t eCAN_GeneralInit(void)
    return eCAN_OKAY;
 }
 
+/**
+ * @fn eCAN_TxInit
+ * @brief initialize of Transmit
+ * @ret Error handling
+ */
 static eCAN_t eCAN_TxInit(void)
 {
    xCANTxHeader.IdType =cu32TxId;
@@ -49,7 +63,11 @@ static eCAN_t eCAN_TxInit(void)
    return eCAN_OKAY;
 }
 
-
+/**
+ * @fn eCAN_FilterInit
+ * @brief initialize the Filter of CAN
+ * @ret Error handling
+ */
 static eCAN_t eCAN_FilterInit(void)
 {
 
