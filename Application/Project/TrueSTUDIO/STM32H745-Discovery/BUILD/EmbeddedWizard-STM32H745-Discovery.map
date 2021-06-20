@@ -1742,18 +1742,162 @@ Discarded input sections
  .ARM.attributes
                 0x00000000       0x39 Application\Source\BFFT\CAN\CAN.o
  .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
  .text          0x00000000        0x0 Application\Source\BFFT\CAN\CANFilterCalculator.o
  .data          0x00000000        0x0 Application\Source\BFFT\CAN\CANFilterCalculator.o
  .bss           0x00000000        0x0 Application\Source\BFFT\CAN\CANFilterCalculator.o
- .debug_info    0x00000000       0x21 Application\Source\BFFT\CAN\CANFilterCalculator.o
- .debug_abbrev  0x00000000       0x13 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .text.eCAN_CalculateFilter
+                0x00000000       0x1c Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_info    0x00000000     0x14c9 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_abbrev  0x00000000      0x1cf Application\Source\BFFT\CAN\CANFilterCalculator.o
  .debug_aranges
-                0x00000000       0x18 Application\Source\BFFT\CAN\CANFilterCalculator.o
- .debug_macro   0x00000000       0x11 Application\Source\BFFT\CAN\CANFilterCalculator.o
+                0x00000000       0x20 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_ranges  0x00000000       0x10 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x362 Application\Source\BFFT\CAN\CANFilterCalculator.o
  .debug_macro   0x00000000      0x8e0 Application\Source\BFFT\CAN\CANFilterCalculator.o
- .debug_line    0x00000000       0x52 Application\Source\BFFT\CAN\CANFilterCalculator.o
- .debug_str     0x00000000     0x2699 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x10a Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x2e Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x49 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x22 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x4f Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x51 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0xef Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x6a Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x1df Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x1c Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x22 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0xdf Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000     0x12cd Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x11f Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x19 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000    0x26858 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x43 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000     0x3cd3 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x174 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x58 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x3c Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x9c Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x58 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x1f Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x43 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x20 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x1a3 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x307 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0xde Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x54 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000     0x3a9d Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000     0x102c Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x138 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x133 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x3a0 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x27 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x72d Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x229 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x66 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x3ad Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x294 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x408 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x27c Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000     0x101a Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x6b7 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x36e Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0xe34 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x3cb Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x4a9 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x51 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x513 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x22c Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x58 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0xa5 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x198 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0xd6 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x219 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x2e5 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x35 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x2d4 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x34b Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x6af Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0xe4 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x11 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x662 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0xa6 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x783 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x22 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x10 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x58 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_line    0x00000000      0x8e9 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_str     0x00000000   0x199295 Application\Source\BFFT\CAN\CANFilterCalculator.o
  .comment       0x00000000       0x7d Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_frame   0x00000000       0x20 Application\Source\BFFT\CAN\CANFilterCalculator.o
  .ARM.attributes
                 0x00000000       0x39 Application\Source\BFFT\CAN\CANFilterCalculator.o
  .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANID.o
@@ -17753,7 +17897,7 @@ OUTPUT(EmbeddedWizard-STM32H745-Discovery.elf elf32-littlearm)
  .debug_macro   0x0000e8e7       0x10 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
  .debug_macro   0x0000e8f7       0x74 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
 
-.debug_line     0x00000000    0x396af
+.debug_line     0x00000000    0x396a6
  .debug_line    0x00000000     0x2502 Application\GeneratedCode\BezierClock.o
  .debug_line    0x00002502     0x4f9a Application\GeneratedCode\Core.o
  .debug_line    0x0000749c      0xd0a Application\GeneratedCode\DriverInterfce.o
@@ -17768,53 +17912,53 @@ OUTPUT(EmbeddedWizard-STM32H745-Discovery.elf elf32-littlearm)
  .debug_line    0x0000e665     0x267c Application\GeneratedCode\WidgetSet.o
  .debug_line    0x00010ce1      0x4ff Application\Source\DeviceDriver.o
  .debug_line    0x000111e0      0x7c4 Application\Source\ewmain.o
- .debug_line    0x000119a4      0x93e Application\Source\fdcan.o
- .debug_line    0x000122e2      0x8e4 Application\Source\gpio.o
- .debug_line    0x00012bc6      0xbdc Application\Source\main.o
- .debug_line    0x000137a2      0xfec PlatformPackage\RGB565\ewextgfx.o
- .debug_line    0x0001478e      0x637 PlatformPackage\RTE\ewextrte.o
- .debug_line    0x00014dc5      0x4dc TargetSpecific\Drivers\ft5336.o
- .debug_line    0x000152a1      0xa25 TargetSpecific\Drivers\ft5336_reg.o
- .debug_line    0x00015cc6      0xc94 TargetSpecific\ew_bsp_clock.o
- .debug_line    0x0001695a      0xb5c TargetSpecific\ew_bsp_console.o
- .debug_line    0x000174b6      0xfbf TargetSpecific\ew_bsp_display.o
- .debug_line    0x00018475      0xda0 TargetSpecific\ew_bsp_event.o
- .debug_line    0x00019215      0xf08 TargetSpecific\ew_bsp_graphics.o
- .debug_line    0x0001a11d      0x95b TargetSpecific\ew_bsp_inout.o
- .debug_line    0x0001aa78      0xde8 TargetSpecific\ew_bsp_system.o
- .debug_line    0x0001b860      0xd92 TargetSpecific\ew_bsp_touch.o
- .debug_line    0x0001c5f2      0xe70 TargetSpecific\stm32h7xx_it.o
- .debug_line    0x0001d462      0x9be TargetSpecific\system_stm32h7xx.o
- .debug_line    0x0001de20      0xe88 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
- .debug_line    0x0001eca8      0xad4 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
- .debug_line    0x0001f77c      0xa1f ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery.o
- .debug_line    0x0002019b      0xb98 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
- .debug_line    0x00020d33      0xd7d ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_qspi.o
- .debug_line    0x00021ab0      0xb9d ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_sdram.o
- .debug_line    0x0002264d      0xe6e ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
- .debug_line    0x000234bb      0xbf3 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_cortex.o
- .debug_line    0x000240ae     0x11e2 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma2d.o
- .debug_line    0x00025290     0x1a69 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_fdcan.o
- .debug_line    0x00026cf9      0xb72 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_gpio.o
- .debug_line    0x0002786b     0x2a1b ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c.o
- .debug_line    0x0002a286      0xb33 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c_ex.o
- .debug_line    0x0002adb9     0x17a1 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_ltdc.o
- .debug_line    0x0002c55a     0x1043 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_mdma.o
- .debug_line    0x0002d59d      0xd7f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr_ex.o
- .debug_line    0x0002e31c      0xfc1 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_qspi.o
- .debug_line    0x0002f2dd      0xeab ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc.o
- .debug_line    0x00030188      0xf11 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.o
- .debug_line    0x00031099      0xfb9 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc.o
- .debug_line    0x00032052      0xdda ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_sdram.o
- .debug_line    0x00032e2c     0x2126 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o
- .debug_line    0x00034f52      0xc4d ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_ll_fmc.o
- .debug_line    0x00035b9f      0xcc9 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
- .debug_line    0x00036868      0x5b5 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
- .debug_line    0x00036e1d      0x654 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.o
- .debug_line    0x00037471      0x656 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
- .debug_line    0x00037ac7      0xc4a ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
- .debug_line    0x00038711      0xf28 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
- .debug_line    0x00039639       0x76 startup_stm32h745xx.o
+ .debug_line    0x000119a4      0x93b Application\Source\fdcan.o
+ .debug_line    0x000122df      0x8e1 Application\Source\gpio.o
+ .debug_line    0x00012bc0      0xbd9 Application\Source\main.o
+ .debug_line    0x00013799      0xfec PlatformPackage\RGB565\ewextgfx.o
+ .debug_line    0x00014785      0x637 PlatformPackage\RTE\ewextrte.o
+ .debug_line    0x00014dbc      0x4dc TargetSpecific\Drivers\ft5336.o
+ .debug_line    0x00015298      0xa25 TargetSpecific\Drivers\ft5336_reg.o
+ .debug_line    0x00015cbd      0xc94 TargetSpecific\ew_bsp_clock.o
+ .debug_line    0x00016951      0xb5c TargetSpecific\ew_bsp_console.o
+ .debug_line    0x000174ad      0xfbf TargetSpecific\ew_bsp_display.o
+ .debug_line    0x0001846c      0xda0 TargetSpecific\ew_bsp_event.o
+ .debug_line    0x0001920c      0xf08 TargetSpecific\ew_bsp_graphics.o
+ .debug_line    0x0001a114      0x95b TargetSpecific\ew_bsp_inout.o
+ .debug_line    0x0001aa6f      0xde8 TargetSpecific\ew_bsp_system.o
+ .debug_line    0x0001b857      0xd92 TargetSpecific\ew_bsp_touch.o
+ .debug_line    0x0001c5e9      0xe70 TargetSpecific\stm32h7xx_it.o
+ .debug_line    0x0001d459      0x9be TargetSpecific\system_stm32h7xx.o
+ .debug_line    0x0001de17      0xe88 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
+ .debug_line    0x0001ec9f      0xad4 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
+ .debug_line    0x0001f773      0xa1f ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery.o
+ .debug_line    0x00020192      0xb98 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
+ .debug_line    0x00020d2a      0xd7d ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_qspi.o
+ .debug_line    0x00021aa7      0xb9d ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_sdram.o
+ .debug_line    0x00022644      0xe6e ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
+ .debug_line    0x000234b2      0xbf3 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_cortex.o
+ .debug_line    0x000240a5     0x11e2 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma2d.o
+ .debug_line    0x00025287     0x1a69 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_fdcan.o
+ .debug_line    0x00026cf0      0xb72 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_gpio.o
+ .debug_line    0x00027862     0x2a1b ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c.o
+ .debug_line    0x0002a27d      0xb33 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c_ex.o
+ .debug_line    0x0002adb0     0x17a1 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_ltdc.o
+ .debug_line    0x0002c551     0x1043 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_mdma.o
+ .debug_line    0x0002d594      0xd7f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr_ex.o
+ .debug_line    0x0002e313      0xfc1 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_qspi.o
+ .debug_line    0x0002f2d4      0xeab ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc.o
+ .debug_line    0x0003017f      0xf11 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.o
+ .debug_line    0x00031090      0xfb9 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc.o
+ .debug_line    0x00032049      0xdda ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_sdram.o
+ .debug_line    0x00032e23     0x2126 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o
+ .debug_line    0x00034f49      0xc4d ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_ll_fmc.o
+ .debug_line    0x00035b96      0xcc9 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
+ .debug_line    0x0003685f      0x5b5 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
+ .debug_line    0x00036e14      0x654 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.o
+ .debug_line    0x00037468      0x656 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
+ .debug_line    0x00037abe      0xc4a ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
+ .debug_line    0x00038708      0xf28 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
+ .debug_line    0x00039630       0x76 startup_stm32h745xx.o
 
 .debug_str      0x00000000   0x1ce1f8
  .debug_str     0x00000000    0x121c0 Application\GeneratedCode\BezierClock.o
