@@ -49,7 +49,7 @@ e:/program files (x86)/zoom/atollic/new folder/truestudio for stm32 9.3.0/armtoo
 e:/program files (x86)/zoom/atollic/new folder/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-memmove.o)
                               PlatformPackage\RTE\ewextrte.o (memmove)
 e:/program files (x86)/zoom/atollic/new folder/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-memset.o)
-                              PlatformPackage\RTE\ewextrte.o (memset)
+                              Application\Source\BFFT\DataManagement\LIFO.o (memset)
 e:/program files (x86)/zoom/atollic/new folder/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-rand.o)
                               PlatformPackage\RTE\ewextrte.o (srand)
 e:/program files (x86)/zoom/atollic/new folder/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/fpv5-sp-d16\libc.a(lib_a-setjmp.o)
@@ -1741,6 +1741,21 @@ Discarded input sections
  .debug_frame   0x00000000       0x30 Application\Source\BFFT\CAN\CAN.o
  .ARM.attributes
                 0x00000000       0x39 Application\Source\BFFT\CAN\CAN.o
+ .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .text          0x00000000        0x0 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .data          0x00000000        0x0 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .bss           0x00000000        0x0 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_info    0x00000000       0x21 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_abbrev  0x00000000       0x13 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_aranges
+                0x00000000       0x18 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000       0x11 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_macro   0x00000000      0x8e0 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_line    0x00000000       0x52 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .debug_str     0x00000000     0x2699 Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .comment       0x00000000       0x7d Application\Source\BFFT\CAN\CANFilterCalculator.o
+ .ARM.attributes
+                0x00000000       0x39 Application\Source\BFFT\CAN\CANFilterCalculator.o
  .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANID.o
  .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANID.o
  .group         0x00000000        0x8 Application\Source\BFFT\CAN\CANID.o
@@ -2073,6 +2088,180 @@ Discarded input sections
  .debug_frame   0x00000000       0x50 Application\Source\BFFT\CAN\CANSubscriber.o
  .ARM.attributes
                 0x00000000       0x39 Application\Source\BFFT\CAN\CANSubscriber.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .group         0x00000000        0x8 Application\Source\BFFT\DataManagement\LIFO.o
+ .text          0x00000000        0x0 Application\Source\BFFT\DataManagement\LIFO.o
+ .data          0x00000000        0x0 Application\Source\BFFT\DataManagement\LIFO.o
+ .bss           0x00000000        0x0 Application\Source\BFFT\DataManagement\LIFO.o
+ .text.eLIFO_DeInit
+                0x00000000       0x1c Application\Source\BFFT\DataManagement\LIFO.o
+ .text.eLIFO_Init
+                0x00000000        0x4 Application\Source\BFFT\DataManagement\LIFO.o
+ .text.eLIFO_Write
+                0x00000000       0x28 Application\Source\BFFT\DataManagement\LIFO.o
+ .text.eLIFO_Search
+                0x00000000       0x2c Application\Source\BFFT\DataManagement\LIFO.o
+ .text.eLIFO_GetBuffer
+                0x00000000       0x1c Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_info    0x00000000     0x1659 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_abbrev  0x00000000      0x256 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_loc     0x00000000       0xeb Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_aranges
+                0x00000000       0x38 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_ranges  0x00000000       0x40 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x384 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x8e0 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x10a Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x2e Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x49 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x22 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x4f Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x51 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0xef Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x6a Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x1df Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x1c Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x22 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0xdf Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000     0x12cd Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x11f Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x19 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000    0x26858 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x43 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000     0x3cd3 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x174 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x58 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x3c Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x9c Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x58 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x1f Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x43 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x20 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x1a3 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x307 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0xde Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x54 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000     0x3a9d Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000     0x102c Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x138 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x133 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x3a0 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x27 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x72d Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x229 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x66 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x3ad Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x294 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x408 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x27c Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000     0x101a Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x6b7 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x36e Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0xe34 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x3cb Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x4a9 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x51 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x513 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x22c Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x58 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0xa5 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x198 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0xd6 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x219 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x2e5 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x35 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x2d4 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x34b Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x6af Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0xe4 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x11 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x662 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0xa6 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000      0x783 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x22 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x10 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x58 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x16 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x35 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_macro   0x00000000       0x20 Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_line    0x00000000      0x93c Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_str     0x00000000   0x1993b8 Application\Source\BFFT\DataManagement\LIFO.o
+ .comment       0x00000000       0x7d Application\Source\BFFT\DataManagement\LIFO.o
+ .debug_frame   0x00000000       0x74 Application\Source\BFFT\DataManagement\LIFO.o
+ .ARM.attributes
+                0x00000000       0x39 Application\Source\BFFT\DataManagement\LIFO.o
  .group         0x00000000        0x8 Application\Source\BFFT\globals.o
  .group         0x00000000        0x8 Application\Source\BFFT\globals.o
  .group         0x00000000        0x8 Application\Source\BFFT\globals.o
@@ -2837,6 +3026,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x22 Application\Source\main.o
  .debug_macro   0x00000000       0x10 Application\Source\main.o
  .debug_macro   0x00000000       0x58 Application\Source\main.o
+ .debug_macro   0x00000000       0x35 Application\Source\main.o
  .group         0x00000000        0x8 PlatformPackage\RGB565\ewextgfx.o
  .group         0x00000000        0x8 PlatformPackage\RGB565\ewextgfx.o
  .group         0x00000000        0x8 PlatformPackage\RGB565\ewextgfx.o
@@ -3073,6 +3263,8 @@ Discarded input sections
  .debug_macro   0x00000000       0xb6 PlatformPackage\RTE\ewextrte.o
  .debug_macro   0x00000000       0x16 PlatformPackage\RTE\ewextrte.o
  .debug_macro   0x00000000      0x130 PlatformPackage\RTE\ewextrte.o
+ .debug_macro   0x00000000       0x16 PlatformPackage\RTE\ewextrte.o
+ .debug_macro   0x00000000       0x20 PlatformPackage\RTE\ewextrte.o
  .debug_macro   0x00000000       0x16 PlatformPackage\RTE\ewextrte.o
  .group         0x00000000        0x8 TargetSpecific\Drivers\ft5336.o
  .group         0x00000000        0x8 TargetSpecific\Drivers\ft5336.o
@@ -11565,8 +11757,10 @@ LOAD Application\GeneratedCode\Templates.o
 LOAD Application\GeneratedCode\Views.o
 LOAD Application\GeneratedCode\WidgetSet.o
 LOAD Application\Source\BFFT\CAN\CAN.o
+LOAD Application\Source\BFFT\CAN\CANFilterCalculator.o
 LOAD Application\Source\BFFT\CAN\CANID.o
 LOAD Application\Source\BFFT\CAN\CANSubscriber.o
+LOAD Application\Source\BFFT\DataManagement\LIFO.o
 LOAD Application\Source\BFFT\globals.o
 LOAD Application\Source\DeviceDriver.o
 LOAD Application\Source\ewmain.o
@@ -17357,7 +17551,7 @@ OUTPUT(EmbeddedWizard-STM32H745-Discovery.elf elf32-littlearm)
  .debug_ranges  0x000097b8      0x2c8 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
  .debug_ranges  0x00009a80       0x20 startup_stm32h745xx.o
 
-.debug_macro    0x00000000     0xe9d6
+.debug_macro    0x00000000     0xe96b
  .debug_macro   0x00000000      0x40f Application\GeneratedCode\BezierClock.o
  .debug_macro   0x0000040f       0x10 Application\GeneratedCode\BezierClock.o
  .debug_macro   0x0000041f       0x1c Application\GeneratedCode\BezierClock.o
@@ -17461,106 +17655,103 @@ OUTPUT(EmbeddedWizard-STM32H745-Discovery.elf elf32-littlearm)
  .debug_macro   0x0000340f      0x4c9 Application\Source\main.o
  .debug_macro   0x000038d8       0x47 Application\Source\main.o
  .debug_macro   0x0000391f       0x1c Application\Source\main.o
- .debug_macro   0x0000393b       0x35 Application\Source\main.o
- .debug_macro   0x00003970       0x10 Application\Source\main.o
- .debug_macro   0x00003980       0x10 Application\Source\main.o
- .debug_macro   0x00003990       0xb6 Application\Source\main.o
- .debug_macro   0x00003a46       0x16 Application\Source\main.o
- .debug_macro   0x00003a5c      0x130 Application\Source\main.o
- .debug_macro   0x00003b8c      0x12b Application\Source\main.o
- .debug_macro   0x00003cb7      0x15a Application\Source\main.o
- .debug_macro   0x00003e11       0xe4 Application\Source\main.o
- .debug_macro   0x00003ef5       0x1c Application\Source\main.o
- .debug_macro   0x00003f11       0x26 Application\Source\main.o
- .debug_macro   0x00003f37      0x4b7 Application\Source\main.o
- .debug_macro   0x000043ee       0xb5 Application\Source\main.o
- .debug_macro   0x000044a3       0xaa Application\Source\main.o
- .debug_macro   0x0000454d       0x91 Application\Source\main.o
- .debug_macro   0x000045de       0x86 Application\Source\main.o
- .debug_macro   0x00004664       0x7e Application\Source\main.o
- .debug_macro   0x000046e2       0xcf Application\Source\main.o
- .debug_macro   0x000047b1      0x3d9 PlatformPackage\RGB565\ewextgfx.o
- .debug_macro   0x00004b8a       0x19 PlatformPackage\RGB565\ewextgfx.o
- .debug_macro   0x00004ba3      0x1d5 PlatformPackage\RTE\ewextrte.o
- .debug_macro   0x00004d78       0x52 PlatformPackage\RTE\ewextrte.o
- .debug_macro   0x00004dca       0x55 PlatformPackage\RTE\ewextrte.o
- .debug_macro   0x00004e1f       0x57 PlatformPackage\RTE\ewextrte.o
- .debug_macro   0x00004e76      0x30d PlatformPackage\RTE\ewextrte.o
- .debug_macro   0x00005183       0x16 PlatformPackage\RTE\ewextrte.o
- .debug_macro   0x00005199       0x20 PlatformPackage\RTE\ewextrte.o
- .debug_macro   0x000051b9       0x52 PlatformPackage\RTE\ewextrte.o
- .debug_macro   0x0000520b       0x16 PlatformPackage\RTE\ewextrte.o
- .debug_macro   0x00005221       0x22 PlatformPackage\RTE\ewextrte.o
- .debug_macro   0x00005243       0x93 TargetSpecific\Drivers\ft5336.o
- .debug_macro   0x000052d6      0x5ae TargetSpecific\Drivers\ft5336.o
- .debug_macro   0x00005884       0x1c TargetSpecific\Drivers\ft5336.o
- .debug_macro   0x000058a0       0x76 TargetSpecific\Drivers\ft5336.o
- .debug_macro   0x00005916       0x72 TargetSpecific\Drivers\ft5336_reg.o
- .debug_macro   0x00005988      0x3ab TargetSpecific\ew_bsp_clock.o
- .debug_macro   0x00005d33       0x6a TargetSpecific\ew_bsp_clock.o
- .debug_macro   0x00005d9d       0xa0 TargetSpecific\ew_bsp_clock.o
- .debug_macro   0x00005e3d       0xa5 TargetSpecific\ew_bsp_clock.o
- .debug_macro   0x00005ee2      0x3a6 TargetSpecific\ew_bsp_console.o
- .debug_macro   0x00006288      0x44b TargetSpecific\ew_bsp_display.o
- .debug_macro   0x000066d3      0x416 TargetSpecific\ew_bsp_event.o
- .debug_macro   0x00006ae9      0x40a TargetSpecific\ew_bsp_graphics.o
- .debug_macro   0x00006ef3       0x10 TargetSpecific\ew_bsp_graphics.o
- .debug_macro   0x00006f03      0x358 TargetSpecific\ew_bsp_inout.o
- .debug_macro   0x0000725b      0x3a0 TargetSpecific\ew_bsp_system.o
- .debug_macro   0x000075fb       0x16 TargetSpecific\ew_bsp_system.o
- .debug_macro   0x00007611       0x7c TargetSpecific\ew_bsp_system.o
- .debug_macro   0x0000768d       0x34 TargetSpecific\ew_bsp_system.o
- .debug_macro   0x000076c1       0x28 TargetSpecific\ew_bsp_system.o
- .debug_macro   0x000076e9      0x357 TargetSpecific\ew_bsp_system.o
- .debug_macro   0x00007a40      0x1b5 TargetSpecific\ew_bsp_system.o
- .debug_macro   0x00007bf5      0x3ed TargetSpecific\ew_bsp_touch.o
- .debug_macro   0x00007fe2       0x10 TargetSpecific\ew_bsp_touch.o
- .debug_macro   0x00007ff2       0xd9 TargetSpecific\ew_bsp_touch.o
- .debug_macro   0x000080cb       0x6a TargetSpecific\ew_bsp_touch.o
- .debug_macro   0x00008135      0x5b4 TargetSpecific\ew_bsp_touch.o
- .debug_macro   0x000086e9      0x42f TargetSpecific\stm32h7xx_it.o
- .debug_macro   0x00008b18       0x64 TargetSpecific\stm32h7xx_it.o
- .debug_macro   0x00008b7c      0x31b TargetSpecific\system_stm32h7xx.o
- .debug_macro   0x00008e97      0x333 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
- .debug_macro   0x000091ca       0x22 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
- .debug_macro   0x000091ec      0x333 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
- .debug_macro   0x0000951f       0x10 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
- .debug_macro   0x0000952f      0x33c ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery.o
- .debug_macro   0x0000986b      0x390 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
- .debug_macro   0x00009bfb       0x64 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
- .debug_macro   0x00009c5f      0x354 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_qspi.o
- .debug_macro   0x00009fb3      0x354 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_sdram.o
- .debug_macro   0x0000a307      0x33f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
- .debug_macro   0x0000a646      0x315 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_cortex.o
- .debug_macro   0x0000a95b      0x324 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma2d.o
- .debug_macro   0x0000ac7f      0x3d3 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_fdcan.o
- .debug_macro   0x0000b052      0x35f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_gpio.o
- .debug_macro   0x0000b3b1      0x3da ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c.o
- .debug_macro   0x0000b78b      0x315 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c_ex.o
- .debug_macro   0x0000baa0      0x316 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_ltdc.o
- .debug_macro   0x0000bdb6      0x324 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_mdma.o
- .debug_macro   0x0000c0da      0x34e ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr_ex.o
- .debug_macro   0x0000c428      0x339 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_qspi.o
- .debug_macro   0x0000c761      0x339 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc.o
- .debug_macro   0x0000ca9a      0x333 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.o
- .debug_macro   0x0000cdcd      0x316 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc.o
- .debug_macro   0x0000d0e3      0x315 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_sdram.o
- .debug_macro   0x0000d3f8      0x340 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o
- .debug_macro   0x0000d738      0x33f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_ll_fmc.o
- .debug_macro   0x0000da77      0x1e0 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
- .debug_macro   0x0000dc57      0x12b ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
- .debug_macro   0x0000dd82       0xc7 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
- .debug_macro   0x0000de49      0x172 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
- .debug_macro   0x0000dfbb      0x10e ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
- .debug_macro   0x0000e0c9       0x8d ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
- .debug_macro   0x0000e156      0x184 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.o
- .debug_macro   0x0000e2da      0x199 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
- .debug_macro   0x0000e473      0x1ed ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
- .debug_macro   0x0000e660       0x80 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
- .debug_macro   0x0000e6e0      0x262 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
- .debug_macro   0x0000e942       0x10 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
- .debug_macro   0x0000e952       0x10 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
- .debug_macro   0x0000e962       0x74 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
+ .debug_macro   0x0000393b       0x10 Application\Source\main.o
+ .debug_macro   0x0000394b       0x10 Application\Source\main.o
+ .debug_macro   0x0000395b       0xb6 Application\Source\main.o
+ .debug_macro   0x00003a11       0x16 Application\Source\main.o
+ .debug_macro   0x00003a27      0x130 Application\Source\main.o
+ .debug_macro   0x00003b57      0x12b Application\Source\main.o
+ .debug_macro   0x00003c82      0x15a Application\Source\main.o
+ .debug_macro   0x00003ddc       0xe4 Application\Source\main.o
+ .debug_macro   0x00003ec0       0x1c Application\Source\main.o
+ .debug_macro   0x00003edc       0x26 Application\Source\main.o
+ .debug_macro   0x00003f02      0x4b7 Application\Source\main.o
+ .debug_macro   0x000043b9       0xb5 Application\Source\main.o
+ .debug_macro   0x0000446e       0xaa Application\Source\main.o
+ .debug_macro   0x00004518       0x91 Application\Source\main.o
+ .debug_macro   0x000045a9       0x86 Application\Source\main.o
+ .debug_macro   0x0000462f       0x7e Application\Source\main.o
+ .debug_macro   0x000046ad       0xcf Application\Source\main.o
+ .debug_macro   0x0000477c      0x3d9 PlatformPackage\RGB565\ewextgfx.o
+ .debug_macro   0x00004b55       0x19 PlatformPackage\RGB565\ewextgfx.o
+ .debug_macro   0x00004b6e      0x1d5 PlatformPackage\RTE\ewextrte.o
+ .debug_macro   0x00004d43       0x52 PlatformPackage\RTE\ewextrte.o
+ .debug_macro   0x00004d95       0x55 PlatformPackage\RTE\ewextrte.o
+ .debug_macro   0x00004dea       0x57 PlatformPackage\RTE\ewextrte.o
+ .debug_macro   0x00004e41      0x30d PlatformPackage\RTE\ewextrte.o
+ .debug_macro   0x0000514e       0x52 PlatformPackage\RTE\ewextrte.o
+ .debug_macro   0x000051a0       0x16 PlatformPackage\RTE\ewextrte.o
+ .debug_macro   0x000051b6       0x22 PlatformPackage\RTE\ewextrte.o
+ .debug_macro   0x000051d8       0x93 TargetSpecific\Drivers\ft5336.o
+ .debug_macro   0x0000526b      0x5ae TargetSpecific\Drivers\ft5336.o
+ .debug_macro   0x00005819       0x1c TargetSpecific\Drivers\ft5336.o
+ .debug_macro   0x00005835       0x76 TargetSpecific\Drivers\ft5336.o
+ .debug_macro   0x000058ab       0x72 TargetSpecific\Drivers\ft5336_reg.o
+ .debug_macro   0x0000591d      0x3ab TargetSpecific\ew_bsp_clock.o
+ .debug_macro   0x00005cc8       0x6a TargetSpecific\ew_bsp_clock.o
+ .debug_macro   0x00005d32       0xa0 TargetSpecific\ew_bsp_clock.o
+ .debug_macro   0x00005dd2       0xa5 TargetSpecific\ew_bsp_clock.o
+ .debug_macro   0x00005e77      0x3a6 TargetSpecific\ew_bsp_console.o
+ .debug_macro   0x0000621d      0x44b TargetSpecific\ew_bsp_display.o
+ .debug_macro   0x00006668      0x416 TargetSpecific\ew_bsp_event.o
+ .debug_macro   0x00006a7e      0x40a TargetSpecific\ew_bsp_graphics.o
+ .debug_macro   0x00006e88       0x10 TargetSpecific\ew_bsp_graphics.o
+ .debug_macro   0x00006e98      0x358 TargetSpecific\ew_bsp_inout.o
+ .debug_macro   0x000071f0      0x3a0 TargetSpecific\ew_bsp_system.o
+ .debug_macro   0x00007590       0x16 TargetSpecific\ew_bsp_system.o
+ .debug_macro   0x000075a6       0x7c TargetSpecific\ew_bsp_system.o
+ .debug_macro   0x00007622       0x34 TargetSpecific\ew_bsp_system.o
+ .debug_macro   0x00007656       0x28 TargetSpecific\ew_bsp_system.o
+ .debug_macro   0x0000767e      0x357 TargetSpecific\ew_bsp_system.o
+ .debug_macro   0x000079d5      0x1b5 TargetSpecific\ew_bsp_system.o
+ .debug_macro   0x00007b8a      0x3ed TargetSpecific\ew_bsp_touch.o
+ .debug_macro   0x00007f77       0x10 TargetSpecific\ew_bsp_touch.o
+ .debug_macro   0x00007f87       0xd9 TargetSpecific\ew_bsp_touch.o
+ .debug_macro   0x00008060       0x6a TargetSpecific\ew_bsp_touch.o
+ .debug_macro   0x000080ca      0x5b4 TargetSpecific\ew_bsp_touch.o
+ .debug_macro   0x0000867e      0x42f TargetSpecific\stm32h7xx_it.o
+ .debug_macro   0x00008aad       0x64 TargetSpecific\stm32h7xx_it.o
+ .debug_macro   0x00008b11      0x31b TargetSpecific\system_stm32h7xx.o
+ .debug_macro   0x00008e2c      0x333 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
+ .debug_macro   0x0000915f       0x22 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt25tl01g\mt25tl01g.o
+ .debug_macro   0x00009181      0x333 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
+ .debug_macro   0x000094b4       0x10 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\Components\mt48lc4m32b2\mt48lc4m32b2.o
+ .debug_macro   0x000094c4      0x33c ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery.o
+ .debug_macro   0x00009800      0x390 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
+ .debug_macro   0x00009b90       0x64 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_bus.o
+ .debug_macro   0x00009bf4      0x354 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_qspi.o
+ .debug_macro   0x00009f48      0x354 ThirdParty\STM32Cube_FW_H7\Drivers\BSP\STM32H745I-DISCO\stm32h745i_discovery_sdram.o
+ .debug_macro   0x0000a29c      0x33f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
+ .debug_macro   0x0000a5db      0x315 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_cortex.o
+ .debug_macro   0x0000a8f0      0x324 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma2d.o
+ .debug_macro   0x0000ac14      0x3d3 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_fdcan.o
+ .debug_macro   0x0000afe7      0x35f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_gpio.o
+ .debug_macro   0x0000b346      0x3da ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c.o
+ .debug_macro   0x0000b720      0x315 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c_ex.o
+ .debug_macro   0x0000ba35      0x316 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_ltdc.o
+ .debug_macro   0x0000bd4b      0x324 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_mdma.o
+ .debug_macro   0x0000c06f      0x34e ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr_ex.o
+ .debug_macro   0x0000c3bd      0x339 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_qspi.o
+ .debug_macro   0x0000c6f6      0x339 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc.o
+ .debug_macro   0x0000ca2f      0x333 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.o
+ .debug_macro   0x0000cd62      0x316 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rtc.o
+ .debug_macro   0x0000d078      0x315 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_sdram.o
+ .debug_macro   0x0000d38d      0x340 ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o
+ .debug_macro   0x0000d6cd      0x33f ThirdParty\STM32Cube_FW_H7\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_ll_fmc.o
+ .debug_macro   0x0000da0c      0x1e0 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
+ .debug_macro   0x0000dbec      0x12b ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
+ .debug_macro   0x0000dd17       0xc7 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
+ .debug_macro   0x0000ddde      0x172 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
+ .debug_macro   0x0000df50      0x10e ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
+ .debug_macro   0x0000e05e       0x8d ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\list.o
+ .debug_macro   0x0000e0eb      0x184 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.o
+ .debug_macro   0x0000e26f      0x199 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
+ .debug_macro   0x0000e408      0x1ed ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
+ .debug_macro   0x0000e5f5       0x80 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\queue.o
+ .debug_macro   0x0000e675      0x262 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
+ .debug_macro   0x0000e8d7       0x10 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
+ .debug_macro   0x0000e8e7       0x10 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
+ .debug_macro   0x0000e8f7       0x74 ThirdParty\STM32Cube_FW_H7\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
 
 .debug_line     0x00000000    0x396af
  .debug_line    0x00000000     0x2502 Application\GeneratedCode\BezierClock.o
