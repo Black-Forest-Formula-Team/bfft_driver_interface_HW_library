@@ -1,0 +1,13 @@
+/*
+ * DataConverter.h
+ *
+ *  Created on: 03.08.2021
+ *      Author: maanm
+ */
+
+#ifndef APPLICATION_SOURCE_BFFT_CAN_DATACONVERTER_H_
+#define APPLICATION_SOURCE_BFFT_CAN_DATACONVERTER_H_
+
+
+
+#endif /* APPLICATION_SOURCE_BFFT_CAN_DATACONVERTER_H_ */
