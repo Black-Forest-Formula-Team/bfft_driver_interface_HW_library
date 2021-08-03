@@ -36,6 +36,7 @@ extern "C" {
 #include "./BFFT/CAN/CAN.h"
 #include "./BFFT/CAN/CANID.h"
 #include "./BFFT/CAN/CANSubscriber.h"
+#include "./BFFT/CAN/CANFilterCalculator.h"
 #include "./BFFT/externals.h"
 
 

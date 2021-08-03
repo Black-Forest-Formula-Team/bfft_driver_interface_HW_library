@@ -70,10 +70,8 @@ static eCAN_t eCAN_TxInit(void)
  */
 static eCAN_t eCAN_FilterInit(void)
 {
-
- // TODO set CAN callculate filter
-
-   if(HAL_OK != HAL_FDCAN_ConfigFilter(&hfdcan1, (FDCAN_FilterTypeDef*)&xCANFilter))
+   if((eCAN_OKAY != eCAN_CalculateFilter()) ||
+      (HAL_OK != HAL_FDCAN_ConfigFilter(&hfdcan1, (FDCAN_FilterTypeDef*)&xCANFilter)))
       return eCAN_ERROR;
 
    return eCAN_OKAY;
