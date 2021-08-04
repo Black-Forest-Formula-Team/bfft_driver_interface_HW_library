@@ -22,5 +22,5 @@ typedef enum eCAN
 
 /*------ Function Declaration-----*/
 eCAN_t eCAN_Start(void);
-
+uint32_t u32CAN_GetMessageId(void);
 #endif /* APPLICATION_SOURCE_BFFT_CAN_CAN_H_ */
