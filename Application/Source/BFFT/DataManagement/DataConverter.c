@@ -30,12 +30,13 @@ eDisplayType_t eCANTypeToDisplayType(const eCANSubscriberType_t ceCANSubscriberT
 
 
 /**
- * @fn u32ConvertRevolution
+ * @fn bConvertRevolution
  * @brief unit Convert to Revolution
- * @param cu32Revolution: const Variable
- * @ret uint32_t
+ * @param pu8Data: Pointer of Data
+ * @param cu8DataLength: const Variable
+ * @ret bool
  */
-uint32_t u32ConvertRevolution(const uint32_t cu32Revolution)
+bool bConvertRevolution(uint8_t* const pu8Data, const uint8_t cu8DataLength)
 {
    //TODO Clearify Conversion
    return 0;
@@ -45,10 +46,11 @@ uint32_t u32ConvertRevolution(const uint32_t cu32Revolution)
 /**
  * @fn u32ConvertBatteryStatus
  * @brief unit Convert the Battery status
- * @param cu32BatteryStatus: const Variable
- * @ret uint32_t
+ * @param pu8Data: Pointer of Data
+ * @param cu8DataLength: const Variable
+ * @ret bool
  */
-uint32_t u32ConvertBatteryStatus(const uint32_t cu32BatteryStatus)
+bool bConvertBatteryStatus(uint8_t* const pu8Data, const uint8_t cu8DataLength)
 {
    //TODO Clearify Conversion
    return 0;
@@ -58,10 +60,11 @@ uint32_t u32ConvertBatteryStatus(const uint32_t cu32BatteryStatus)
 /**
  * @fn u32ConvertSpeed
  * @brief unit Convert the Speed Level
- * @param cu32Speed: const Variable
- * @ret uint32_t
+ * @param pu8Data: Pointer of Data
+ * @param cu8DataLength: const Variable
+ * @ret bool
  */
-uint32_t u32ConvertSpeed(const uint32_t cu32Speed)
+bool bConvertSpeed(uint8_t* const pu8Data, const uint8_t cu8DataLength)
 {
    //TODO Clearify Conversion
    return 0;

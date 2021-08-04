@@ -23,8 +23,8 @@ typedef eDisplayType_t* peDisplayType_t;
 
 
 eDisplayType_t eCANTypeToDisplayType(const eCANSubscriberType_t ceCANSubscriberType);
-uint32_t u32ConvertRevolution(const uint32_t cu32Revolution);
-uint32_t u32ConvertBatteryStatus(const uint32_t cu32BatteryStatus);
-uint32_t u32ConvertSpeed(const uint32_t cu32Speed);
+bool bConvertRevolution(uint8_t* const pu8Data, const uint8_t cu8DataLength);
+bool bConvertBatteryStatus(uint8_t* const pu8Data, const uint8_t cu8DataLength);
+bool bConvertSpeed(uint8_t* const pu8Data, const uint8_t cu8DataLength);
 
 #endif /* APPLICATION_SOURCE_BFFT_CAN_DATACONVERTER_H_ */

@@ -1,0 +1,9 @@
+/*
+ * CANDispatcher.c
+ *
+ *  Created on: 04.08.2021
+ *      Author: maanm
+ */
+
+#include "main.h"
+static bool bDispatchToDisplay(const eCANSubscriberType_t ceCANSubscriberType,const uint8_t * cpu8Data);

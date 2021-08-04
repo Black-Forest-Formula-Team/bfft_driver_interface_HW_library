@@ -76,3 +76,8 @@ static eCAN_t eCAN_FilterInit(void)
 
    return eCAN_OKAY;
 }
+
+uint32_t u32CAN_GetMessageId(void)
+{
+    return xCANRxHeader.Identifier;
+}
