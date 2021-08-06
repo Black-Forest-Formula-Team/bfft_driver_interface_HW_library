@@ -12,7 +12,7 @@
 
 typedef enum CANSubscriberType eCANSubscriberType_t;
 
-bool bDispatchMessage(void);
+bool bCAN_DispatchMessage(void);
 
 
 #endif /* APPLICATION_SOURCE_BFFT_CAN_CANDISPATCHER_H_ */

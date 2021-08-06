@@ -84,7 +84,7 @@ EW_END_OF_CLASS_VARIANTS( GUIGUI )
 
 /* Virtual Method Table (VMT) for the class : 'GUI::GUI' */
 EW_DEFINE_CLASS( GUIGUI, CoreRoot, DriverInterface, DriverInterface, DriverInterface, 
-                 DriverInterface, _None, _None, "GUI::GUI" )
+                 DriverInterface, _None, _None, "GUI::GUI")
   CoreRectView_initLayoutContext,
   CoreRoot_GetRoot,
   CoreRoot_Draw,

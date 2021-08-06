@@ -9,7 +9,7 @@
 static bool bDispatchToDisplay(const eCANSubscriberType_t ceCANSubscriberType, uint8_t * const pu8Data, const uint8_t cu8DataLength);
 static uint8_t au8MessageBuffer[8u];
 
-bool bDispatchMessage(void)
+bool bCAN_DispatchMessage(void)
 {
   if(HAL_OK != HAL_FDCAN_GetRxMessage(&hfdcan1, FDCAN_RX_FIFO0, (FDCAN_RxHeaderTypeDef*)&xCANRxHeader, au8MessageBuffer))
      return false;
@@ -31,7 +31,7 @@ bool bDispatchMessage(void)
 
 bool bDispatchToDisplay(const eCANSubscriberType_t ceCANSubscriberType, uint8_t* const pu8Data, const uint8_t cu8DataLength)
 {
-   if(NULL == pu8Data)
+   if((NULL == pu8Data) || (0u == cu8DataLength))
       return false;
 
    bool bRetVal = false;
@@ -54,9 +54,7 @@ bool bDispatchToDisplay(const eCANSubscriberType_t ceCANSubscriberType, uint8_t*
    }
 
    if(true == bRetVal)
-   {
-      //TODO Call displayDispatcher
-   }
+      bRetVal = bDisplay_DispatchValue(ceDisplayType, pu8Data, cu8DataLength);
 
    return bRetVal;
 }
